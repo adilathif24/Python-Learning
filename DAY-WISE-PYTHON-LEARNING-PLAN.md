@@ -81,48 +81,51 @@ Never mark a topic Completed just because a Markdown file exists.
 
 ## Day-by-day sequence
 
-| Day | Topic | Status |
+| Day | Topic (click to open) | Study-pack status |
 |---:|---|---|
-| 01 | [Output, variables, data types and input](days/DAY-01-Output-Variables-Data-Types.md) | Covered |
-| 02 | [Operators](days/DAY-02-Operators.md) | Covered |
-| 03 | [Conditions](days/DAY-03-Conditions.md) | Covered |
-| 04 | [Loops and counting](days/DAY-04-Loops-and-Counting.md) | Covered |
-| 05 | [Number problems](days/DAY-05-Number-Problems.md) | Covered |
-| 06 | [Strings](days/DAY-06-Strings.md) | Covered |
-| 07 | [Lists](days/DAY-07-Lists.md) | Covered |
-| 08 | [Functions and return](days/DAY-08-Functions-and-Return.md) | Covered |
-| 09 | [Function argument patterns](days/DAY-09-Function-Arguments.md) | Ongoing |
-| 10 | [Default arguments, scope, docstrings and validation](days/DAY-10-Function-Fundamentals.md) | Next |
-| 11 | [List mastery and mutation/copying](days/DAY-11-Complete-Lists.md) | Planned |
-| 12 | [Tuples and unpacking](days/DAY-12-Tuples-and-Unpacking.md) | Planned |
-| 13 | [Sets and set operations](days/DAY-13-Sets.md) | Planned |
-| 14 | [Dictionaries and nested data](days/DAY-14-Dictionaries.md) | Planned |
-| 15 | [Choosing the right collection](days/DAY-15-Choosing-Collections.md) | Planned |
-| 16 | [String mastery](days/DAY-16-String-Mastery.md) | Planned |
-| 17 | [Loop mastery and menu programs](days/DAY-17-Loop-Mastery.md) | Planned |
-| 18 | [Number-problem patterns](days/DAY-18-Number-Problem-Patterns.md) | Planned |
-| 19 | [Input validation](days/DAY-19-Input-Validation.md) | Planned |
-| 20 | [Debugging fundamentals](days/DAY-20-Debugging-Fundamentals.md) | Planned |
-| 21 | [Exceptions](days/DAY-21-Exceptions.md) | Planned |
-| 22 | [Testing and assertions](days/DAY-22-Testing.md) | Planned |
-| 23 | [Files and paths](days/DAY-23-Files.md) | Planned |
-| 24 | [CSV and JSON](days/DAY-24-CSV-and-JSON.md) | Planned |
-| 25 | [Modules and packages](days/DAY-25-Modules-and-Packages.md) | Planned |
-| 26 | [Virtual environments and dependencies](days/DAY-26-Virtual-Environments.md) | Planned |
-| 27 | [Comprehensions and built-ins](days/DAY-27-Comprehensions-and-Built-ins.md) | Planned |
-| 28 | [Sorting and lambda expressions](days/DAY-28-Sorting-and-Lambdas.md) | Planned |
-| 29 | [Advanced function patterns, type hints and contracts](days/DAY-29-Functions-Deeper.md) | Planned |
-| 30 | [Iterators and generators](days/DAY-30-Iterators-and-Generators.md) | Planned |
+| 01 | [Output, variables, data types and input](days/DAY-01-Output-Variables-Data-Types.md) | Study pack ready |
+| 02 | [Operators](days/DAY-02-Operators.md) | Study pack ready |
+| 03 | [Conditions](days/DAY-03-Conditions.md) | Study pack ready |
+| 04 | [Loops and counting](days/DAY-04-Loops-and-Counting.md) | Study pack ready |
+| 05 | [Number problems](days/DAY-05-Number-Problems.md) | Study pack ready |
+| 06 | [Strings](days/DAY-06-Strings.md) | Study pack ready |
+| 07 | [Lists](days/DAY-07-Lists.md) | Study pack ready |
+| 08 | [Functions and return](days/DAY-08-Functions-and-Return.md) | Study pack ready |
+| 09 | [Function argument patterns](days/DAY-09-Function-Arguments.md) | Study pack ready |
+| 10 | [Default arguments, scope, docstrings and validation](days/DAY-10-Function-Fundamentals.md) | Study pack ready |
+| 11 | [List mastery and mutation/copying](days/DAY-11-Complete-Lists.md) | Study pack ready |
+| 12 | [Tuples and unpacking](days/DAY-12-Tuples-and-Unpacking.md) | Study pack ready |
+| 13 | [Sets and set operations](days/DAY-13-Sets.md) | Study pack ready |
+| 14 | [Dictionaries and nested data](days/DAY-14-Dictionaries.md) | Study pack ready |
+| 15 | [Choosing the right collection](days/DAY-15-Choosing-Collections.md) | Study pack ready |
+| 16 | [String mastery](days/DAY-16-String-Mastery.md) | Study pack ready |
+| 17 | [Loop mastery and menu programs](days/DAY-17-Loop-Mastery.md) | Study pack ready |
+| 18 | [Number-problem patterns](days/DAY-18-Number-Problem-Patterns.md) | Study pack ready |
+| 19 | [Input validation](days/DAY-19-Input-Validation.md) | Study pack ready |
+| 20 | [Debugging fundamentals](days/DAY-20-Debugging-Fundamentals.md) | Study pack ready |
+| 21 | [Exceptions](days/DAY-21-Exceptions.md) | Study pack ready |
+| 22 | [Testing and assertions](days/DAY-22-Testing.md) | Study pack ready |
+| 23 | [Files and paths](days/DAY-23-Files.md) | Study pack ready |
+| 24 | [CSV and JSON](days/DAY-24-CSV-and-JSON.md) | Study pack ready |
+| 25 | [Modules and packages](days/DAY-25-Modules-and-Packages.md) | Study pack ready |
+| 26 | [Virtual environments and dependencies](days/DAY-26-Virtual-Environments.md) | Study pack ready |
+| 27 | [Comprehensions and built-ins](days/DAY-27-Comprehensions-and-Built-ins.md) | Study pack ready |
+| 28 | [Sorting and lambda expressions](days/DAY-28-Sorting-and-Lambdas.md) | Study pack ready |
+| 29 | [Advanced functions, type hints and contracts](days/DAY-29-Functions-Deeper.md) | Study pack ready |
+| 30 | [Iterators and generators](days/DAY-30-Iterators-and-Generators.md) | Study pack ready |
 | 31 | [OOP foundations](days/DAY-31-OOP-Foundations.md) | Study pack ready |
 | 32 | [OOP design and principles](days/DAY-32-OOP-Design-and-Principles.md) | Study pack ready |
-| 33 | [Decorators and context managers](days/DAY-33-Decorators-and-Context-Managers.md) | Planned |
-| 34 | [APIs and external data](days/DAY-34-APIs-and-External-Data.md) | Planned |
+| 33 | [Decorators and context managers](days/DAY-33-Decorators-and-Context-Managers.md) | Study pack ready |
+| 34 | [APIs and external data](days/DAY-34-APIs-and-External-Data.md) | Study pack ready |
 | 35 | [DSA foundations and complexity](days/DAY-35-DSA-Foundations-and-Complexity.md) | Study pack ready |
 | 36 | [Searching and sorting algorithms](days/DAY-36-Searching-and-Sorting.md) | Study pack ready |
 | 37 | [Stacks, queues, linked lists and recursion](days/DAY-37-Stacks-Queues-Linked-Lists-Recursion.md) | Study pack ready |
 | 38 | [Trees, heaps and graphs](days/DAY-38-Trees-Heaps-and-Graphs.md) | Study pack ready |
-| 39 | [SQL with Python (application topic only; keep separate from Data Analyst syllabus)](days/DAY-39-SQL-with-Python.md) | Planned |
+| 39 | [SQL with Python — application track](days/DAY-39-SQL-with-Python.md) | Study pack ready |
 | 40 | [Capstone project and interview preparation](days/DAY-40-Capstone-and-Interview-Preparation.md) | Study pack ready |
+
+**Learner mastery status:** Not automatically completed. Mark each day Complete only after you have run its examples, attempted tasks, passed project tests, completed the quiz and explained the solution independently.
+
 
 ## Separate tracks — do not mix lesson files
 
