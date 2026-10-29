@@ -486,3 +486,11 @@ Extend the Order Total Calculator so it:
 - includes five test cases.
 
 Do not mark Day 10 complete until you can explain and run the examples, solve the tasks independently, and test the project.
+
+## Real-world use cases — where, when and how
+1. **Default settings:** Where: APIs and reports. When a sensible fallback is needed. How: give a parameter a safe immutable default.
+2. **Money calculators:** Where: checkout. When optional discount or delivery values are present. How: validate inputs and return a calculated amount.
+3. **Shared validation:** Where: user input or imports. When the same rule appears in multiple flows. How: centralize it in a documented helper.
+4. **Function documentation:** Where: team repositories. When developers need to understand the contract. How: write a docstring and accurate type hints.
+5. **Scope isolation:** Where: larger programs. When names might conflict. How: use local variables and return values rather than hidden globals.
+
