@@ -1,6 +1,6 @@
 # Python Core — Topic-by-Topic Code, Explanation and Real-World Use
 
-This companion guide explains code line by line at a beginner-friendly level. Run examples with Python 3. Each section includes what the code does, why it matters, and a practical use.
+This guide combines concept explanations with interview-oriented reasoning, readable code, practical applications and follow-up questions. Work through the basics, then use the interview-ready section to practise explaining design decisions.
 
 ## 1. Variables, data types and conversion
 
@@ -242,3 +242,73 @@ print(order_summary(cart))
 **Expected output:** `{'item_count': 2, 'total': 150}`
 
 **What to practise:** Add a discount, reject invalid data, write unit tests, and save the order summary to JSON.
+
+
+---
+
+# Interview-Ready Layer: Professional Answers and Applied Examples
+
+The earlier sections teach the concepts. Use this section to practise explaining design decisions, edge cases and maintainability in an interview. Do not memorise these answers word for word; explain the reasoning in your own language.
+
+## Interview example: Validate and summarise an order
+
+**Problem statement:** Given order line items, calculate the subtotal and reject malformed data. Keep business logic separate from printing so it can be reused by a CLI, API or test.
+
+```python
+from typing import TypedDict
+
+
+class OrderItem(TypedDict):
+    sku: str
+    unit_price: float
+    quantity: int
+
+
+def calculate_subtotal(items: list[OrderItem]) -> float:
+    subtotal = 0.0
+
+    for item in items:
+        if not item["sku"].strip():
+            raise ValueError("SKU must not be empty")
+        if item["unit_price"] < 0:
+            raise ValueError("Unit price must be non-negative")
+        if item["quantity"] < 1:
+            raise ValueError("Quantity must be at least one")
+
+        subtotal += item["unit_price"] * item["quantity"]
+
+    return round(subtotal, 2)
+
+
+if __name__ == "__main__":
+    order = [
+        {"sku": "NOTEBOOK-01", "unit_price": 60.0, "quantity": 2},
+        {"sku": "PEN-02", "unit_price": 10.0, "quantity": 3},
+    ]
+    print(f"Subtotal: ₹{calculate_subtotal(order):.2f}")
+```
+
+**Expected output:** `Subtotal: ₹150.00`
+
+**How to explain it in an interview:**
+- I separated calculation from presentation so the function can be reused and tested.
+- I validate input at the boundary rather than allowing invalid values to silently affect the total.
+- The loop is linear in the number of line items: O(n) time and O(1) auxiliary space, excluding the input.
+- For a financial production system, I would consider `Decimal` rather than binary floating-point, define currency/rounding rules, and validate the incoming schema at the API boundary.
+
+## Professional discussion prompts
+
+### Why use a dictionary instead of parallel lists?
+A dictionary keeps each key associated with its value and makes the data model clearer. Parallel lists can drift out of sync if an item is inserted or removed from only one list.
+
+### When should code be split into functions?
+Extract a function when a behaviour has a clear purpose, needs reuse, deserves independent tests, or makes the caller easier to read. Avoid creating tiny functions that only add indirection without clarifying intent.
+
+### How do you handle invalid input?
+Validate it at a defined boundary, raise or return a meaningful error, and avoid silently substituting defaults for invalid values unless that is an explicit business rule.
+
+### What makes code production-minded?
+Clear names, small responsibilities, explicit assumptions, useful error handling, tests for normal and boundary cases, and documentation of trade-offs. A snippet is not production-ready simply because it runs once.
+
+## Interview practice checklist
+For each core topic, prepare: (1) a precise definition, (2) a short code example, (3) a practical use case, (4) a limitation or common mistake, and (5) one follow-up question.
