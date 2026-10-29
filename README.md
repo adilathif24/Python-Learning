@@ -122,3 +122,14 @@ python dsa/examples.py
 ```
 
 If your system uses the Python 3 launcher, use `py` instead of `python`. Read each function, predict the output, run it, then change the inputs and test edge cases. The examples are starter implementations; verify them in your own environment before treating them as tested interview solutions.
+
+
+## Full code + explanation + real-world guides
+
+The detailed topic guides above provide complete code snippets, plain-English explanations, and practical use cases instead of only short example descriptions.
+
+- [Python Core: topic-by-topic code, explanation and real-world use](core/Topic-by-Topic-Code-Explanation-Real-World.md)
+- [Python OOP: complete examples with explanations and real-world use](oop/Topic-by-Topic-Code-Explanation-Real-World.md)
+- [DSA: implementations, explanations, complexity and real-world use](dsa/Topic-by-Topic-Code-Explanation-Real-World.md)
+
+For OOP, the Dog examples now show the full code for defining a class, creating an object, adding an attribute, using `__init__`, writing `speak()`, creating independent objects, and calling a bound method. The other tracks likewise contain code and explanations for their main topics. These are learning guides; run the code and test edge cases yourself before treating a solution as verified.
