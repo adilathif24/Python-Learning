@@ -60,3 +60,10 @@ AI tools have assisted with organising notes, explaining concepts, suggesting pr
 - GitHub: [adilathif24](https://github.com/adilathif24)
 - Repository: [Python-Learning](https://github.com/adilathif24/Python-Learning)
 
+## Separate learning and interview tracks
+
+- [Python Core Concepts — Beginner to Advanced](interview/Python-Core-Concepts.md) — definitions, explanations, real-world uses, tasks and interview Q&A for each core topic.
+- [Python OOP — Beginner to Advanced](interview/Python-OOP-Interview-Guide.md) — classes, objects, encapsulation, inheritance, polymorphism, abstraction, composition and seven OOP coding interview examples.
+- [DSA — Beginner to Advanced](interview/DSA-Roadmap-and-Interview-Guide.md) — complexity, arrays, strings, hashing, two pointers, sliding window, prefix sums, binary search, recursion, linked lists, stacks, queues, trees, heaps, graphs, greedy, DP and advanced structures.
+
+**Study rule:** Keep Python fundamentals, OOP and DSA as separate tracks. For each topic, study the definition and explanation, understand the real-world use, complete examples and tasks, then answer interview questions without copying. These guides are learning material, not a claim that every topic is mastered or every code sample independently tested.
