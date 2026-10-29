@@ -393,6 +393,44 @@ Final order total: ₹950.00
 
 ---
 
+## Project unit tests
+
+Save the calculator functions as `day10_order_total_calculator.py`. Save this test file beside it as `test_day10_order_total_calculator.py`. Run `python -m unittest -v`.
+
+```python
+import unittest
+from day10_order_total_calculator import calculate_order_total
+
+
+class OrderTotalTests(unittest.TestCase):
+    def test_normal_order(self):
+        self.assertAlmostEqual(calculate_order_total(1000, 10, 50), 950)
+
+    def test_default_arguments(self):
+        self.assertAlmostEqual(calculate_order_total(500), 500)
+
+    def test_full_discount(self):
+        self.assertAlmostEqual(calculate_order_total(100, 100, 20), 20)
+
+    def test_negative_subtotal_rejected(self):
+        with self.assertRaises(ValueError):
+            calculate_order_total(-1, 0, 0)
+
+    def test_discount_above_limit_rejected(self):
+        with self.assertRaises(ValueError):
+            calculate_order_total(100, 101, 0)
+
+    def test_negative_delivery_rejected(self):
+        with self.assertRaises(ValueError):
+            calculate_order_total(100, 0, -1)
+
+
+if __name__ == "__main__":
+    unittest.main()
+```
+
+**What these tests cover:** normal calculation, optional defaults, exact 100% discount boundary, and invalid negative/out-of-range values. A test is evidence only after the learner runs it in the same folder as the project module.
+
 ## 7. Common mistakes
 
 ### Mistake 1 — Put a required parameter after a default parameter
