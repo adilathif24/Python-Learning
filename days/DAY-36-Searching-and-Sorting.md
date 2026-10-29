@@ -166,6 +166,14 @@ Run `python -m unittest -v`.
 5. Which method for production sort? **Usually built-in sorted/list.sort.**
 **Challenge:** Modify binary search to find the first occurrence among duplicates and test duplicate/missing values.
 
+## Real-world use cases — where, when and how
+1. **Contact search:** Where: address book. When records are in small unsorted lists. How: use linear search; for sorted data use binary search.
+2. **Leaderboard:** Where: games or scores. When ranking is needed. How: sort on score and a tie-break key.
+3. **Product sorting:** Where: catalogues. When user chooses price/name. How: built-in sorted with a field key.
+4. **Route/lookup table:** Where: pre-sorted static data. When repeated lookup justifies sorting once. How: binary search sorted data and benchmark trade-offs.
+5. **Batch report:** Where: export. When original order should remain available. How: create a sorted copy rather than mutate source.
+
+
 ## 10. Completion
 - [ ] Search code passes hit/miss and boundary tests.
 - [ ] I can explain complexities.
