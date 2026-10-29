@@ -67,6 +67,7 @@ The goal is to prepare to **explain and implement a concept in a technical inter
 
 ## Project and learning notes
 
+- [Python Function Arguments — Four Practical Types](core/Function-Arguments-Four-Types.md)
 - [Python Functions — Arbitrary Positional Arguments (\`*args\`)](core/Functions-Arbitrary-Positional-Arguments-args.md)
 - [Python Core — Beginner to Advanced](core/Python-Core-Concepts-Beginner-to-Advanced.md)
 - [Python OOP — Beginner to Advanced](oop/Python-OOP-Beginner-to-Advanced.md)
