@@ -169,6 +169,14 @@ Run `python -m unittest -v`.
 
 **Challenge:** Model a library checkout with a dict keyed by book ID, a set of available IDs, and a list of checkout events. Explain why each type fits its role.
 
+## Real-world use cases — where, when and how
+1. **Ordered playlist:** Where: media list. When order and duplicates matter. How: use a list.
+2. **Fixed coordinate:** Where: geometry. When a pair should not change. How: use a tuple and unpack it.
+3. **Unique tags:** Where: search filters. When duplicates should collapse. How: use a set.
+4. **Lookup by identifier:** Where: products/users. When a key retrieves a record. How: use a dictionary keyed by ID.
+5. **FIFO jobs:** Where: worker queues. When first-in jobs run first. How: use collections.deque rather than pop(0) on a list.
+
+
 ## 10. Completion
 - [ ] I can justify a collection choice for a real use case.
 - [ ] I solved all tasks and ran project tests.
