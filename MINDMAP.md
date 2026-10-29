@@ -1,5 +1,7 @@
 # Python Learning Mind Map
 
+**Study in order:** [Day-wise Python Learning Plan](DAY-WISE-PYTHON-LEARNING-PLAN.md) → [Roadmap checklist](ROADMAP.md) → matching lesson in `core/` → practice and mini-project → interview revision.
+
 This map shows the intended learning order. The current-focus branch reflects topics practised in sessions; it is not a claim of mastery.
 
     PYTHON LEARNING
