@@ -1,223 +1,199 @@
-# Complete Python Learning Roadmap 🐍
+# Python Learning Roadmap
 
-This roadmap starts from absolute beginner level and moves toward practical projects and interview preparation. Follow the phases in order; practise each phase before moving on.
+This roadmap is a learning plan, not a claim that every topic is already mastered. Progress should reflect independent understanding and practice.
 
-## How to study every topic
-1. Definition in simple English.
-2. Syntax and a small example.
-3. Type 3–5 examples yourself.
-4. Dry-run the code by predicting variable values.
-5. Explain why, where, and how the concept is used in real life.
-6. Solve practice questions without looking at solutions.
-7. Test edge cases and write down mistakes.
-8. Build a small task using the concept.
+## Progress labels
 
-## Phase 1 — Python foundations
-- What Python is and where it is used
-- Install Python, use an editor, run a .py file
-- print() and comments
-- Variables and naming rules
-- Data types: int, float, str, bool, None
-- type() and type conversion
-- input() and output
-- f-strings and simple formatting
-- Read basic error messages
+- [x] Practised in current learning sessions; revisit and test independently.
+- [ ] Planned; not yet documented as completed in this repository.
 
-Mini tasks: personal introduction, age calculator, simple bill calculator.
+A checked item means it has been practised, not that it is mastered at an advanced level.
+
+## Phase 1 — Setup and foundations
+
+- [x] Run simple Python statements and use print()
+- [x] Variables and basic types: int, float, str, bool
+- [ ] Install/configure Python and editor; run scripts from terminal
+- [ ] Comments, naming conventions, type(), None
+- [x] input() basics (continue practising conversion and invalid input)
+- [ ] f-strings and formatting
+- [ ] Basic type conversion and input validation
+
+Mini-projects: personal introduction, age calculator, bill calculator.
 
 ## Phase 2 — Operators
-- Arithmetic: +, -, *, /, //, %, **
-- Comparison: ==, !=, <, >, <=, >=
-- Logical: and, or, not
-- Assignment: =, +=, -=, *=
-- Membership: in, not in
-- Identity: is, is not
-- Operator precedence
 
-Mini tasks: odd/even checker, temperature converter, simple calculator.
+- [x] Arithmetic: +, -, *, /, //, %, **
+- [x] Comparison: ==, !=, <, >, <=, >=
+- [ ] Logical operators: and, or, not
+- [ ] Assignment operators: +=, -=, *=
+- [ ] Membership: in, not in
+- [ ] Identity: is, is not
+- [ ] Operator precedence and parentheses
+
+Mini-projects: calculator, odd/even checker, temperature converter.
 
 ## Phase 3 — Conditions
-- if, if/else, if/elif/else
-- Nested conditions
-- Combining conditions with logical operators
-- Input validation and boundary cases
 
-Practised: grade conditions, positive/negative/zero, prime-number decisions.
-Mini tasks: grade calculator, eligibility checker, login simulation.
+- [x] if, elif, else
+- [ ] Nested conditions and combined conditions
+- [ ] Boundary checks and input validation
+- [ ] Avoiding overlapping or unreachable branches
+
+Mini-projects: grade calculator, eligibility checker, discount calculator.
 
 ## Phase 4 — Loops
-- for and while
-- range(start, stop, step); stop is excluded
-- Counters and accumulators
-- break and continue
-- Nested loops and patterns
-- Dry-running loops and avoiding infinite loops
 
-Practised: print 1–10, sum 1–10, multiplication tables, countdown.
-Mini tasks: pattern printer, table generator, menu loop.
+- [x] for, while and range()
+- [x] Counters and accumulators
+- [x] Sum of a range and multiplication table
+- [ ] break and continue
+- [ ] Nested loops and patterns
+- [ ] Menu loops and infinite-loop prevention
 
-## Phase 5 — Number problems
-- Sum of a range and multiplication table
-- Factorial, including 0! = 1
-- Prime check; values below 2 are not prime
-- Fibonacci sequence
-- Digit counting and digit sum
-- Reverse number and palindrome number
-- Armstrong number
-- GCD and LCM
-- Swap with a temporary variable and without one
+Mini-projects: table generator, countdown, pattern printer.
 
-Practised examples include sum, factorial, prime, Fibonacci, digit count, and swapping.
+## Phase 5 — Number-based problem solving
+
+- [x] Sum of numbers
+- [x] Multiplication table
+- [x] Factorial, including 0! = 1
+- [x] Prime-number check
+- [x] Fibonacci sequence
+- [x] Digit counting
+- [x] Swapping values
+- [ ] Sum of digits and reverse a number
+- [ ] Numeric palindrome and Armstrong number
+- [ ] GCD and LCM
+- [ ] Efficient solutions and edge cases
 
 ## Phase 6 — Strings
-- Indexing, slicing, and immutability
-- lower(), upper(), strip(), split(), join(), replace()
-- isalpha(), isdigit(), isalnum()
-- Iterate over characters
-- Vowel/consonant counting
-- Character frequency, reverse string, palindrome string, word count
 
-Practised: vowel and consonant counting. In a loop, test the current character, not the entire input string.
+- [x] Iterate through a string
+- [x] Count vowels and consonants
+- [ ] Indexing, slicing and immutability
+- [ ] lower(), upper(), strip(), split(), join(), replace()
+- [ ] Character and word frequency
+- [ ] Reverse string and palindrome check
+- [ ] Handle spaces, punctuation and mixed case
 
-## Phase 7 — Lists and collections
-- Create lists, indexing and slicing
-- Update list elements
-- append(), extend(), insert()
-- remove(), pop(), clear()
-- len(), count(), index(), sort(), reverse()
-- Membership with in and not in
-- Loop through lists and nested lists
-- Copying and aliasing
-- Remove duplicates while preserving order
-- Intro to tuples, sets, and dictionaries
+## Phase 7 — Collections
 
-Practised: active/deleted/restored name lists, list counts, and index changes after deletion.
+- [x] Lists and zero-based indexing
+- [x] append(), remove(), len(), in and not in
+- [ ] List slicing, assignment and iteration
+- [ ] extend(), insert(), pop(), clear(), count(), index()
+- [ ] sort(), reverse(), copying and aliasing
+- [ ] Tuples and sets
+- [ ] Dictionaries: keys, values, items, update and lookup
+- [ ] Nested collections and choosing the right structure
 
 ## Phase 8 — Functions
-- Why functions are useful
-- def syntax and calling a function
-- Parameters vs arguments
-- Positional, keyword, and default arguments
-- print() vs return
-- Local and global scope
-- Return values and decomposing problems
-- Docstrings; lambda later
 
-Practised functions: addname(), removename(), restoreName(), viewname(), factorial(), prime check.
+- [x] def, function calls, parameters and arguments
+- [x] return versus print()
+- [x] Use functions in the Name Management project
+- [ ] Positional, keyword and default arguments
+- [ ] Scope and local variables
+- [ ] Docstrings and decomposition
+- [ ] Validate arguments and return predictable values
+- [ ] Refactor repeated code into functions
 
-## Phase 9 — Errors, debugging, testing
-- Syntax, runtime, and logic errors
-- Read tracebacks
-- ValueError, TypeError, IndexError, NameError
-- try/except/else/finally
-- Assertions and simple tests
-- Test normal, boundary, and invalid inputs
-- Debug using prints and a debugger
+## Phase 9 — Debugging, exceptions and testing
 
-## Phase 10 — Files and persistence
-- Read and write text files
-- with open(), file modes, encodings
-- CSV and JSON basics
-- Handle missing files and malformed data
-- Save and restore project data
+- [ ] Syntax errors, runtime errors and logic errors
+- [ ] Read tracebacks and locate the failing line
+- [ ] NameError, TypeError, ValueError, IndexError, KeyError
+- [ ] try / except / else / finally
+- [ ] Assertions and unit tests
+- [ ] Normal, boundary and invalid-input test cases
+- [ ] Debug the Name Management project
 
-Mini task: update the Name Management project so lists persist after the program exits.
+## Phase 10 — Files and data persistence
 
-## Phase 11 — Modules and environments
-- import and from ... import ...
-- Standard library modules and your own modules
-- Packages and project structure
-- pip and virtual environments
-- requirements.txt
-- Git and GitHub workflow
+- [ ] Read and write text files
+- [ ] with open(...) and file modes
+- [ ] Paths and working directories
+- [ ] CSV and JSON basics
+- [ ] Handle missing files and malformed data
+- [ ] Persist Name Management data between runs
+
+## Phase 11 — Modules, packages and environments
+
+- [ ] import and from ... import
+- [ ] Create and organise modules
+- [ ] __name__ == "__main__"
+- [ ] pip and virtual environments
+- [ ] Dependency and README documentation
 
 ## Phase 12 — Object-oriented programming
-- Classes, objects, __init__, self
-- Attributes and methods
-- Encapsulation basics
-- Inheritance, composition, polymorphism
-- When a class is useful versus a function
 
-Mini task: model a contact or task as an object.
+- [ ] Classes and objects
+- [ ] __init__ and self
+- [ ] Instance versus class attributes
+- [ ] Methods and encapsulation
+- [ ] Inheritance and composition
+- [ ] When a class is useful versus a function
 
 ## Phase 13 — Intermediate Python
-- List, dictionary, and set comprehensions
-- Iterables, iterators, generators, yield
-- enumerate() and zip()
-- Sorting with key=
-- *args and **kwargs
-- Type hints and dataclasses
-- Decorators and context managers
+
+- [ ] Comprehensions
+- [ ] enumerate() and zip()
+- [ ] Sorting with key functions
+- [ ] Iterators and generators
+- [ ] Lambda functions
+- [ ] *args and **kwargs
+- [ ] Type hints
+- [ ] Context managers and decorators (after fundamentals)
 
 ## Phase 14 — Data structures and algorithms
-- Big-O basics
-- Lists/arrays and strings
-- Dictionaries/hash maps and sets
-- Stack and queue
-- Linked lists
-- Binary search and sorting
-- Recursion
-- Trees and graphs
-- Two pointers and sliding window
-- Practise easy problems before medium problems
 
-## Phase 15 — Python with SQL
-- Tables, keys, and relational data
-- SELECT, WHERE, ORDER BY
-- Aggregations and GROUP BY
-- Joins and subqueries
-- Connect Python to a database
-- Read query results in Python
-- Parameterised queries and safe input handling
-- Build a database-backed record manager
+- [ ] Complexity basics: time and space, Big O
+- [ ] Arrays/lists, strings and hash maps
+- [ ] Stack, queue and linked-list concepts
+- [ ] Searching and sorting
+- [ ] Recursion and backtracking
+- [ ] Trees, heaps and graphs
+- [ ] Greedy and dynamic programming foundations
+- [ ] Practise problems with explanations and complexity analysis
 
-## Phase 16 — Choose a practical track
-- Automation: files, folders, CSV, APIs, scheduled tasks
-- Data analysis: NumPy, pandas, visualisation, notebooks
-- Backend development: HTTP, APIs, FastAPI/Flask, validation, authentication, databases
-- AI applications: APIs, prompt design, evaluation, privacy, error handling
+## Phase 15 — SQL and Python integration
 
-Choose one track based on the project or job goal; do not try to learn all tracks at once.
+- [ ] SQL fundamentals separately
+- [ ] Connect Python to a database
+- [ ] CRUD operations and parameterised queries
+- [ ] Transactions and error handling
+- [ ] Small database-backed application
 
-## Phase 17 — Projects
-1. Calculator and grade calculator
-2. Number practice toolkit
-3. String analyser
-4. Contact/name manager
-5. Task manager with file persistence
-6. CSV summary tool
-7. SQL-backed record manager
-8. API-based application
-9. Portfolio project with README, setup steps, examples, and tests
+## Phase 16 — Practical tracks
+
+Choose a track after the foundations; do not try to learn every library at once.
+
+- Automation and scripting
+- Backend development and APIs
+- Data analysis
+- AI/ML applications
+
+## Phase 17 — Portfolio projects
+
+Build projects incrementally, document setup and usage, include meaningful examples, and test important behaviour.
+
+1. [x] Name Management — beginner in-memory console project
+2. [ ] Menu-driven task manager
+3. [ ] File-backed contact or task manager
+4. [ ] Tested application with validation and error handling
+5. [ ] Database-backed project
+6. [ ] One larger project aligned with a chosen career track
 
 ## Phase 18 — Interview preparation
-- Explain concepts in simple English
-- Dry-run loops and functions
-- Solve beginner coding questions without copying
-- Explain time and space complexity where relevant
-- Debug intentionally broken code
-- Explain project design, limitations, and improvements
-- Be transparent about AI assistance and understand every line
 
-## Progress checklist
-- [ ] Phase 1: Foundations
-- [ ] Phase 2: Operators
-- [ ] Phase 3: Conditions
-- [ ] Phase 4: Loops
-- [ ] Phase 5: Number problems
-- [ ] Phase 6: Strings
-- [ ] Phase 7: Lists and collections
-- [ ] Phase 8: Functions
-- [ ] Phase 9: Errors and testing
-- [ ] Phase 10: Files
-- [ ] Phase 11: Modules and environments
-- [ ] Phase 12: OOP
-- [ ] Phase 13: Intermediate Python
-- [ ] Phase 14: DSA
-- [ ] Phase 15: Python + SQL
-- [ ] Phase 16: Choose a track
-- [ ] Phase 17: Projects
-- [ ] Phase 18: Interview preparation
+- [ ] Explain core concepts without memorised-only answers
+- [ ] Practise tracing code and predicting output
+- [ ] Solve beginner and intermediate coding questions
+- [ ] Discuss time and space complexity where relevant
+- [ ] Explain project design choices, edge cases and limitations
+- [ ] Review Git, debugging and basic software-development workflow
 
-## Learning rule
-Measure progress by code you can write from memory, explain in English, debug, and adapt to a new problem—not by videos watched.
+## Completion rule
+
+Do not mark a topic complete just because a video was watched or code was copied. Mark it complete after explaining it, writing examples independently, solving practice questions, testing edge cases, and using it in a small task.
