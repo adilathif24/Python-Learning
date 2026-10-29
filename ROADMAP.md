@@ -1,5 +1,7 @@
 # Python Learning Roadmap
 
+**Recommended order:** Start with the [Day-Wise Python Learning Plan](DAY-WISE-PYTHON-LEARNING-PLAN.md), use this file as the full topic checklist, and refer to the [Mind Map](MINDMAP.md) for topic relationships.
+
 This roadmap is a learning plan, not a claim that every topic is already mastered. Progress should reflect independent understanding and practice.
 
 ## Progress labels
@@ -89,6 +91,10 @@ Mini-projects: table generator, countdown, pattern printer.
 - [ ] Nested collections and choosing the right structure
 
 ## Phase 8 — Functions
+
+- [x] Single-argument and multiple-positional-argument patterns practised
+- [x] Named/keyword arguments practised
+- [x] Arbitrary positional arguments (`*args`) and arbitrary keyword arguments (`**kwargs`) documented; practise independently
 
 - [x] def, function calls, parameters and arguments
 - [x] return versus print()
