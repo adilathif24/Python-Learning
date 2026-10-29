@@ -1,119 +1,22 @@
-# Python Learning Portfolio
+# Python Learning & Technical Interview Preparation
 
-A structured, hands-on record of my Python learning: concepts, runnable examples, problem-solving practice, debugging notes, and small projects.
+A structured repository for developing Python programming fundamentals, object-oriented design, and data structures and algorithms (DSA), with code examples, practical scenarios, interview explanations, and problem-solving practice.
 
-I am building this repository to strengthen programming fundamentals and prepare for technical interviews. It documents what I have practised and what I plan to learn next; planned topics are not presented as completed skills.
+This repository documents an ongoing learning process. The guides are organised to support interview preparation, but topics should only be considered mastered after the code has been run, tested, and explained independently.
 
-## Current focus
+## Learning tracks
 
-- Variables, built-in data types, input and output
-- Arithmetic, comparison and logical operators
-- if / elif / else conditions
-- for and while loops, range(), counters and accumulators
-- Number problems: sum, multiplication tables, factorial, prime check, Fibonacci, digit count and swapping
-- String iteration and vowel/consonant counting
-- Functions, parameters, arguments, calls and return values
-- Lists, indexing, membership, append(), remove() and len()
-- Name Management mini-project using functions, conditions and lists
+Keep these tracks separate and study them in sequence. Each guide includes professional terminology, clear reasoning, code, practical applications, and interview follow-ups.
 
-## Repository map
+| Track | What it covers | Main guide |
+|---|---|---|
+| **Python Core** | Data types, control flow, collections, functions, files, exceptions, generators, type hints and maintainable code | [Core: concepts and examples](core/Topic-by-Topic-Code-Explanation-Real-World.md) |
+| **Object-Oriented Programming** | Classes, object state, constructors, methods, encapsulation, inheritance, polymorphism, abstraction, composition and design trade-offs | [OOP: code and interview-ready design](oop/Topic-by-Topic-Code-Explanation-Real-World.md) |
+| **Data Structures & Algorithms** | Complexity, arrays, strings, hashing, two pointers, sliding window, binary search, recursion, stacks, queues, trees, heaps, graphs, greedy and DP | [DSA: implementations and interview approach](dsa/Topic-by-Topic-Code-Explanation-Real-World.md) |
 
-| File | Purpose |
-| --- | --- |
-| [Detailed learning notes](notes/Python-Basics-to-Functions-and-Lists.md) | Definitions, syntax, examples, dry runs, common mistakes, practice problems with solutions and interview Q&A |
-| [Learning roadmap](ROADMAP.md) | Beginner-to-advanced sequence with honest progress checkpoints |
-| [Mind map](MINDMAP.md) | Quick view of how topics connect |
+## Runnable code
 
-## How I practise
-
-For each topic, I aim to:
-1. Explain the concept in my own words.
-2. Type and run examples rather than only copy them.
-3. Predict the output and dry-run variable changes.
-4. Test normal inputs, boundary values and invalid inputs.
-5. Solve questions without looking at solutions first.
-6. Refactor the code for readability and explain its limitations.
-7. Mark a topic complete only when I can use it independently.
-
-## Current project
-
-### Name Management — beginner console project
-
-Practises adding names, preventing active duplicates, deleting names, restoring deleted names, and displaying current counts. At this stage, data is stored in Python lists and is lost when the program exits. It is a learning project, not a production contact-management system.
-
-Next improvements: menu-driven input, case-insensitive matching, automated tests, file persistence, and clearer separation between program logic and user interface.
-
-## Roadmap
-
-The full roadmap continues through collections, functions, debugging and testing, files, exceptions, modules, object-oriented programming, intermediate Python, data structures and algorithms, databases, projects, and interview preparation. See [ROADMAP.md](ROADMAP.md) for the full sequence.
-
-## Quality and accuracy
-
-Examples should include expected output where useful and should be tested before being treated as verified. If an example has not been run in an environment, it should not be described as tested. The repository is a work in progress and will grow topic by topic.
-
-## AI assistance disclosure
-
-AI tools have assisted with organising notes, explaining concepts, suggesting practice problems, and reviewing code. I am responsible for reviewing, running, understanding, and improving the material before relying on it. This disclosure is intentional; AI assistance is not represented as unaided work.
-
-## Contact and profile
-
-- GitHub: [adilathif24](https://github.com/adilathif24)
-- Repository: [Python-Learning](https://github.com/adilathif24/Python-Learning)
-
-## Separate learning and interview tracks
-
-- [Python Core Concepts — Beginner to Advanced](interview/Python-Core-Concepts.md) — definitions, explanations, real-world uses, tasks and interview Q&A for each core topic.
-- [Python OOP — Beginner to Advanced](interview/Python-OOP-Interview-Guide.md) — classes, objects, encapsulation, inheritance, polymorphism, abstraction, composition and seven OOP coding interview examples.
-- [DSA — Beginner to Advanced](interview/DSA-Roadmap-and-Interview-Guide.md) — complexity, arrays, strings, hashing, two pointers, sliding window, prefix sums, binary search, recursion, linked lists, stacks, queues, trees, heaps, graphs, greedy, DP and advanced structures.
-
-**Study rule:** Keep Python fundamentals, OOP and DSA as separate tracks. For each topic, study the definition and explanation, understand the real-world use, complete examples and tasks, then answer interview questions without copying. These guides are learning material, not a claim that every topic is mastered or every code sample independently tested.
-
-## Separate Learning Tracks — Beginner to Advanced
-
-Study each track independently. The Python Core guide focuses on language fundamentals; OOP has its own concepts and interview questions; DSA focuses on data structures, algorithms, coding patterns and complexity.
-
-- [Python Core Concepts — Beginner to Advanced](notes/Python-Core-Concepts-Beginner-to-Advanced.md) — variables, types, operators, input/output, conditions, loops, strings, lists, tuples, sets, dictionaries, functions, comprehensions, imports, exceptions, files, generators, decorators, type hints and testing. Each topic has definitions, explanations, real-world use, seven examples/Q&A and tasks.
-- [Python OOP — Beginner to Advanced](oop/Python-OOP-Beginner-to-Advanced.md) — classes, objects, self, constructors, instance/class/static methods, encapsulation, properties, inheritance, overriding, MRO, polymorphism, duck typing, abstraction, composition, special methods, dataclasses and seven coding interview questions with answers.
-- [DSA with Python — Beginner to Advanced](dsa/DSA-Python-Beginner-to-Advanced.md) — complexity, arrays/lists, strings, hashing, two pointers, sliding window, prefix sums, sorting, binary search, recursion, backtracking, linked lists, stacks, queues, trees, heaps, graphs, greedy, dynamic programming, tries, DSU, range-query structures and bit manipulation.
-- [Python Interview Preparation](interview/Python-Interview-Preparation.md) — general Python interview concepts and coding practice.
-
-### How to study
-1. Learn Python core fundamentals first.
-2. Study OOP as a separate track and build small class-based examples.
-3. Study DSA topic by topic: understand the pattern, dry-run, implement, analyse complexity, then solve unseen variations.
-4. For every topic, complete the examples, interview Q&A and tasks before moving on.
-5. Run code locally and verify it; these guides are learning materials, not a substitute for independent practice.
-
-## Separate learning tracks — recruiter-friendly
-
-Study Python fundamentals, OOP and DSA independently so each skill is easy to navigate and review.
-
-- [Python Core Concepts: Beginner to Advanced](core/Python-Core-Concepts-Beginner-to-Advanced.md) — variables, operators, conditions, loops, strings, lists, tuples, sets, dictionaries, functions, files, exceptions and advanced core concepts. Each topic includes a definition, use cases, seven solved examples and five practice answers.
-- [Python OOP: Beginner to Advanced](oop/Python-OOP-Beginner-to-Advanced.md) — classes, objects, constructors, methods, encapsulation, inheritance, polymorphism, abstraction, composition and seven OOP coding interview examples.
-- [DSA: Beginner to Advanced](dsa/DSA-Beginner-to-Advanced.md) — complexity, arrays, strings, hashing, two pointers, sliding windows, prefix sums, searching, recursion, linked lists, stacks, queues, trees, heaps, graphs, greedy, dynamic programming and advanced structures.
-- [Python Interview Preparation](interview/Python-Interview-Preparation.md) — general Python interview questions, coding questions and project discussion.
-
-### Recommended learning order
-1. Python Core Concepts — complete examples and practice tasks.
-2. OOP — implement each class and explain design choices.
-3. DSA — learn one pattern at a time; dry-run and analyse complexity.
-4. Projects — add tests, clear README instructions and examples of your own work.
-
-### Contribution and accuracy note
-These are learning notes and starter interview practice, not a claim that every topic is mastered. Run code, test edge cases, correct mistakes and solve new variations independently before listing a skill as interview-ready.
-
-
-## Runnable code examples
-
-Each learning track now has a Python file you can run locally. These files demonstrate the main concepts and common coding patterns; use them alongside the detailed Markdown guide.
-
-- [Python Core runnable examples](core/examples.py) — variables, operators, loops, strings, collections, functions, exceptions, generators and more.
-- [OOP runnable examples](oop/examples.py) — classes, constructors, methods, encapsulation, inheritance, polymorphism, abstraction, composition and dataclasses.
-- [DSA runnable examples](dsa/examples.py) — searching, arrays, strings, hashing, two pointers, sliding window, prefix sums, recursion, stacks, queues/BFS, heaps, DP, greedy and bit manipulation.
-
-### Run the examples
-
-From the repository's root folder, use:
+Run the examples from the repository root with Python 3:
 
 ```bash
 python core/examples.py
@@ -121,15 +24,65 @@ python oop/examples.py
 python dsa/examples.py
 ```
 
-If your system uses the Python 3 launcher, use `py` instead of `python`. Read each function, predict the output, run it, then change the inputs and test edge cases. The examples are starter implementations; verify them in your own environment before treating them as tested interview solutions.
+On Windows, `py` can be used instead of `python` if that is how Python is configured on your system.
 
+- [Core examples](core/examples.py)
+- [OOP examples](oop/examples.py)
+- [DSA examples](dsa/examples.py)
 
-## Full code + explanation + real-world guides
+## How each topic is prepared
 
-The detailed topic guides above provide complete code snippets, plain-English explanations, and practical use cases instead of only short example descriptions.
+The goal is to prepare to **explain and implement a concept in a technical interview**, not merely memorise a definition.
 
-- [Python Core: topic-by-topic code, explanation and real-world use](core/Topic-by-Topic-Code-Explanation-Real-World.md)
-- [Python OOP: complete examples with explanations and real-world use](oop/Topic-by-Topic-Code-Explanation-Real-World.md)
-- [DSA: implementations, explanations, complexity and real-world use](dsa/Topic-by-Topic-Code-Explanation-Real-World.md)
+1. **Definition and purpose** — what the concept is and why it exists.
+2. **Professional explanation** — how to describe it accurately in an interview.
+3. **Code implementation** — readable, runnable Python with meaningful names.
+4. **Line-by-line reasoning** — explain the important decisions and control flow.
+5. **Output and dry run** — trace how the program behaves.
+6. **Real-world application** — identify where the technique or design is useful.
+7. **Complexity and trade-offs** — where relevant, explain time, space, assumptions and limitations.
+8. **Edge cases and testing** — validate normal, boundary, invalid and no-result cases.
+9. **Interview follow-ups** — prepare for “why this approach?”, “what could fail?” and “how would you improve it?”
+10. **Independent practice** — solve variations without copying the reference solution.
 
-For OOP, the Dog examples now show the full code for defining a class, creating an object, adding an attribute, using `__init__`, writing `speak()`, creating independent objects, and calling a bound method. The other tracks likewise contain code and explanations for their main topics. These are learning guides; run the code and test edge cases yourself before treating a solution as verified.
+## Recommended study workflow
+
+1. Complete Python Core fundamentals and practise writing functions.
+2. Study OOP separately; build small domain models and explain the design decisions.
+3. Study DSA one pattern at a time. Start with a baseline solution, optimise it, then analyse complexity.
+4. Run each example locally and test edge cases.
+5. Practise explaining solutions aloud in your own words.
+6. Build a small project, write tests, document how to run it, and explain its limitations.
+7. Mark a topic as interview-ready only when you can solve a new variation independently.
+
+## What professional preparation should demonstrate
+
+- Clear function and class responsibilities.
+- Explicit assumptions and validation of input.
+- Meaningful names and understandable control flow.
+- Correctness arguments and complexity analysis for DSA.
+- Appropriate error handling and edge-case tests.
+- Awareness of trade-offs rather than claiming one solution fits every situation.
+- Honest descriptions of what has been implemented and verified.
+
+## Project and learning notes
+
+- [Python Core — Beginner to Advanced](core/Python-Core-Concepts-Beginner-to-Advanced.md)
+- [Python OOP — Beginner to Advanced](oop/Python-OOP-Beginner-to-Advanced.md)
+- [DSA — Beginner to Advanced](dsa/DSA-Beginner-to-Advanced.md)
+- [Python Interview Preparation](interview/Python-Interview-Preparation.md)
+- [Learning roadmap](ROADMAP.md)
+- [Mind map](MINDMAP.md)
+
+## Quality and accuracy
+
+The code and notes are learning material, not a guarantee that every example has been executed or that every topic is mastered. Run examples in a Python 3 environment, add tests, verify expected output, and correct any issues found. For money-related calculations, production systems commonly need explicit currency and rounding rules; for algorithms, always state input assumptions.
+
+## AI assistance disclosure
+
+AI tools have assisted with organising material, generating draft examples, and improving explanations. The material should be reviewed, executed, tested, and understood before it is relied on in an interview or represented as independently completed work.
+
+## Profile
+
+- GitHub: [adilathif24](https://github.com/adilathif24)
+- Repository: [Python-Learning](https://github.com/adilathif24/Python-Learning)
