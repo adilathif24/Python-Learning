@@ -192,6 +192,14 @@ Run `python -m unittest -v`.
 
 **Independent challenge:** Implement SQLite persistence for the task manager, add create/list/complete/delete operations, write at least eight tests, and record a two-minute project walkthrough covering design and trade-offs.
 
+## Real-world use cases — where, when and how
+1. **Portfolio demonstration:** Where: GitHub/recruiter review. When showing end-to-end skills. How: provide a clear README, realistic sample use and test instructions.
+2. **Internal task tool:** Where: small team. When tasks need persistence/status. How: combine validation, OOP or functions, SQLite and CLI.
+3. **Data import utility:** Where: operations. When CSV/JSON inputs arrive regularly. How: parse, validate, report errors and retain test fixtures.
+4. **Service integration:** Where: automation. When external data powers a workflow. How: add a timeout, validate payloads and keep credentials out of Git.
+5. **Interview walkthrough:** Where: technical interview. When asked about a project decision. How: explain the problem, architecture, tests, trade-offs, failure modes and the next improvement.
+
+
 ## 10. Completion checklist
 - [ ] Complete app runs from clean setup.
 - [ ] Automated tests pass.
