@@ -67,3 +67,19 @@ AI tools have assisted with organising notes, explaining concepts, suggesting pr
 - [DSA — Beginner to Advanced](interview/DSA-Roadmap-and-Interview-Guide.md) — complexity, arrays, strings, hashing, two pointers, sliding window, prefix sums, binary search, recursion, linked lists, stacks, queues, trees, heaps, graphs, greedy, DP and advanced structures.
 
 **Study rule:** Keep Python fundamentals, OOP and DSA as separate tracks. For each topic, study the definition and explanation, understand the real-world use, complete examples and tasks, then answer interview questions without copying. These guides are learning material, not a claim that every topic is mastered or every code sample independently tested.
+
+## Separate Learning Tracks — Beginner to Advanced
+
+Study each track independently. The Python Core guide focuses on language fundamentals; OOP has its own concepts and interview questions; DSA focuses on data structures, algorithms, coding patterns and complexity.
+
+- [Python Core Concepts — Beginner to Advanced](notes/Python-Core-Concepts-Beginner-to-Advanced.md) — variables, types, operators, input/output, conditions, loops, strings, lists, tuples, sets, dictionaries, functions, comprehensions, imports, exceptions, files, generators, decorators, type hints and testing. Each topic has definitions, explanations, real-world use, seven examples/Q&A and tasks.
+- [Python OOP — Beginner to Advanced](oop/Python-OOP-Beginner-to-Advanced.md) — classes, objects, self, constructors, instance/class/static methods, encapsulation, properties, inheritance, overriding, MRO, polymorphism, duck typing, abstraction, composition, special methods, dataclasses and seven coding interview questions with answers.
+- [DSA with Python — Beginner to Advanced](dsa/DSA-Python-Beginner-to-Advanced.md) — complexity, arrays/lists, strings, hashing, two pointers, sliding window, prefix sums, sorting, binary search, recursion, backtracking, linked lists, stacks, queues, trees, heaps, graphs, greedy, dynamic programming, tries, DSU, range-query structures and bit manipulation.
+- [Python Interview Preparation](interview/Python-Interview-Preparation.md) — general Python interview concepts and coding practice.
+
+### How to study
+1. Learn Python core fundamentals first.
+2. Study OOP as a separate track and build small class-based examples.
+3. Study DSA topic by topic: understand the pattern, dry-run, implement, analyse complexity, then solve unseen variations.
+4. For every topic, complete the examples, interview Q&A and tasks before moving on.
+5. Run code locally and verify it; these guides are learning materials, not a substitute for independent practice.
