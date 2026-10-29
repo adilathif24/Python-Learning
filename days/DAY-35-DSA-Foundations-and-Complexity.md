@@ -160,6 +160,14 @@ Run `python -m unittest -v`.
 5. Dictionary lookup average complexity? **O(1), average case.**
 **Challenge:** Compare linear search and binary search for a sorted list, prove result correctness with tests and explain complexity.
 
+## Real-world use cases — where, when and how
+1. **Search optimization:** Where: product/user lookup. When input size grows. How: compare linear scan with hash lookup or binary search where preconditions allow.
+2. **Memory planning:** Where: data import. When collections grow large. How: estimate additional storage and process generators if data need not remain in memory.
+3. **Interview analysis:** Where: coding rounds. When explaining alternatives. How: state time/space complexity and define the input size.
+4. **Duplicate detection:** Where: data quality checks. When repeated IDs are invalid. How: use a set and analyze expected O(n) membership.
+5. **Algorithm selection:** Where: utility design. When performance requirements matter. How: choose structures and algorithms by access pattern and measure representative workloads.
+
+
 ## 10. Completion
 - [ ] I can explain time/space complexity and Big-O.
 - [ ] Project tests pass.
