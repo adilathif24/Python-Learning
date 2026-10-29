@@ -1,109 +1,83 @@
-# Python Learning Mind Map 🧠
+# Python Learning Mind Map
 
-This is a text mind map for quick revision. The full sequence and detailed phase descriptions are in ROADMAP.md.
+This map shows the intended learning order. The current-focus branch reflects topics practised in sessions; it is not a claim of mastery.
 
-~~~text
-PYTHON LEARNING
-|
-+-- 1. Foundations
-|   +-- Python setup and running files
-|   +-- print(), comments
-|   +-- variables and naming
-|   +-- types: int, float, str, bool, None
-|   +-- input(), output, type conversion
-|
-+-- 2. Operators
-|   +-- arithmetic: + - * / // % **
-|   +-- comparison: == != < > <= >=
-|   +-- logical: and / or / not
-|   +-- membership: in / not in
-|
-+-- 3. Decisions
-|   +-- if
-|   +-- if / else
-|   +-- if / elif / else
-|   +-- nested conditions and validation
-|
-+-- 4. Loops
-|   +-- for and range()
-|   +-- while
-|   +-- counters
-|   +-- accumulators
-|   +-- break / continue
-|   +-- nested loops and patterns
-|
-+-- 5. Coding logic
-|   +-- sum and multiplication table
-|   +-- factorial
-|   +-- prime number
-|   +-- Fibonacci
-|   +-- digit count / digit sum
-|   +-- swapping values
-|
-+-- 6. Strings
-|   +-- indexing and slicing
-|   +-- string methods
-|   +-- character iteration
-|   +-- vowels and consonants
-|   +-- palindrome / reverse / frequency
-|
-+-- 7. Collections
-|   +-- lists: indexing, append, remove, len
-|   +-- membership and list traversal
-|   +-- tuples
-|   +-- sets
-|   +-- dictionaries
-|
-+-- 8. Functions
-|   +-- def and function calls
-|   +-- parameters and arguments
-|   +-- print() vs return
-|   +-- scope and return values
-|   +-- split a program into small tasks
-|
-+-- 9. Debugging and reliability
-|   +-- syntax / runtime / logic errors
-|   +-- tracebacks and common exceptions
-|   +-- try / except
-|   +-- testing edge cases
-|
-+-- 10. Files and tools
-|   +-- text files, CSV, JSON
-|   +-- modules and packages
-|   +-- pip and virtual environments
-|   +-- Git and GitHub
-|
-+-- 11. Next level
-|   +-- OOP
-|   +-- comprehensions and generators
-|   +-- DSA and Big-O
-|   +-- Python + SQL
-|
-+-- 12. Projects and jobs
-    +-- Name Management mini-project
-    +-- file-backed task manager
-    +-- database-backed project
-    +-- chosen track: automation / data / backend / AI
-    +-- coding practice and interview Q&A
-~~~
+    PYTHON LEARNING
+    |
+    +-- 1. Foundations [practised]
+    |   +-- print, variables, basic data types
+    |   +-- input and output
+    |   +-- operators
+    |
+    +-- 2. Decisions [practised]
+    |   +-- if / elif / else
+    |   +-- comparisons and conditions
+    |
+    +-- 3. Repetition [practised]
+    |   +-- for, while, range
+    |   +-- counters and accumulators
+    |   +-- tables and sums
+    |
+    +-- 4. Problem solving [practised / extend]
+    |   +-- factorial and prime check
+    |   +-- Fibonacci and digit count
+    |   +-- swapping
+    |   +-- more number problems and edge cases
+    |
+    +-- 5. Strings [initial practice]
+    |   +-- character iteration
+    |   +-- vowels and consonants
+    |   +-- slicing, frequency, palindrome
+    |
+    +-- 6. Collections [initial practice]
+    |   +-- lists, indexing and membership
+    |   +-- append, remove, len
+    |   +-- tuples, sets and dictionaries
+    |
+    +-- 7. Functions [practised]
+    |   +-- def, parameters and arguments
+    |   +-- calls, return vs print
+    |   +-- reusable program logic
+    |
+    +-- 8. Quality
+    |   +-- debugging and exceptions
+    |   +-- testing and edge cases
+    |   +-- readable code and documentation
+    |
+    +-- 9. Working with data
+    |   +-- files, CSV and JSON
+    |   +-- modules and environments
+    |   +-- SQL and database integration
+    |
+    +-- 10. Deeper Python
+    |   +-- object-oriented programming
+    |   +-- comprehensions, iterators, generators
+    |
+    +-- 11. DSA and interview skills
+    |   +-- Big O, searching and sorting
+    |   +-- stacks, queues, trees and graphs
+    |   +-- coding practice and explanation
+    |
+    +-- 12. Portfolio projects
+        +-- Name Management (current beginner project)
+        +-- file-backed task manager
+        +-- database-backed application
+        +-- one project in a chosen career track
 
-## Current learning position
-Based on the topics practised so far, the current focus is:
-- Variables, basic types, operators
-- if / elif / else
-- for / while / range()
-- Counters and accumulators
-- Number problems: sum, factorial, prime, Fibonacci, digit count, swapping
+## Current focus
+
+- Variables, basic types, operators and conditions
+- for / while / range, counters and accumulators
+- Sum, multiplication tables, factorial, prime check, Fibonacci, digit count and swapping
 - String iteration and vowel/consonant counting
-- Functions: def, parameters, arguments, calls, return
-- Lists: indexing, append(), remove(), len(), in, not in
-- Name Management: add, delete, restore, view
+- Functions and return values
+- Lists, membership and list operations
+- Name Management: add, delete, restore and view
 
-## How to use this map
-1. Start at Foundations and follow the branches in order.
-2. Mark a branch complete only when you can explain it without reading.
-3. Write at least three examples and solve a practice question.
-4. Use ROADMAP.md for details and README.md for the current notes.
-5. Add new branches as you learn new topics.
+## How the branches connect
 
-**AI assistance disclosure:** This mind map was organised with AI assistance from the topics and practice discussed in the learning session.
+Conditions decide what should happen. Loops repeat actions. Collections hold multiple values. Functions package logic for reuse. Testing checks whether that logic works for expected and unexpected inputs. Files and databases make data persist after a program exits. Projects combine these skills into a complete workflow.
+
+## AI assistance disclosure
+
+AI assisted with organising this map and explaining topics. The learner is responsible for checking, understanding, practising and improving the material.
