@@ -1,6 +1,6 @@
 # Python OOP — Complete Code, Explanation and Real-World Use
 
-OOP (Object-Oriented Programming) groups related data and behaviour into classes and objects. For each section, type the code and run it. Examples are independent unless stated otherwise.
+This guide moves from OOP foundations to interview-ready design: complete examples, explicit state, validation, trade-offs and follow-up questions. The early Dog snippets isolate syntax; the later design example demonstrates how to discuss OOP professionally.
 
 ## 1. Class, object, attributes and methods
 
@@ -327,3 +327,99 @@ print(book.return_book())
 ```
 
 **Real-world use:** This small project models book inventory and state changes. Improve it with a `Library` class, multiple books, search, validation and unit tests.
+
+
+---
+
+# Interview-Ready OOP: Professional Design, Not Just Syntax
+
+The seven short Dog snippets above are concept-building steps. In an interview, follow them with a complete example that demonstrates object state, validation, behaviour, readable interfaces and tests.
+
+## Interview-ready example: Pet boarding record
+
+**Problem statement:** Model a pet boarding record. A pet must have a non-empty name and a valid age; a booking can be checked in only once. Keep state changes behind methods instead of letting callers modify internal state arbitrarily.
+
+```python
+from dataclasses import dataclass, field
+
+
+@dataclass
+class BoardingRecord:
+    pet_name: str
+    age_years: int
+    _checked_in: bool = field(default=False, init=False, repr=False)
+
+    def __post_init__(self) -> None:
+        self.pet_name = self.pet_name.strip()
+        if not self.pet_name:
+            raise ValueError("Pet name must not be empty")
+        if self.age_years < 0:
+            raise ValueError("Age must be non-negative")
+
+    @property
+    def is_checked_in(self) -> bool:
+        return self._checked_in
+
+    def check_in(self) -> None:
+        if self._checked_in:
+            raise ValueError(f"{self.pet_name} is already checked in")
+        self._checked_in = True
+
+    def check_out(self) -> None:
+        if not self._checked_in:
+            raise ValueError(f"{self.pet_name} is not checked in")
+        self._checked_in = False
+
+
+if __name__ == "__main__":
+    record = BoardingRecord(" Milo ", 4)
+    print(record.pet_name, record.is_checked_in)
+    record.check_in()
+    print(record.is_checked_in)
+    record.check_out()
+    print(record.is_checked_in)
+```
+
+**Expected output:**
+```text
+Milo False
+True
+False
+```
+
+**Design explanation:**
+- A dataclass reduces boilerplate for a class that primarily stores data.
+- `__post_init__` validates and normalises state after dataclass initialisation.
+- `_checked_in` is marked as internal by convention; Python does not make a single-underscore attribute truly private.
+- The property exposes read access, while methods control state transitions.
+- The class enforces simple invariants, but a real booking service would also need persistence, concurrency protection, audit history and domain-specific rules.
+
+## Interview answer: Explain class and object
+
+“A class defines the structure and behaviour of a type, while an object is a concrete instance of that class. Instance attributes represent per-object state, and instance methods operate on that state through `self`. In application code, I initialise required attributes in `__init__` and validate invariants so callers cannot easily create invalid objects.”
+
+## Interview answer: Why not add attributes dynamically?
+
+“Python permits dynamic attributes, which is useful for flexible objects, but it can make the object's shape inconsistent and hide errors such as misspelled attribute names. For domain models, I normally define expected state explicitly in `__init__` or a dataclass. If a fixed attribute layout is important, I may consider `__slots__`, after evaluating its trade-offs.”
+
+## Interview answer: Encapsulation vs abstraction
+
+“Encapsulation groups state with the methods that manage it and provides controlled access to internal details. Abstraction exposes the operations a caller needs while hiding implementation choices. For example, a payment interface may expose `pay(amount)`; a card-payment implementation handles the provider-specific details behind that interface.”
+
+## Interview answer: Inheritance vs composition
+
+“I use inheritance when the subtype genuinely is a kind of the parent and can honour its contract. I prefer composition when one object needs another object's capability, because dependencies can be replaced or tested independently. For example, a checkout can receive a payment service rather than inherit from a payment provider.”
+
+## Follow-up questions interviewers may ask
+
+1. What happens if `__init__` returns a non-None value? Python raises `TypeError`; initialisation methods should return `None`.
+2. What is the difference between `self` and `cls`? `self` refers to an instance; `cls` refers to the class in a class method.
+3. Why use a property? It offers attribute-style access while allowing validation or computed behaviour behind the interface.
+4. What is method overriding? A subclass provides its own implementation of an inherited method.
+5. What is duck typing? Code relies on an object's supported behaviour rather than requiring a specific concrete class.
+6. Is a single underscore private? No. It is a convention indicating an implementation detail.
+7. When would you use a dataclass? For data-focused classes where generated initialisation and representation methods reduce boilerplate.
+
+## Testing expectation
+
+A strong interview answer includes tests, not only a happy-path print statement. Test an empty name, negative age, duplicate check-in, check-out before check-in, and a normal check-in/check-out sequence. Explain expected behaviour before writing the tests.
