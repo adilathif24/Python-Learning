@@ -23,8 +23,6 @@ I am building this repository to strengthen programming fundamentals and prepare
 | [Detailed learning notes](notes/Python-Basics-to-Functions-and-Lists.md) | Definitions, syntax, examples, dry runs, common mistakes, practice problems with solutions and interview Q&A |
 | [Learning roadmap](ROADMAP.md) | Beginner-to-advanced sequence with honest progress checkpoints |
 | [Mind map](MINDMAP.md) | Quick view of how topics connect |
-| [Practice folder](practice/) | Small programs and exercises will be organised here as the collection grows |
-| [Projects folder](projects/) | Standalone projects will be added here when they are ready |
 
 ## How I practise
 
