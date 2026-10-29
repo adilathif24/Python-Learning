@@ -196,6 +196,14 @@ Run `python -m unittest -v`.
 5. Is underscore name truly private? **No; it is a convention.**
 **Challenge:** Add a second notifier implementation and test that the service works without changing its own code.
 
+## Real-world use cases — where, when and how
+1. **Payment methods:** Where: checkout systems. When card/wallet/bank payments share a contract. How: polymorphic pay methods provide different implementations.
+2. **Notification service:** Where: business apps. When messages go by email, SMS or console. How: inject a notifier object through composition.
+3. **Access control:** Where: user management. When state changes must obey rules. How: encapsulate permissions and expose controlled methods.
+4. **File storage adapters:** Where: apps that save local/cloud. When interchangeable backends are needed. How: define a common interface and implement each backend.
+5. **Shape calculations:** Where: drawing/geometry. When many shapes answer area differently. How: abstraction defines area(); concrete shapes implement it.
+
+
 ## 10. Completion
 - [ ] I can explain the four pillars and composition.
 - [ ] Tests pass.
