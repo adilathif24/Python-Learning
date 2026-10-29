@@ -9,14 +9,99 @@ Each topic has definition, explanation, real-world example, where/when/how to us
 **Explanation:** Each instance can hold its own attributes. Use classes when state and related operations belong together.
 **Real-world example:** A BankAccount stores a balance and supports deposit/withdraw operations.
 **Where/when/how:** Identify the entity, its data and actions; create a class when this grouping improves clarity.
-### Seven examples
-1. class Dog: pass
-2. pet = Dog() creates an object.
-3. pet.name = 'Milo' adds an attribute dynamically; usually define expected attributes in __init__.
-4. class Dog with __init__(self, name) sets self.name.
-5. Add a speak method returning 'Woof'.
-6. Create two Dog instances with different names.
-7. Call pet.speak() to invoke the bound instance method.
+### Seven examples — code + explanation
+
+#### Example 1: Define a class
+```python
+class Dog:
+    pass
+```
+**Explanation:** `class` defines a new class named `Dog`. `pass` means “do nothing for now”; it lets us create an empty class without a syntax error.
+
+#### Example 2: Create an object
+```python
+class Dog:
+    pass
+
+pet = Dog()
+print(type(pet).__name__)
+```
+**Output:** `Dog`  
+**Explanation:** `Dog()` creates an instance (object) of the `Dog` class. The variable `pet` refers to that object.
+
+#### Example 3: Add an attribute dynamically
+```python
+class Dog:
+    pass
+
+pet = Dog()
+pet.name = "Milo"
+print(pet.name)
+```
+**Output:** `Milo`  
+**Explanation:** Python lets us attach `name` to this particular object after it is created. This works, but for attributes every Dog is expected to have, defining them in `__init__` is clearer and safer.
+
+#### Example 4: Use `__init__` to initialise an object
+```python
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+pet = Dog("Milo")
+print(pet.name)
+```
+**Output:** `Milo`  
+**Explanation:** Python calls `__init__` when the new instance is initialised. `name` receives the argument `"Milo"`; `self.name` stores it on this specific object. `self` refers to the current instance.
+
+#### Example 5: Add a method
+```python
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        return "Woof"
+
+pet = Dog("Milo")
+print(pet.speak())
+```
+**Output:** `Woof`  
+**Explanation:** A method is a function defined inside a class. `speak()` describes behaviour that a Dog object can perform. `return` sends the result back to the caller.
+
+#### Example 6: Create two objects with different state
+```python
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+first_dog = Dog("Milo")
+second_dog = Dog("Buddy")
+print(first_dog.name)
+print(second_dog.name)
+```
+**Output:**
+```text
+Milo
+Buddy
+```
+**Explanation:** Both objects come from the same class, but each has its own `name` attribute. Changing one object's name does not automatically change the other.
+
+#### Example 7: Call a bound instance method
+```python
+class Dog:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        return f"{self.name} says Woof!"
+
+pet = Dog("Milo")
+print(pet.speak())
+```
+**Output:** `Milo says Woof!`  
+**Explanation:** Calling `pet.speak()` automatically passes `pet` as the method's `self` argument. This is why the method can read `self.name` from the correct object.
+
+**Key takeaway:** A class defines a type of object; an object is an instance; attributes store data; methods define behaviour; `__init__` initialises each instance; and `self` refers to the current instance.
 ### Tasks
 - Create Student with name and marks.
 - Create Product with name and price.
