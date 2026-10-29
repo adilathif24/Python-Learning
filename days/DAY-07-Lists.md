@@ -329,3 +329,11 @@ Add a quantity-update method to the cart, reject an unknown item, and test updat
 - [ ] I tried all examples and tasks before reading solutions.
 - [ ] Shopping-cart tests pass.
 - [ ] I completed the independent challenge.
+
+## Real-world use cases — where, when and how
+1. **Shopping cart:** Where: checkout. When: items need ordered updates. How: append product records and sum item totals.
+2. **Task queue:** Where: simple task manager. When: ordered work is shown. How: store task records in a list and update completion flags.
+3. **Score analysis:** Where: class reports. When: scores are collected in order. How: filter or aggregate values and preserve the raw list.
+4. **API result processing:** Where: web clients. When: a JSON array is returned. How: iterate and build a filtered list of valid records.
+5. **History/undo:** Where: small interactive apps. When: prior actions must be recorded. How: append events and pop the latest event when undoing.
+
