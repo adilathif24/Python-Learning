@@ -35,8 +35,8 @@ Never mark a topic Completed just because a Markdown file exists.
 
 | Day | Topic | Status | Next action |
 |---:|---|---|---|
-| 01 | Output, variables, data types, input | Covered | Review and expand into full lesson template |
-| 02 | Operators | Covered | Review and expand into full lesson template |
+| 01 | [Output, variables, data types, input](days/DAY-01-Output-Variables-Data-Types.md) | Covered | Review and expand into full lesson template |
+| 02 | [Operators](days/DAY-02-Operators.md) | Covered | Review and expand into full lesson template |
 | 03 | Conditions | Covered | Review and expand into full lesson template |
 | 04 | Loops and counting | Covered | Review and expand into full lesson template |
 | 05 | Number problems | Covered | Review edge cases and expand lesson |
@@ -51,8 +51,8 @@ Never mark a topic Completed just because a Markdown file exists.
 
 | Day | Topic | Status |
 |---:|---|---|
-| 01 | Output, variables, data types and input | Covered |
-| 02 | Operators | Covered |
+| 01 | [Output, variables, data types and input](days/DAY-01-Output-Variables-Data-Types.md) | Covered |
+| 02 | [Operators](days/DAY-02-Operators.md) | Covered |
 | 03 | Conditions | Covered |
 | 04 | Loops and counting | Covered |
 | 05 | Number problems | Covered |
