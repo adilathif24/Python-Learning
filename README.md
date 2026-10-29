@@ -4,6 +4,16 @@ A structured repository for developing Python programming fundamentals, object-o
 
 This repository documents an ongoing learning process. The guides are organised to support interview preparation, but topics should only be considered mastered after the code has been run, tested, and explained independently.
 
+## Start here — recommended file order
+
+1. **[Day-wise Python Learning Plan](DAY-WISE-PYTHON-LEARNING-PLAN.md)** — what we have practised, what comes next, and the required lesson format.
+2. [Roadmap](ROADMAP.md) — full topic checklist and progress status.
+3. [Mind map](MINDMAP.md) — how the concepts connect.
+4. Study the matching topic in `core/`; then use the interview workbook and solve the tasks before moving on.
+5. Study `oop/` after core functions and collections; study `dsa/` after the foundations.
+
+Every lesson is intended to include definitions, why/where/when to use the topic, five complete examples with questions and outputs, five practice tasks with full answers, interview Q&A, and a complete real-world mini-project. Existing lessons may not yet all meet this format; the day-wise plan identifies what to reuse and what still needs to be created.
+
 ## Learning tracks
 
 Keep these tracks separate and study them in sequence. Each guide includes professional terminology, clear reasoning, code, practical applications, and interview follow-ups.
