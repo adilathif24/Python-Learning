@@ -150,6 +150,14 @@ Run `python -m unittest -v`.
 5. Lambda body count? **One expression.**
 **Challenge:** Sort students by score descending, then name ascending, and test ties.
 
+## Real-world use cases — where, when and how
+1. **Product catalogue:** Where: online shops. When customers sort by price/rating. How: sorted with a field-based key.
+2. **Leaderboard:** Where: games or student results. When higher score ranks first. How: sort descending and define tie-break rules.
+3. **Contact directory:** Where: address books. When names should be case-insensitive. How: key=str.casefold.
+4. **Prioritization:** Where: support queues. When urgent tickets appear before ordinary tickets. How: build a tuple sort key from priority and creation time.
+5. **Reports:** Where: exports. When source data must remain unchanged. How: sorted returns a separate ordered list.
+
+
 ## 10. Completion
 - [ ] I can select a key and explain sort stability.
 - [ ] Project tests pass.
