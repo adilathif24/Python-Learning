@@ -12,7 +12,9 @@ This repository documents an ongoing learning process. The guides are organised 
 4. Study the matching topic in `core/`; then use the interview workbook and solve the tasks before moving on.
 5. Study `oop/` after core functions and collections; study `dsa/` after the foundations.
 
-Every lesson is intended to include definitions, why/where/when to use the topic, five complete examples with questions and outputs, five practice tasks with full answers, interview Q&A, and a complete real-world mini-project. Existing lessons may not yet all meet this format; the day-wise plan identifies what to reuse and what still needs to be created.
+## Mandatory format for every topic
+
+Every topic must include definitions, detailed explanations, syntax, why/where/when to use it, **at least five complete examples** (question, runnable code, output, and explanation), **at least five practice tasks with full solution code**, and **one complete real-world project with all runnable code**, setup instructions, sample output, and test cases. Also include common mistakes, edge cases, interview Q&A, a revision quiz, and an independent challenge. We will not move to the next topic until the current one has been practised and reviewed. Progress must reflect actual practice, not just notes being added. Existing lessons may not yet all meet this format; the day-wise plan identifies what to reuse and what still needs to be created.
 
 ## Learning tracks
 
