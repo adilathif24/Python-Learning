@@ -2,22 +2,23 @@
 
 > **Learning rule:** Follow the days in order. A day marked **Practised** means it appeared in our learning sessions; it does not mean mastery. A day marked **Next / Planned** must be taught and practised before it is checked off.
 
-## How every study day must be taught
+## Mandatory lesson format — apply to every topic
 
-Every lesson in this plan follows the same format:
+Do not teach a topic as a short summary. Teach it thoroughly, from the definition to independent practice. Every topic/lesson must include:
 
-1. **Definition** in simple English.
-2. **Why, where, and when** the concept is used; explain when not to use it.
-3. **Syntax** and a clear mental model.
-4. **Five complete worked examples** — each with a question/problem, full runnable code, expected output, and line-by-line explanation. Include easy-to-medium variations.
-5. **Five practice tasks** — each with a clear question, requirements, sample input/output, full solution code, and explanation. Do not leave answers as hints only.
-6. **Common mistakes and edge cases.**
-7. **Interview questions and answers** with ready-to-say explanations.
-8. **One real-world mini-project** with complete runnable code, explanation of where/how/when it is useful, limitations, and test cases.
-9. **Revision quiz** and a short independent challenge.
-10. **GitHub notes:** add the lesson under the correct folder, link it from the index, and update progress only after practice.
+1. **Definition:** simple-English definition and the correct technical meaning.
+2. **Detailed explanation:** explain the concept step by step, with a mental model and a dry run where useful.
+3. **Why, where, and when:** why the concept exists, where it is used in real work, when to choose it, and when not to use it.
+4. **Syntax and rules:** general syntax, parameters, indentation, return behaviour, and important rules.
+5. **Five complete worked examples (minimum):** each must contain the problem/question, complete runnable code, expected output, explanation of important lines, and a short dry run. Progress from easy to medium and include variations. Never provide fragments when a complete program is needed.
+6. **Five practice tasks (minimum):** each must include the question, requirements, sample input/output, and a **full working solution code** followed by an explanation. Do not leave hints in place of solutions.
+7. **Common mistakes and edge cases:** show incorrect patterns, explain why they fail, and provide corrected code when appropriate.
+8. **Interview preparation:** likely interview questions with clear, ready-to-say answers and follow-up questions.
+9. **One real-world mini-project:** explain the purpose, users, use cases, and design; provide the **complete runnable project code**, instructions to run it, sample output, test cases, limitations, and possible improvements.
+10. **Revision:** quiz with answers plus one independent challenge to attempt without copying.
+11. **GitHub organisation:** save the lesson in the correct folder, link it from README/index files where appropriate, and update progress only after the user has practised it.
 
-Some days may be split into multiple lessons if needed. Do not rush to fit a topic into one day.
+All code examples, task answers, and project code must be complete enough to run. Include expected outputs. Explain code in simple English. Split a large topic into multiple lessons rather than rushing or omitting requirements. Do not mark a topic mastered merely because notes were written.
 
 ## Progress key
 
