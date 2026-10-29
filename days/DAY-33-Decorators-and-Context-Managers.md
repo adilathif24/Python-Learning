@@ -235,6 +235,14 @@ Run `python -m unittest -v`.
 5. What does decorator factory return? **Usually a decorator callable.**
 **Challenge:** Add a retry decorator for a function that raises a specified exception, with a maximum attempt limit and tests for success-on-retry and exhausted retries.
 
+## Real-world use cases — where, when and how
+1. **Call logging:** Where: internal libraries. When function calls need traceability. How: a decorator records function names and safe metadata.
+2. **Timing:** Where: profiling. When comparing code paths. How: wrap a function with a timer and keep its return result intact.
+3. **Authorization check:** Where: service methods. When roles must be checked before execution. How: a decorator checks the actor and refuses unauthorized calls.
+4. **File/database resources:** Where: persistence code. When handles must be released. How: use with/context managers for deterministic cleanup.
+5. **Temporary configuration:** Where: tests. When state must be reset even after failure. How: a context manager sets up state and restores it in finally.
+
+
 ## 10. Completion
 - [ ] I can explain wrapper and decorator factory.
 - [ ] Context manager cleanup tests pass.
