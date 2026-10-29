@@ -1,5 +1,8 @@
 # Python OOP — Complete Code, Explanation and Real-World Use
 
+
+> **Professional interview preparation:** For structured syntax, complete code examples, interview-ready explanations, seven solved interview Q&As and five practice tasks with solutions, also use the [Professional Interview Workbook](oop/Professional-Interview-Workbook.md).
+
 This guide moves from OOP foundations to interview-ready design: complete examples, explicit state, validation, trade-offs and follow-up questions. The early Dog snippets isolate syntax; the later design example demonstrates how to discuss OOP professionally.
 
 ## 1. Class, object, attributes and methods
