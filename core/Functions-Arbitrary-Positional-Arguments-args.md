@@ -466,7 +466,82 @@ For `n` submitted email strings and total character count `C`, the loop performs
 - A production system should use appropriate validation, safe handling of personal data, and confirmation workflows where ownership matters.
 - Add automated tests for empty strings, whitespace, missing or repeated `@`, duplicate values with different capitalization, and an empty input list.
 
-## 11. Final revision checklist
+
+## 11. Debugging your email-validator attempt
+
+This section records the common mistakes from the practice attempt and the corrected full program.
+
+### What needed fixing?
+
+1. **Check the current email, not the list:** use `if "@" not in removed_spaces:`, not `if "@" not in accepted_value:`. The list contains accepted emails; `removed_spaces` is the current string.
+2. **Call `count()` on the string:** use `removed_spaces.count("@") > 1`. `"@".count` is a method reference and does not count the characters in the email.
+3. **Append to the list:** use `accepted_value.append(removed_spaces)`, not `removed_spaces.append(accepted_value)`. Strings do not have a list-style `append()` method.
+4. **Create the accepted list inside the function:** this gives each call a fresh result list and avoids carrying old results into later calls.
+5. **Return inside the function:** `return accepted_value` must be indented within the function body. Code after the function call should print the returned list.
+6. **Call the function, not the list:** use `print(email_val(...))`, not `accepted_value()`.
+7. **Reject invalid values with `continue`:** after printing a rejection, skip to the next email so the invalid value is not accepted.
+
+### Corrected full code
+
+**Question:** Accept any number of email strings, trim leading/trailing spaces, reject values without `@` or with more than one `@`, store the accepted values in a list, return that list, and print it.
+
+```python
+def email_val(*emails):
+    accepted_value = []
+
+    for i in emails:
+        removed_spaces = i.strip()
+
+        if "@" not in removed_spaces:
+            print("Rejected: missing @ ->", repr(removed_spaces))
+            continue
+
+        if removed_spaces.count("@") > 1:
+            print("Rejected: more than one @ ->", repr(removed_spaces))
+            continue
+
+        accepted_value.append(removed_spaces)
+        print("Successfully added:", removed_spaces)
+
+    return accepted_value
+
+
+final_emails = email_val(
+    " syedadil24@gmail.com ",
+    "invalid-email",
+    "adil@@gmail.com",
+    "  hello@example.com  ",
+)
+
+print("Final accepted list:", final_emails)
+```
+
+**Expected output:**
+
+```text
+Successfully added: syedadil24@gmail.com
+Rejected: missing @ -> 'invalid-email'
+Rejected: more than one @ -> 'adil@@gmail.com'
+Successfully added: hello@example.com
+Final accepted list: ['syedadil24@gmail.com', 'hello@example.com']
+```
+
+### Real-world explanation
+
+- **Where:** a beginner contact-list or registration form exercise.
+- **Why:** it demonstrates collecting multiple values, cleaning user input, applying simple rules, and returning the results.
+- **When:** use this pattern when a function must process zero or more submitted values.
+- **Limitation:** this only checks the number of `@` characters. For example, `@gmail.com` may pass. This is not complete email-address validation.
+
+### Five practice checks
+
+1. **Question:** What does `*emails` contain? **Answer:** A tuple of the positional arguments passed to the function.
+2. **Question:** Why use `strip()`? **Answer:** To remove whitespace at the beginning and end of each submitted string.
+3. **Question:** Why use `continue` after rejection? **Answer:** To skip the append statement for that invalid value and move to the next email.
+4. **Question:** Why is `accepted_value.append(removed_spaces)` correct? **Answer:** The accepted list stores each cleaned email string.
+5. **Question:** What does `return accepted_value` do? **Answer:** It sends the completed list back to the caller so it can be stored or printed.
+
+## 12. Final revision checklist
 
 You are ready to move on when you can explain and demonstrate all of these without copying:
 - [ ] Define `*args` and explain why it creates a tuple.
