@@ -139,6 +139,14 @@ Run `python -m unittest -v`. No third-party dependency is needed.
 5. Should .venv be committed? **Normally no.**
 **Challenge:** Write setup instructions for Windows and Linux, add a dependency only if the app truly needs it, and verify installation in a fresh environment.
 
+## Real-world use cases — where, when and how
+1. **Portfolio project:** Where: GitHub repositories. When recruiter or teammate clones the project. How: provide a requirements file and clear environment setup steps.
+2. **Conflicting libraries:** Where: two Python projects needing different package versions. When dependency versions clash. How: create a separate venv for each project.
+3. **Test isolation:** Where: CI pipelines. When tests should run consistently. How: create a clean environment and install declared dependencies.
+4. **Deployment preparation:** Where: staging/server setup. When a new instance is configured. How: install only the application's documented dependencies.
+5. **Team onboarding:** Where: shared projects. When a developer joins. How: document Python version, environment creation, install, run and test commands.
+
+
 ## 10. Completion
 - [ ] I can create, activate, and leave a venv.
 - [ ] I can install dependencies and record them.
