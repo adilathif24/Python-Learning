@@ -6,7 +6,7 @@ This repository documents an ongoing learning process. Topics should only be con
 
 ## Start here — recommended file order
 
-1. **[Day-by-Day Lessons](days/README.md)** — separate Day 01, Day 02, Day 03... lesson files.
+1. **[Day-by-Day Lessons](days/README.md)** — direct clickable lessons for Day 01 through Day 40.
 2. [Day-wise Python Learning Plan](DAY-WISE-PYTHON-LEARNING-PLAN.md) — syllabus, progress and required teaching format.
 3. [Roadmap](ROADMAP.md) — full topic checklist and progress status.
 4. [Mind map](MINDMAP.md) — how the concepts connect.
@@ -17,7 +17,7 @@ This repository documents an ongoing learning process. Topics should only be con
 
 Every lesson should include definitions, detailed explanations, syntax, why/where/when to use it, **at least five complete examples** (question, runnable code, output, explanation), **at least five practice tasks with full solution code**, and **one complete real-world project with all runnable code**, setup instructions, sample output and test cases. Also include common mistakes, edge cases, interview Q&A, a revision quiz and an independent challenge. Do not move to the next topic until the current one has been practised and reviewed. Progress must reflect actual practice, not just notes being added.
 
-**Repository status:** Day 10 has a full lesson pack. Day 01–09 now have separate day files linking to existing core notes, but those files still need to be expanded into the full five-example/five-task format. Days 11–40 follow the master plan and will be added in order. A file existing does not mean that day's lesson is complete.
+**Repository status (lesson-pack pass):** Individual study packs are now present for Days 01–40, including day-specific examples, solved tasks, project code, test snippets, interview questions and revision challenges. The learner has not automatically mastered these topics; execute the code/tests and complete the checklist before treating any topic as learned. The DSA track remains separate from Data Analyst learning.
 
 ## Learning tracks
 
