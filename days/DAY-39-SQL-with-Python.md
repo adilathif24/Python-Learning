@@ -210,6 +210,14 @@ Run `python -m unittest -v`.
 5. Why parameterise? **Safer and correct value binding.**
 **Challenge:** Add deletion by task ID and tests for existing and missing IDs. Keep this database programming topic separate from Data Analyst topics.
 
+## Real-world use cases — where, when and how
+1. **Task manager:** Where: personal productivity tool. When records must persist between runs. How: store title/status in SQLite and parameterize all values.
+2. **Inventory:** Where: stock systems. When each SKU has quantity and change history. How: use a primary key, transactions and update queries.
+3. **Contact lookup:** Where: desktop app. When searching many records by field. How: query with WHERE and indexes where appropriate.
+4. **Orders:** Where: checkout. When several related tables must update together. How: use transactions and constraints for consistency.
+5. **Application audit:** Where: support tools. When recent actions must be reviewed. How: insert records into an append-style table with timestamps.
+
+
 ## 10. Completion
 - [ ] I can connect, query, insert, update and delete with sqlite3.
 - [ ] Queries use placeholders for values.
