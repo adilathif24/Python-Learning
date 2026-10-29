@@ -175,6 +175,14 @@ Run `python -m unittest -v`.
 5. What is an edge? **Connection between vertices.**
 **Challenge:** Return both shortest path and distance, and test multiple equal-length paths.
 
+## Real-world use cases — where, when and how
+1. **File hierarchy:** Where: file browsers. When folders contain children. How: model directories as a tree and traverse recursively or iteratively.
+2. **Priority scheduling:** Where: job queues. When smallest deadline/cost should be processed first. How: use heapq as a min-heap.
+3. **Shortest routes:** Where: maps/network paths. When all edges have equal cost. How: run BFS and store parent/distance.
+4. **Dependency graph:** Where: package/build systems. When tasks depend on other tasks. How: model vertices/edges and detect unreachable/cyclic relationships.
+5. **Social network:** Where: connection recommendations. When neighboring accounts matter. How: graph traversal finds reachable nodes or shared connections.
+
+
 ## 10. Completion
 - [ ] I can explain tree, heap, graph, BFS and DFS.
 - [ ] Route finder tests pass.
