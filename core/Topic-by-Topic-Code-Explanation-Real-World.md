@@ -1,5 +1,8 @@
 # Python Core — Topic-by-Topic Code, Explanation and Real-World Use
 
+
+> **Professional interview preparation:** For structured syntax, complete code examples, interview-ready explanations, seven solved interview Q&As and five practice tasks with solutions, also use the [Professional Interview Workbook](core/Professional-Interview-Workbook.md).
+
 This guide combines concept explanations with interview-oriented reasoning, readable code, practical applications and follow-up questions. Work through the basics, then use the interview-ready section to practise explaining design decisions.
 
 ## 1. Variables, data types and conversion
