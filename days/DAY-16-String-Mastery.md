@@ -166,3 +166,11 @@ Run `python -m unittest -v`.
 - [ ] I ran all examples and tasks.
 - [ ] Project tests pass.
 - [ ] I solved the challenge independently.
+
+## Real-world use cases — where, when and how
+1. **Keyword search:** Where: names and titles. When casing differences should not matter. How: use casefold normalisation and substring checks.
+2. **Tags and CSV-like input:** Where: CLI tools. When users submit comma-separated items. How: split then strip/validate each token.
+3. **Log summaries:** Where: support dashboards. When words/errors need counting. How: tokenize and use Counter.
+4. **Privacy masking:** Where: logs or receipts. When identifiers should be partially hidden. How: retain only allowed suffix characters.
+5. **Text cleanup:** Where: imported descriptions. When whitespace is inconsistent. How: normalize whitespace with split/join before further processing.
+
