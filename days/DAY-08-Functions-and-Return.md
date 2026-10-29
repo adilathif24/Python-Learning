@@ -315,3 +315,11 @@ Add an `update_contact(old_name, new_name)` function that updates a contact safe
 - [ ] I completed the worked examples and tasks independently.
 - [ ] The name-manager tests pass.
 - [ ] I completed the independent challenge.
+
+## Real-world use cases — where, when and how
+1. **Reusable calculations:** Where: checkout apps. When: multiple screens need the same total logic. How: put logic in a function that returns a value.
+2. **Validation helpers:** Where: form processing. When: the same rule is reused. How: make a function return a Boolean or raise a clear exception.
+3. **Formatting:** Where: reports. When: data needs consistent display. How: return a formatted string from a small helper.
+4. **Testing:** Where: automated test suites. When: logic should be tested without user input. How: isolate pure functions with explicit inputs and outputs.
+5. **Code organisation:** Where: team projects. When: a long script becomes hard to follow. How: split it into focused functions with single responsibilities.
+
