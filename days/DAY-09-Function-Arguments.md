@@ -310,3 +310,97 @@ Add a required `source` keyword-only argument and optional `max_emails` limit to
 4. **Decorators/wrappers:** Where: logging and timing. When another function's call must be forwarded. How: accept and forward *args and **kwargs.
 5. **Metadata collection:** Where: simple integration layers. When optional labels vary. How: collect named options with **kwargs but reject unknown keys where possible.
 
+
+
+## Learner Practice — Order Summary with `**kwargs`
+
+### Code
+
+```python
+# Customer details: name, city, product and quantity
+def order_summary(**cdetails):
+    for key, value in cdetails.items():
+        print(f"{key}: {value}")
+    return cdetails
+
+
+print(order_summary(name="syed", product="earphones", quantity="1", city="ongole"))
+print("-------------")
+print(order_summary(name="adil", product="bike", quantity="1", city="chennai"))
+print("-------------")
+print(order_summary(name="ali", product="car", quantity="1", city="banglore"))
+```
+
+### What it teaches
+
+- `**cdetails` collects any keyword arguments into a dictionary.
+- `cdetails.items()` lets the loop access each key and its value.
+- The function prints each detail and returns the dictionary.
+- `print(order_summary(...))` prints the returned dictionary after the function has printed each field, so the details appear twice in different formats.
+
+### Sample output
+
+```text
+name: syed
+product: earphones
+quantity: 1
+city: ongole
+{'name': 'syed', 'product': 'earphones', 'quantity': '1', 'city': 'ongole'}
+-------------
+name: adil
+product: bike
+quantity: 1
+city: chennai
+{'name': 'adil', 'product': 'bike', 'quantity': '1', 'city': 'chennai'}
+-------------
+name: ali
+product: car
+quantity: 1
+city: banglore
+{'name': 'ali', 'product': 'car', 'quantity': '1', 'city': 'banglore'}
+```
+
+### Recruiter-style review
+
+**Good:** The function correctly uses `**kwargs`, loops through the dictionary, and returns the collected data.
+
+**Improve:**
+1. Use consistent capitalization for names and cities (for example, `"Syed"` and `"Ongole"`).
+2. Use `quantity=1` as an integer rather than `quantity="1"` as a string if you will calculate totals later.
+3. If the goal is only to display the summary, you can omit `return cdetails` and the outer `print()`. If you need the dictionary for later processing, keep the return and assign it to a variable.
+4. For a real order system, validate required fields and ensure quantity is a positive integer.
+
+### Cleaner version
+
+```python
+def order_summary(**cdetails):
+    required = {"name", "city", "product", "quantity"}
+    missing = required - cdetails.keys()
+    if missing:
+        raise ValueError(f"Missing required fields: {', '.join(sorted(missing))}")
+
+    if not isinstance(cdetails["quantity"], int) or cdetails["quantity"] < 1:
+        raise ValueError("quantity must be a positive integer")
+
+    for key, value in cdetails.items():
+        print(f"{key}: {value}")
+
+    return cdetails
+
+
+order = order_summary(
+    name="Syed",
+    city="Ongole",
+    product="Earphones",
+    quantity=1,
+)
+print("Returned order:", order)
+```
+
+### Practice tasks
+
+1. Add a `price` keyword and pass it as a number.
+2. Calculate `total = price * quantity`.
+3. Display only `name`, `product`, and `total` in a formatted order receipt.
+4. Call the function without `city` and check that validation reports the missing field.
+5. Pass quantity as `0` and verify that the function rejects it.
