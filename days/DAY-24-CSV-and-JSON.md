@@ -185,6 +185,14 @@ Run `python -m unittest -v`.
 5. Which exception signals malformed JSON? **JSONDecodeError.**
 **Challenge:** Extend the report with highest/lowest scorer and tests for ties and an empty file.
 
+## Real-world use cases — where, when and how
+1. **Student score import:** Where: school reporting apps. When records come from spreadsheets. How: use DictReader and validate every score before calculation.
+2. **API responses:** Where: integrations. When external services respond with nested objects. How: parse JSON then validate key names and value types.
+3. **App settings:** Where: local utilities. When named preferences persist between runs. How: store configuration as JSON and supply defaults.
+4. **Export reports:** Where: business apps. When tabular results are shared. How: use csv.writer/DictWriter to handle delimiters and quoting safely.
+5. **Data exchange:** Where: internal tools. When a nested payload must move between services. How: serialize JSON and version/validate the expected schema.
+
+
 ## 10. Completion
 - [ ] I can read/write CSV and JSON.
 - [ ] Report tests pass on valid, malformed and boundary cases.
