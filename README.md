@@ -2,23 +2,26 @@
 
 A structured repository for developing Python programming fundamentals, object-oriented design, and data structures and algorithms (DSA), with code examples, practical scenarios, interview explanations, and problem-solving practice.
 
-This repository documents an ongoing learning process. The guides are organised to support interview preparation, but topics should only be considered mastered after the code has been run, tested, and explained independently.
+This repository documents an ongoing learning process. Topics should only be considered mastered after the code has been run, tested, and explained independently.
 
 ## Start here — recommended file order
 
-1. **[Day-wise Python Learning Plan](DAY-WISE-PYTHON-LEARNING-PLAN.md)** — what we have practised, what comes next, and the required lesson format.
-2. [Roadmap](ROADMAP.md) — full topic checklist and progress status.
-3. [Mind map](MINDMAP.md) — how the concepts connect.
-4. Study the matching topic in `core/`; then use the interview workbook and solve the tasks before moving on.
-5. Study `oop/` after core functions and collections; study `dsa/` after the foundations.
+1. **[Day-by-Day Lessons](days/README.md)** — separate Day 01, Day 02, Day 03... lesson files.
+2. [Day-wise Python Learning Plan](DAY-WISE-PYTHON-LEARNING-PLAN.md) — syllabus, progress and required teaching format.
+3. [Roadmap](ROADMAP.md) — full topic checklist and progress status.
+4. [Mind map](MINDMAP.md) — how the concepts connect.
+5. Study the matching topic in `core/`; then use the interview workbook and solve the tasks before moving on.
+6. Study `oop/` after core functions and collections; study `dsa/` after the foundations.
 
-## Mandatory format for every topic
+## Mandatory format for every day/topic
 
-Every topic must include definitions, detailed explanations, syntax, why/where/when to use it, **at least five complete examples** (question, runnable code, output, and explanation), **at least five practice tasks with full solution code**, and **one complete real-world project with all runnable code**, setup instructions, sample output, and test cases. Also include common mistakes, edge cases, interview Q&A, a revision quiz, and an independent challenge. We will not move to the next topic until the current one has been practised and reviewed. Progress must reflect actual practice, not just notes being added. Existing lessons may not yet all meet this format; the day-wise plan identifies what to reuse and what still needs to be created.
+Every lesson should include definitions, detailed explanations, syntax, why/where/when to use it, **at least five complete examples** (question, runnable code, output, explanation), **at least five practice tasks with full solution code**, and **one complete real-world project with all runnable code**, setup instructions, sample output and test cases. Also include common mistakes, edge cases, interview Q&A, a revision quiz and an independent challenge. Do not move to the next topic until the current one has been practised and reviewed. Progress must reflect actual practice, not just notes being added.
+
+**Repository status:** Day 10 has a full lesson pack. Day 01–09 now have separate day files linking to existing core notes, but those files still need to be expanded into the full five-example/five-task format. Days 11–40 follow the master plan and will be added in order. A file existing does not mean that day's lesson is complete.
 
 ## Learning tracks
 
-Keep these tracks separate and study them in sequence. Each guide includes professional terminology, clear reasoning, code, practical applications, and interview follow-ups.
+Keep these tracks separate and study them in sequence.
 
 | Track | What it covers | Main guide |
 |---|---|---|
@@ -36,51 +39,26 @@ python oop/examples.py
 python dsa/examples.py
 ```
 
-On Windows, `py` can be used instead of `python` if that is how Python is configured on your system.
+On Windows, `py` can be used instead of `python` if that is how Python is configured.
 
 - [Core examples](core/examples.py)
 - [OOP examples](oop/examples.py)
 - [DSA examples](dsa/examples.py)
 
-## How each topic is prepared
-
-The goal is to prepare to **explain and implement a concept in a technical interview**, not merely memorise a definition.
-
-1. **Definition and purpose** — what the concept is and why it exists.
-2. **Professional explanation** — how to describe it accurately in an interview.
-3. **Code implementation** — readable, runnable Python with meaningful names.
-4. **Line-by-line reasoning** — explain the important decisions and control flow.
-5. **Output and dry run** — trace how the program behaves.
-6. **Real-world application** — identify where the technique or design is useful.
-7. **Complexity and trade-offs** — where relevant, explain time, space, assumptions and limitations.
-8. **Edge cases and testing** — validate normal, boundary, invalid and no-result cases.
-9. **Interview follow-ups** — prepare for “why this approach?”, “what could fail?” and “how would you improve it?”
-10. **Independent practice** — solve variations without copying the reference solution.
-
 ## Recommended study workflow
 
-1. Complete Python Core fundamentals and practise writing functions.
-2. Study OOP separately; build small domain models and explain the design decisions.
-3. Study DSA one pattern at a time. Start with a baseline solution, optimise it, then analyse complexity.
-4. Run each example locally and test edge cases.
-5. Practise explaining solutions aloud in your own words.
-6. Build a small project, write tests, document how to run it, and explain its limitations.
-7. Mark a topic as interview-ready only when you can solve a new variation independently.
+1. Follow the day files in order.
+2. Read the definition, explanation, syntax and usage scenarios.
+3. Run all five examples and trace the output.
+4. Attempt all five tasks before checking the full solutions.
+5. Build and test the day's real-world project.
+6. Complete interview questions, quiz and independent challenge.
+7. Mark a topic as complete only when you can explain it and solve a new variation independently.
 
-## What professional preparation should demonstrate
-
-- Clear function and class responsibilities.
-- Explicit assumptions and validation of input.
-- Meaningful names and understandable control flow.
-- Correctness arguments and complexity analysis for DSA.
-- Appropriate error handling and edge-case tests.
-- Awareness of trade-offs rather than claiming one solution fits every situation.
-- Honest descriptions of what has been implemented and verified.
-
-## Project and learning notes
+## Existing learning notes
 
 - [Python Function Arguments — Four Practical Types](core/Function-Arguments-Four-Types.md)
-- [Python Functions — Arbitrary Positional Arguments (\`*args\`)](core/Functions-Arbitrary-Positional-Arguments-args.md)
+- [Python Functions — Arbitrary Positional Arguments (`*args`)](core/Functions-Arbitrary-Positional-Arguments-args.md)
 - [Python Core — Beginner to Advanced](core/Python-Core-Concepts-Beginner-to-Advanced.md)
 - [Python OOP — Beginner to Advanced](oop/Python-OOP-Beginner-to-Advanced.md)
 - [DSA — Beginner to Advanced](dsa/DSA-Beginner-to-Advanced.md)
@@ -90,11 +68,11 @@ The goal is to prepare to **explain and implement a concept in a technical inter
 
 ## Quality and accuracy
 
-The code and notes are learning material, not a guarantee that every example has been executed or that every topic is mastered. Run examples in a Python 3 environment, add tests, verify expected output, and correct any issues found. For money-related calculations, production systems commonly need explicit currency and rounding rules; for algorithms, always state input assumptions.
+The notes are learning material, not a guarantee that every example has been executed or that every topic is mastered. Run examples in a Python 3 environment, add tests, verify expected output, and correct any issues found. For money-related calculations, production systems commonly need explicit currency and rounding rules.
 
 ## AI assistance disclosure
 
-AI tools have assisted with organising material, generating draft examples, and improving explanations. The material should be reviewed, executed, tested, and understood before it is relied on in an interview or represented as independently completed work.
+AI tools have assisted with organising material and drafting examples. Review, execute, test and understand the material before relying on it in an interview or representing it as independently completed work.
 
 ## Profile
 
