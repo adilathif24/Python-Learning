@@ -25,9 +25,23 @@ Keep these tracks separate and study them in sequence.
 
 | Track | What it covers | Main guide |
 |---|---|---|
-| **Python Core** | Data types, control flow, collections, functions, files, exceptions, generators, type hints and maintainable code | [Core topic guide](core/Topic-by-Topic-Code-Explanation-Real-World.md) · [Professional interview workbook](core/Professional-Interview-Workbook.md) |
-| **Object-Oriented Programming** | Classes, object state, constructors, methods, encapsulation, inheritance, polymorphism, abstraction, composition and design trade-offs | [OOP topic guide](oop/Topic-by-Topic-Code-Explanation-Real-World.md) · [Professional interview workbook](oop/Professional-Interview-Workbook.md) |
-| **Data Structures & Algorithms** | Complexity, arrays, strings, hashing, two pointers, sliding window, binary search, recursion, stacks, queues, trees, heaps, graphs, greedy and DP | [DSA topic guide](dsa/Topic-by-Topic-Code-Explanation-Real-World.md) · [Professional interview workbook](dsa/Professional-Interview-Workbook.md) |
+| **Python Core** | Data types, control flow, collections, functions, files, exceptions, generators, type hints and maintainable code | [Day-wise lessons](days/README.md) · [Core topic guide](core/Topic-by-Topic-Code-Explanation-Real-World.md) · [Interview workbook](core/Professional-Interview-Workbook.md) |
+| **Object-Oriented Programming** | Classes, object state, constructors, methods, encapsulation, inheritance, polymorphism, abstraction, composition and design trade-offs | [Day 31–32 lessons](days/DAY-31-OOP-Foundations.md) · [OOP topic guide](oop/Topic-by-Topic-Code-Explanation-Real-World.md) · [Interview workbook](oop/Professional-Interview-Workbook.md) |
+| **Data Structures & Algorithms** | Complexity, arrays, strings, hashing, two pointers, sliding window, binary search, recursion, stacks, queues, trees, heaps, graphs, greedy and DP | [Day 35–38 lessons](days/DAY-35-DSA-Foundations-and-Complexity.md) · [DSA topic guide](dsa/Topic-by-Topic-Code-Explanation-Real-World.md) · [Interview workbook](dsa/Professional-Interview-Workbook.md) |
+
+
+## Separate subject tracks
+
+Use these folders as subject-specific indexes; day files remain the chronological syllabus, and the topic guides below provide additional depth.
+
+- [Exceptions](exceptions/README.md)
+- [Files and CSV/JSON](files/README.md)
+- [Modules and packages](modules/README.md)
+- [Testing and debugging](testing/README.md)
+- [APIs and external data](apis/README.md)
+- [OOP](oop/README.md)
+- [DSA](dsa/README.md)
+- [Interview preparation](interview/README.md)
 
 ## Runnable code
 
