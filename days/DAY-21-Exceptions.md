@@ -182,6 +182,14 @@ Run `python -m unittest -v`.
 5. What does raise do? **Raises an exception.**
 **Challenge:** Add exponentiation, reject unreasonable exponent inputs, and add tests for invalid operands/operators.
 
+## Real-world use cases — where, when and how
+1. **Input parsing:** Where: CLI programs. When text should become an integer. How: catch ValueError and show how to correct it.
+2. **File access:** Where: report exports. When a file may be missing or locked. How: catch the specific OSError subtype the program can reasonably recover from.
+3. **Missing records:** Where: dictionaries/database lookups. When a requested key or ID may not exist. How: use a documented fallback or raise a domain-specific error.
+4. **Transaction protection:** Where: data updates. When a failed operation must not leave partial changes. How: use a transaction/context manager with rollback behavior.
+5. **Domain rules:** Where: checkout or banking logic. When a value breaks a business rule. How: raise a clear ValueError or custom exception and test it.
+
+
 ## 10. Completion
 - [ ] I can explain try/except/else/finally and raise.
 - [ ] I completed all practice tasks.
