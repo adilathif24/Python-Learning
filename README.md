@@ -10,9 +10,9 @@ Keep these tracks separate and study them in sequence. Each guide includes profe
 
 | Track | What it covers | Main guide |
 |---|---|---|
-| **Python Core** | Data types, control flow, collections, functions, files, exceptions, generators, type hints and maintainable code | [Core: concepts and examples](core/Topic-by-Topic-Code-Explanation-Real-World.md) |
-| **Object-Oriented Programming** | Classes, object state, constructors, methods, encapsulation, inheritance, polymorphism, abstraction, composition and design trade-offs | [OOP: code and interview-ready design](oop/Topic-by-Topic-Code-Explanation-Real-World.md) |
-| **Data Structures & Algorithms** | Complexity, arrays, strings, hashing, two pointers, sliding window, binary search, recursion, stacks, queues, trees, heaps, graphs, greedy and DP | [DSA: implementations and interview approach](dsa/Topic-by-Topic-Code-Explanation-Real-World.md) |
+| **Python Core** | Data types, control flow, collections, functions, files, exceptions, generators, type hints and maintainable code | [Core topic guide](core/Topic-by-Topic-Code-Explanation-Real-World.md) · [Professional interview workbook](core/Professional-Interview-Workbook.md) |
+| **Object-Oriented Programming** | Classes, object state, constructors, methods, encapsulation, inheritance, polymorphism, abstraction, composition and design trade-offs | [OOP topic guide](oop/Topic-by-Topic-Code-Explanation-Real-World.md) · [Professional interview workbook](oop/Professional-Interview-Workbook.md) |
+| **Data Structures & Algorithms** | Complexity, arrays, strings, hashing, two pointers, sliding window, binary search, recursion, stacks, queues, trees, heaps, graphs, greedy and DP | [DSA topic guide](dsa/Topic-by-Topic-Code-Explanation-Real-World.md) · [Professional interview workbook](dsa/Professional-Interview-Workbook.md) |
 
 ## Runnable code
 
