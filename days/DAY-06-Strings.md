@@ -291,3 +291,11 @@ Add a frequency summary that reports each alphabetic character's count, case-ins
 - [ ] I ran all five examples and tasks.
 - [ ] The text-analyzer tests pass.
 - [ ] I solved the independent challenge.
+
+## Real-world use cases — where, when and how
+1. **Form cleanup:** Where: user registration. When: accidental whitespace is present. How: strip values before validation.
+2. **Search:** Where: contact finder. When: case should not matter. How: normalise with casefold and compare.
+3. **Text analytics:** Where: feedback summaries. When: word/character counts are needed. How: split text and count tokens/chars.
+4. **Parsing tags:** Where: simple command-line lists. When: comma-separated input is expected. How: split, strip each value, then validate.
+5. **Safe display:** Where: reports. When: only partial identifiers should show. How: mask all but the required final characters.
+
