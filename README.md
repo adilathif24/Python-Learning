@@ -396,3 +396,43 @@ These notes were organised and drafted with AI assistance from the learner's pra
 I also added a detailed guide from Python basics through functions and lists, with definitions, syntax, explanations, real-world use cases, worked examples, loop and number problems, the Name Management mini-project, practice questions with solutions, interview Q&A, common mistakes, and AI assistance disclosure.
 
 **[Read Python Basics to Functions and Lists](notes/Python-Basics-to-Functions-and-Lists.md)**
+
+---
+
+## Repository study guide and navigation
+
+This repository separates the **topics already practised** from the **full future roadmap**:
+
+- **[Detailed Python Notes — Basics to Functions and Lists](notes/Python-Basics-to-Functions-and-Lists.md)**  
+  Definitions, syntax, explanations in English, worked code examples, dry-run guidance, real-world uses, common mistakes, practice questions with answers, interview Q&A, and the Name Management mini-project.
+
+- **[Complete Python Learning Roadmap](ROADMAP.md)**  
+  A beginner-to-advanced learning sequence covering foundations, operators, conditions, loops, number problems, strings, collections, functions, debugging, files, modules, OOP, intermediate Python, DSA, Python with SQL, practical tracks, projects, and interviews. Includes a progress checklist.
+
+- **[Python Learning Mind Map](MINDMAP.md)**  
+  A quick visual-text map of the major topics, the concepts already practised, and how they connect.
+
+## Topics practised so far
+
+Current learning notes include:
+1. Python basics: output, variables, types, input, operators.
+2. Conditions: `if`, `elif`, `else`.
+3. Loops: `for`, `while`, `range()`.
+4. Counters, accumulators, totals, and multiplication tables.
+5. Number problems: factorial, prime checking, Fibonacci, digit counting, swapping.
+6. Strings: iterating through characters and counting vowels/consonants.
+7. Functions: `def`, parameters, arguments, function calls, and `return`.
+8. Lists: indexing, `append()`, `remove()`, `len()`, `in`, and `not in`.
+9. Name Management mini-project: add, delete, restore, view, and count.
+
+## How I will use this repository
+
+- Read the definition and syntax.
+- Type and run examples myself.
+- Predict output before execution and dry-run the logic.
+- Solve the practice questions without looking at the answers first.
+- Test edge cases and explain the code in my own words.
+- Tick off roadmap phases only after I can use the concepts independently.
+
+> **AI assistance disclosure:** AI helped organise these notes, explain concepts, identify common beginner mistakes, and prepare practice examples and interview questions. I will test, review, and understand the code, and I will be transparent about AI assistance when sharing this repository.
+
