@@ -348,3 +348,11 @@ Write a function that accepts a non-negative integer and returns its digits sort
 - [ ] I ran all examples and tasks.
 - [ ] Project unit tests pass.
 - [ ] I solved the independent challenge and explained complexity.
+
+## Real-world use cases — where, when and how
+1. **Invoice validation:** Where: finance systems. When: numeric IDs or values need digit checks. How: extract digits using modulo and integer division.
+2. **Scheduling:** Where: recurring events. When: number divisibility matters. How: use GCD/LCM for cycle alignment.
+3. **Coding interviews:** Where: entry-level assessments. When: algorithmic skill is tested. How: implement prime, factorial and Fibonacci patterns with edge cases.
+4. **Data integrity:** Where: device/serial identifiers. When: a simple checksum or pattern is needed. How: derive digit sums and validate the stated rule.
+5. **Numeric utilities:** Where: reporting tools. When: numbers need quick characteristics. How: build a reusable analysis function and test zero/negative inputs.
+
