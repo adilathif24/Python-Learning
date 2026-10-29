@@ -175,6 +175,14 @@ Run `python -m unittest -v`.
 5. What is lcm(4,6)? **12.**
 **Challenge:** Make the report show whether a number is prime, and add tests for 1, 2, 9, and a negative input.
 
+## Real-world use cases — where, when and how
+1. **ID checks:** Where: simple data-quality scripts. When digits follow a documented rule. How: use digit extraction/sums to validate that rule.
+2. **Recurring schedules:** Where: events or maintenance cycles. When periods need to align. How: use GCD/LCM after defining cycle lengths.
+3. **Algorithms interviews:** Where: coding rounds. When the interviewer checks loop reasoning. How: explain a dry run and test zero, negative and single-digit cases.
+4. **Device counters:** Where: embedded/monitoring tools. When numeric counters need formatting or reversal. How: use remainder and integer division for digits.
+5. **Number reports:** Where: CLI utilities. When users need a quick numeric profile. How: group digit-sum, reverse, parity and square checks into a tested function.
+
+
 ## 10. Completion
 - [ ] I solved tasks independently.
 - [ ] Project tests pass.
