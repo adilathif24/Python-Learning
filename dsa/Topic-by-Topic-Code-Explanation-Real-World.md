@@ -1,6 +1,6 @@
 # DSA — Code, Explanation, Complexity and Real-World Use
 
-Data Structures and Algorithms (DSA) is a separate track from Python core and OOP. Examples below are compact implementations intended for learning. Complexity is stated for the usual case and may depend on assumptions.
+This guide develops DSA from pattern foundations to interview-ready solutions. For each problem, practise the approach, assumptions, correctness, complexity, dry run and edge cases. DSA remains a separate learning track from Python Core and OOP.
 
 ## 1. Big-O and linear search
 
@@ -325,3 +325,76 @@ print(is_power_of_two(18))  # False
 ## Practice rule
 
 For each problem: explain the brute-force approach, identify the pattern, write code, dry-run a sample, state time/space complexity, and test empty input, duplicates and boundaries where relevant. A technique is not correct unless its assumptions match the problem.
+
+
+---
+
+# Interview-Ready DSA: Explain the Approach Before the Code
+
+The examples above introduce common patterns. In a technical interview, a complete solution should include requirement clarification, a baseline approach, optimisation reasoning, complexity analysis, and edge-case tests.
+
+## Worked interview problem: Two Sum
+
+**Problem:** Return the indices of two distinct elements whose values sum to the target. Return an empty list if no solution exists.
+
+### Baseline approach
+Check every pair. This is O(n²) time and O(1) auxiliary space. It is easy to explain, but slow for large inputs.
+
+### Optimised approach
+
+```python
+def two_sum(nums: list[int], target: int) -> list[int]:
+    index_by_value: dict[int, int] = {}
+
+    for index, value in enumerate(nums):
+        complement = target - value
+        if complement in index_by_value:
+            return [index_by_value[complement], index]
+        index_by_value[value] = index
+
+    return []
+
+
+def run_examples() -> None:
+    assert two_sum([2, 7, 11, 15], 9) == [0, 1]
+    assert two_sum([3, 3], 6) == [0, 1]
+    assert two_sum([1, 2, 3], 20) == []
+    assert two_sum([], 0) == []
+    print("All Two Sum examples passed.")
+
+
+if __name__ == "__main__":
+    run_examples()
+```
+
+**Expected output:** `All Two Sum examples passed.`
+
+### How to explain the optimisation
+“I use a dictionary to store values I have already visited and their indices. For each current value, I calculate the complement required to reach the target. If that complement is already present, I return the two indices; otherwise, I store the current value. This reduces expected time from O(n²) to O(n), at the cost of O(n) additional space.”
+
+### Important edge case
+The lookup happens before inserting the current value. That prevents a single element from being used twice. Duplicate values are handled because the dictionary can contain the first occurrence before the second is processed.
+
+## Interview answer framework for every DSA problem
+
+1. **Clarify:** Are inputs sorted? Can values repeat? What should happen if there is no answer? Are indices or values required?
+2. **Baseline:** State the simplest correct solution and its complexity.
+3. **Pattern:** Explain why hashing, two pointers, a sliding window, BFS, a heap or DP fits the constraints.
+4. **Invariant:** Describe what remains true during each iteration.
+5. **Code:** Use descriptive names, clear branches and explicit edge-case behaviour.
+6. **Dry run:** Walk through one normal example and one edge case.
+7. **Complexity:** Analyse time and auxiliary space; mention assumptions.
+8. **Tests:** Include empty input, one element, duplicates, boundaries and no-solution cases where applicable.
+9. **Trade-offs:** Explain what extra memory or assumptions the optimisation requires.
+
+## Professional DSA follow-up questions
+
+- **Why is binary search O(log n)?** Each iteration reduces the remaining search interval by approximately half; it requires sorted data or another monotonic property.
+- **When does sliding window apply?** Usually to a contiguous range when the window can be updated incrementally. Variable-size windows often rely on a condition that can be maintained as pointers move.
+- **BFS vs DFS?** BFS explores by distance layers and finds shortest paths in unweighted graphs; DFS explores deeply and is useful for reachability, components and backtracking.
+- **Greedy vs dynamic programming?** Greedy commits to a locally chosen option and needs a proof that this choice is safe. DP evaluates reusable states and transitions when subproblems overlap.
+- **What does O(n) space mean?** Additional memory grows proportionally to input size; clarify whether the analysis includes output storage.
+
+## Quality bar for interview solutions
+
+A passing example is not enough. Make the assumptions explicit, use clear function contracts, test edge cases, and be ready to justify the complexity and trade-offs. Do not claim that every algorithm is optimal for every input; state the conditions under which the approach is correct.
