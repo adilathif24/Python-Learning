@@ -412,3 +412,11 @@ Extend the eligibility checker so applicants aged 18–25 with a score of at lea
 - [ ] I completed the quiz and independent challenge.
 
 **Completion rule:** Do not mark Day 03 complete until practice has been attempted, the tests pass, and the learner can explain branch order and boundary choices.
+
+## Real-world use cases — where, when and how
+1. **Age eligibility:** Where: registrations. When: a minimum age applies. How: validate numeric input then check the inclusive age boundary.
+2. **Grading:** Where: school portals. When: score bands determine a grade. How: validate 0–100 and check highest threshold first.
+3. **Discounts:** Where: checkout. When: spending tiers apply. How: branch on subtotal thresholds and provide a fallback.
+4. **Login access:** Where: accounts. When: account status and credentials must both pass. How: combine independent checks using and.
+5. **Shipping:** Where: online stores. When: membership and minimum order affect delivery. How: use nested rules or a named decision function and test boundaries.
+
