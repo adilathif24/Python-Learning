@@ -1,5 +1,8 @@
 # Data Structures and Algorithms (DSA): Basic to Advanced
 
+
+> **Professional interview preparation:** For structured syntax, complete code examples, interview-ready explanations, seven solved interview Q&As and five practice tasks with solutions, also use the [Professional Interview Workbook](dsa/Professional-Interview-Workbook.md).
+
 This track is separate from Python Core and OOP. For each topic, learn the definition, explanation, where/when/how to use it, a real-world use case, seven solved examples/questions, and five practice questions with answers.
 
 ## How to solve a DSA question
