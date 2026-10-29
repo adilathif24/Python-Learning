@@ -190,6 +190,14 @@ Run `python -m unittest -v`.
 5. When does loop else execute? **When no break ends the loop.**
 **Challenge:** Add an attempt limit and lockout after three failed simulated PIN checks, with tests.
 
+## Real-world use cases — where, when and how
+1. **ATM/menu flow:** Where: command-line tools. When users make several choices. How: loop until the quit option is selected, handle unknown choices and bound retries.
+2. **Batch processing:** Where: imported records. When each row needs checking. How: iterate through all rows and record outcomes.
+3. **Search optimization:** Where: item or user lookup. When the first matching record is enough. How: use break to stop unnecessary iterations.
+4. **Data filtering:** Where: log processing. When invalid/irrelevant entries should be skipped. How: use continue to skip only that record.
+5. **Grid/pair generation:** Where: schedules and combinations. When each row needs comparison against each column. How: use nested loops and estimate the n×m work.
+
+
 ## 10. Completion
 - [ ] I can trace break, continue, loop else and nested loops.
 - [ ] I completed tasks and ATM tests.
