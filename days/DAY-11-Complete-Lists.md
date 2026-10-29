@@ -203,6 +203,14 @@ Run tests: `python -m unittest -v`.
 
 **Challenge:** Add task deletion by index and test empty, first, and invalid indexes.
 
+## Real-world use cases — where, when and how
+1. **Task management:** Where: task trackers. When ordered tasks change. How: append/remove records and update completion fields.
+2. **Inventory pick lists:** Where: warehouse tooling. When workers follow a sequence. How: store items in order and filter unavailable items.
+3. **Nested API results:** Where: APIs returning arrays of objects. When each object has detail fields. How: iterate the list and copy/transform records.
+4. **Undo history:** Where: local apps. When the latest operation should be reversed. How: append actions to a stack-like list and pop the last action.
+5. **Independent snapshots:** Where: simulations/tests. When a baseline should not change. How: copy lists carefully and use deepcopy for nested mutable state.
+
+
 ## 9. Completion checklist
 - [ ] I can explain mutation, aliasing, shallow copy and deep copy.
 - [ ] I attempted the five tasks before reading their solutions.
