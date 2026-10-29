@@ -2,6 +2,10 @@
 
 > **Learning rule:** Follow the days in order. A day marked **Practised** means it appeared in our learning sessions; it does not mean mastery. A day marked **Next / Planned** must be taught and practised before it is checked off.
 
+## Non-negotiable learning rule
+
+For **every topic**, provide definitions, detailed explanations, syntax, why/where/when to use it, **at least five complete worked examples**, **at least five practice tasks with full solution code**, and **one complete runnable real-world project with full code**. Include outputs, line-by-line explanations, testing, common mistakes, interview questions, and a quiz. Do not move to the next topic until the current topic has been practised and reviewed. Save each lesson in this GitHub repository in the correct order. Never mark a topic mastered merely because notes were written.
+
 ## Mandatory lesson format — apply to every topic
 
 Do not teach a topic as a short summary. Teach it thoroughly, from the definition to independent practice. Every topic/lesson must include:
