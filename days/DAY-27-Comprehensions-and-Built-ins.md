@@ -156,6 +156,14 @@ Run `python -m unittest -v`.
 5. Why keep complex logic out of comprehensions? **Readability.**
 **Challenge:** Extend report with average score and tie-aware highest sales products; test empty data and ties.
 
+## Real-world use cases — where, when and how
+1. **Report transformation:** Where: dashboard data preparation. When records need one field or computed value. How: use a list/dict comprehension for a simple mapping.
+2. **Filtering records:** Where: student or product lists. When only certain rows match a rule. How: add a clear if clause to a comprehension.
+3. **Index-labeled output:** Where: CSV preview tools. When positions matter. How: enumerate supplies an index and value together.
+4. **Pair aligned lists:** Where: product/prices tables. When two sequences correspond positionally. How: zip them, checking lengths if every item must match.
+5. **Validation summaries:** Where: configuration or form checks. When all/some records must pass. How: use all/any with generator expressions.
+
+
 ## 10. Completion
 - [ ] I can write list, set and dict comprehensions.
 - [ ] I understand enumerate, zip, min/max, any/all.
