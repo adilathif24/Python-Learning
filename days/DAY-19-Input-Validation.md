@@ -190,6 +190,14 @@ Run `python -m unittest -v`.
 5. Why separate parsing from range checks? **They are different failure conditions.**
 **Challenge:** Add a maximum order total and test just below, exactly at, and above the limit.
 
+## Real-world use cases — where, when and how
+1. **Registration form:** Where: web or CLI signup. When a required name or age is collected. How: strip text, parse integer and validate allowed range.
+2. **Checkout:** Where: shopping software. When price, quantity and discount are entered. How: reject negatives and out-of-range percentages before calculation.
+3. **CSV imports:** Where: bulk data processing. When cells may be blank or malformed. How: validate field presence/type and report the row that failed.
+4. **API boundary:** Where: backend endpoints. When client payloads are untrusted. How: validate fields on the server even if UI validation exists.
+5. **Retry prompt:** Where: command-line utilities. When the user can correct a mistake. How: retry a bounded number of times and give a precise correction message.
+
+
 ## 10. Completion
 - [ ] I can explain parsing, type checks, boundaries and retries.
 - [ ] All project tests pass.
