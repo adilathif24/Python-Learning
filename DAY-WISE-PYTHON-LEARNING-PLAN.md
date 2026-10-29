@@ -33,19 +33,51 @@ Never mark a topic Completed just because a Markdown file exists.
 
 ## Current progress snapshot
 
+**Study-pack completion is not the same as learner mastery.** The files have instructional content; mark learning Complete only after you run the code and pass the practice checks.
+
 | Day | Topic | Status | Next action |
 |---:|---|---|---|
-| 01 | [Output, variables, data types, input](days/DAY-01-Output-Variables-Data-Types.md) | Covered | Review and expand into full lesson template |
-| 02 | [Operators](days/DAY-02-Operators.md) | Covered | Review and expand into full lesson template |
-| 03 | [Conditions](days/DAY-03-Conditions.md) | Covered | Review and expand into full lesson template |
-| 04 | [Loops and counting](days/DAY-04-Loops-and-Counting.md) | Covered | Review and expand into full lesson template |
-| 05 | [Number problems](days/DAY-05-Number-Problems.md) | Covered | Review edge cases and expand lesson |
-| 06 | [Strings](days/DAY-06-Strings.md) | Covered | Practise string iteration and vowel logic |
-| 07 | [Lists](days/DAY-07-Lists.md) | Covered | Expand list operations and collection project |
-| 08 | Function basics and return | Covered | Practise return vs print and decomposition |
-| 09 | Positional/keyword arguments, *args, **kwargs | Ongoing | Test and explain email validator independently |
-| 10 | Default arguments, scope, docstrings, validation | Next | Complete lesson, tasks, project and quiz |
-| 11–40 | Collections through capstone | Planned | Follow sequence below and update after each lesson |
+| 01 | [Output, variables, data types and input](days/DAY-01-Output-Variables-Data-Types.md) | Study pack ready | Run examples; solve the five tasks and bill project |
+| 02 | [Operators](days/DAY-02-Operators.md) | Study pack ready | Practise operator precedence, boundaries and cart project |
+| 03 | [Conditions](days/DAY-03-Conditions.md) | Study pack ready | Run eligibility checker and tests |
+| 04 | [Loops and counting](days/DAY-04-Loops-and-Counting.md) | Study pack ready | Trace loops; run expense tracker tests |
+| 05 | [Number problems](days/DAY-05-Number-Problems.md) | Study pack ready | Solve digit/prime challenges and test toolkit |
+| 06 | [Strings](days/DAY-06-Strings.md) | Study pack ready | Run analyser and solve Unicode/frequency challenge |
+| 07 | [Lists](days/DAY-07-Lists.md) | Study pack ready | Explain aliasing/copying and test cart project |
+| 08 | [Functions and return](days/DAY-08-Functions-and-Return.md) | Study pack ready | Practise return vs print and test name manager |
+| 09 | [Function argument patterns](days/DAY-09-Function-Arguments.md) | Study pack ready | Run email collector tests and argument-unpacking challenge |
+| 10 | [Default arguments, scope, docstrings and validation](days/DAY-10-Function-Fundamentals.md) | Study pack ready | Complete examples, solved tasks, project tests and challenge |
+| 11 | [List mastery and mutation/copying](days/DAY-11-Complete-Lists.md) | Study pack ready | Practise shallow/deep copy and test task manager |
+| 12 | [Tuples and unpacking](days/DAY-12-Tuples-and-Unpacking.md) | Study pack ready | Test coordinate distance and 3D challenge |
+| 13 | [Sets and set operations](days/DAY-13-Sets.md) | Study pack ready | Test permission checker and enrollment comparisons |
+| 14 | [Dictionaries and nested data](days/DAY-14-Dictionaries.md) | Study pack ready | Run inventory tests and low-stock report challenge |
+| 15 | [Choosing the right collection](days/DAY-15-Choosing-Collections.md) | Study pack ready | Explain each structure choice in the project |
+| 16 | [String mastery](days/DAY-16-String-Mastery.md) | Study pack ready | Run text analyser and frequency challenge |
+| 17 | [Loop mastery and menu programs](days/DAY-17-Loop-Mastery.md) | Study pack ready | Run ATM tests and implement PIN lockout |
+| 18 | [Number-problem patterns](days/DAY-18-Number-Problem-Patterns.md) | Study pack ready | Add prime check to the number report |
+| 19 | [Input validation](days/DAY-19-Input-Validation.md) | Study pack ready | Test all boundaries in bill calculator |
+| 20 | [Debugging fundamentals](days/DAY-20-Debugging-Fundamentals.md) | Study pack ready | Practise a regression test on a prime checker |
+| 21 | [Exceptions](days/DAY-21-Exceptions.md) | Study pack ready | Run calculator tests and add a new operation |
+| 22 | [Testing and assertions](days/DAY-22-Testing.md) | Study pack ready | Add fractional-score and boundary tests |
+| 23 | [Files and paths](days/DAY-23-Files.md) | Study pack ready | Run file persistence tests and add delete contact |
+| 24 | [CSV and JSON](days/DAY-24-CSV-and-JSON.md) | Study pack ready | Run score report tests and add tie-aware extremes |
+| 25 | [Modules and packages](days/DAY-25-Modules-and-Packages.md) | Study pack ready | Run modular calculator and create package |
+| 26 | [Virtual environments and dependencies](days/DAY-26-Virtual-Environments.md) | Study pack ready | Recreate a clean venv and run tests |
+| 27 | [Comprehensions and built-ins](days/DAY-27-Comprehensions-and-Built-ins.md) | Study pack ready | Add average and tie-aware sales report |
+| 28 | [Sorting and lambda expressions](days/DAY-28-Sorting-and-Lambdas.md) | Study pack ready | Test stable/tie-breaking sort |
+| 29 | [Advanced function patterns, type hints and contracts](days/DAY-29-Functions-Deeper.md) | Study pack ready | Add range options and tests |
+| 30 | [Iterators and generators](days/DAY-30-Iterators-and-Generators.md) | Study pack ready | Complete lazy file-processing challenge |
+| 31 | [OOP foundations](days/DAY-31-OOP-Foundations.md) | Study pack ready | Test bank account and implement transfer |
+| 32 | [OOP design and principles](days/DAY-32-OOP-Design-and-Principles.md) | Study pack ready | Add a second notifier implementation |
+| 33 | [Decorators and context managers](days/DAY-33-Decorators-and-Context-Managers.md) | Study pack ready | Implement retry decorator with tests |
+| 34 | [APIs and external data](days/DAY-34-APIs-and-External-Data.md) | Study pack ready | Test offline validation; add bounded retry |
+| 35 | [DSA foundations and complexity](days/DAY-35-DSA-Foundations-and-Complexity.md) | Study pack ready | Compare linear and binary search |
+| 36 | [Searching and sorting algorithms](days/DAY-36-Searching-and-Sorting.md) | Study pack ready | Implement first occurrence in binary search |
+| 37 | [Stacks, queues, linked lists and recursion](days/DAY-37-Stacks-Queues-Linked-Lists-Recursion.md) | Study pack ready | Implement queue class and empty-case tests |
+| 38 | [Trees, heaps and graphs](days/DAY-38-Trees-Heaps-and-Graphs.md) | Study pack ready | Return shortest path plus distance |
+| 39 | [SQL with Python — application track](days/DAY-39-SQL-with-Python.md) | Study pack ready | Run SQLite task-manager tests; keep separate from Data Analyst track |
+| 40 | [Capstone project and interview preparation](days/DAY-40-Capstone-and-Interview-Preparation.md) | Study pack ready | Complete SQLite persistence, full tests, README and mock interview |
+
 
 ## Day-by-day sequence
 
@@ -81,16 +113,16 @@ Never mark a topic Completed just because a Markdown file exists.
 | 28 | [Sorting and lambda expressions](days/DAY-28-Sorting-and-Lambdas.md) | Planned |
 | 29 | [Advanced function patterns, type hints and contracts](days/DAY-29-Functions-Deeper.md) | Planned |
 | 30 | [Iterators and generators](days/DAY-30-Iterators-and-Generators.md) | Planned |
-| 31 | [OOP foundations](oop/Python-OOP-Beginner-to-Advanced.md) | Planned |
-| 32 | [OOP design and principles](oop/Topic-by-Topic-Code-Explanation-Real-World.md) | Planned |
+| 31 | [OOP foundations](days/DAY-31-OOP-Foundations.md) | Study pack ready |
+| 32 | [OOP design and principles](days/DAY-32-OOP-Design-and-Principles.md) | Study pack ready |
 | 33 | [Decorators and context managers](days/DAY-33-Decorators-and-Context-Managers.md) | Planned |
 | 34 | [APIs and external data](days/DAY-34-APIs-and-External-Data.md) | Planned |
-| 35 | [DSA foundations and complexity](dsa/DSA-Python-Beginner-to-Advanced.md) | Planned |
-| 36 | [Searching and sorting algorithms](dsa/DSA-Beginner-to-Advanced.md) | Planned |
-| 37 | [Stacks, queues, linked lists and recursion](dsa/Topic-by-Topic-Code-Explanation-Real-World.md) | Planned |
-| 38 | [Trees, heaps and graphs](dsa/DSA-Beginner-to-Advanced.md) | Planned |
+| 35 | [DSA foundations and complexity](days/DAY-35-DSA-Foundations-and-Complexity.md) | Study pack ready |
+| 36 | [Searching and sorting algorithms](days/DAY-36-Searching-and-Sorting.md) | Study pack ready |
+| 37 | [Stacks, queues, linked lists and recursion](days/DAY-37-Stacks-Queues-Linked-Lists-Recursion.md) | Study pack ready |
+| 38 | [Trees, heaps and graphs](days/DAY-38-Trees-Heaps-and-Graphs.md) | Study pack ready |
 | 39 | [SQL with Python (application topic only; keep separate from Data Analyst syllabus)](days/DAY-39-SQL-with-Python.md) | Planned |
-| 40 | [Capstone project and interview preparation](interview/DSA-Roadmap-and-Interview-Guide.md) | Planned |
+| 40 | [Capstone project and interview preparation](days/DAY-40-Capstone-and-Interview-Preparation.md) | Study pack ready |
 
 ## Separate tracks — do not mix lesson files
 
