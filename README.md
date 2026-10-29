@@ -67,6 +67,7 @@ The goal is to prepare to **explain and implement a concept in a technical inter
 
 ## Project and learning notes
 
+- [Python Functions — Arbitrary Positional Arguments (\`*args\`)](core/Functions-Arbitrary-Positional-Arguments-args.md)
 - [Python Core — Beginner to Advanced](core/Python-Core-Concepts-Beginner-to-Advanced.md)
 - [Python OOP — Beginner to Advanced](oop/Python-OOP-Beginner-to-Advanced.md)
 - [DSA — Beginner to Advanced](dsa/DSA-Beginner-to-Advanced.md)
