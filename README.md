@@ -83,3 +83,21 @@ Study each track independently. The Python Core guide focuses on language fundam
 3. Study DSA topic by topic: understand the pattern, dry-run, implement, analyse complexity, then solve unseen variations.
 4. For every topic, complete the examples, interview Q&A and tasks before moving on.
 5. Run code locally and verify it; these guides are learning materials, not a substitute for independent practice.
+
+## Separate learning tracks — recruiter-friendly
+
+Study Python fundamentals, OOP and DSA independently so each skill is easy to navigate and review.
+
+- [Python Core Concepts: Beginner to Advanced](core/Python-Core-Concepts-Beginner-to-Advanced.md) — variables, operators, conditions, loops, strings, lists, tuples, sets, dictionaries, functions, files, exceptions and advanced core concepts. Each topic includes a definition, use cases, seven solved examples and five practice answers.
+- [Python OOP: Beginner to Advanced](oop/Python-OOP-Beginner-to-Advanced.md) — classes, objects, constructors, methods, encapsulation, inheritance, polymorphism, abstraction, composition and seven OOP coding interview examples.
+- [DSA: Beginner to Advanced](dsa/DSA-Beginner-to-Advanced.md) — complexity, arrays, strings, hashing, two pointers, sliding windows, prefix sums, searching, recursion, linked lists, stacks, queues, trees, heaps, graphs, greedy, dynamic programming and advanced structures.
+- [Python Interview Preparation](interview/Python-Interview-Preparation.md) — general Python interview questions, coding questions and project discussion.
+
+### Recommended learning order
+1. Python Core Concepts — complete examples and practice tasks.
+2. OOP — implement each class and explain design choices.
+3. DSA — learn one pattern at a time; dry-run and analyse complexity.
+4. Projects — add tests, clear README instructions and examples of your own work.
+
+### Contribution and accuracy note
+These are learning notes and starter interview practice, not a claim that every topic is mastered. Run code, test edge cases, correct mistakes and solve new variations independently before listing a skill as interview-ready.
