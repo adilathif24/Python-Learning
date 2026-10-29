@@ -171,6 +171,14 @@ Run `python -m unittest -v`.
 5. Why avoid order-dependent tests? **They become fragile and hard to isolate.**
 **Challenge:** Add tests for fractional scores, score 0, 100, -0.01, and 100.01.
 
+## Real-world use cases — where, when and how
+1. **Checkout calculations:** Where: shopping systems. When prices/discounts affect money. How: test ordinary totals, zero discount, full discount and invalid amounts.
+2. **User access:** Where: account rules. When thresholds determine allowed actions. How: test the exact boundary and both sides.
+3. **File import:** Where: ETL-style app scripts. When external files may be missing/malformed. How: create temporary files and test expected exceptions.
+4. **Database operations:** Where: application storage. When inserts/updates/deletes must be correct. How: use an in-memory database and verify state after each operation.
+5. **Bug prevention:** Where: any maintained codebase. When a fixed defect could return. How: retain a failing test case as a regression test.
+
+
 ## 10. Completion
 - [ ] I can write tests for normal, boundary, error cases.
 - [ ] All test code runs.
