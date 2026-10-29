@@ -1,200 +1,240 @@
-# Python Learning — Beginner Notes and Mini Project
+# Python Learning — From Basics to Functions, Loops, Lists & Mini Project
 
-> **AI assistance disclosure:** These notes were prepared with AI assistance based on the code and concepts practised during learning. They are learning material, not a claim that every line was written independently without help. Run, review, and modify the examples so you can explain them yourself in interviews.
+> **AI assistance disclosure:** This learning guide was prepared with AI assistance based on the learner's practice code and questions. AI helped organise explanations, examples, corrections, and interview questions. The learner should run, review, understand, and modify every example and disclose AI assistance honestly when sharing the work.
 
-## Topics covered
-- Functions with `def`; function definition vs function call
-- Parameters and arguments
-- Lists, zero-based indexing, `append()`, `remove()`, and `len()`
-- `if` / `else`, `in`, and `not in`
-- Active, deleted, and restored lists
-- Safe deletion, restoring names, counting, and viewing data
-- Common mistakes, worked examples, practice questions, and interview Q&A
+## Learning path covered
+- Python statements, print(), variables, basic types, operators
+- Conditions: if, elif, else
+- Loops: for, while, range()
+- Counters and accumulators
+- Functions: def, parameters, arguments, function calls, return
+- Lists, indexing, append(), remove(), len(), in, not in
+- Coding exercises: sum, multiplication table, factorial, prime check, Fibonacci, digit count, vowel/consonant count, swapping
+- Name Management mini-project: add, remove, restore, view
+- Practice and interview questions
 
-## 1. Function: definition, syntax, and purpose
+## 1. Python basics
 
-A **function** is a reusable block of code that performs a specific task. Functions help avoid repeated code, improve readability, and make logic easier to test and maintain.
+### Output and variables
+A variable is a name that refers to a value. Common types: int (whole number), float (decimal), str (text), and bool (True/False).
+~~~python
+name = "Adil"
+age = 23
+print("Hello", name)
+print(age)
+~~~
+print() displays output. Use variables to store data for later calculations and decisions.
 
-```python
-def function_name(parameters):
-    # indented function body
-    print("Task completed")
+### Operators
+~~~python
+a, b = 10, 3
+print(a + b)   # 13
+print(a - b)   # 7
+print(a * b)   # 30
+print(a / b)   # 3.333...
+print(a // b)  # 3: floor division
+print(a % b)   # 1: remainder
+print(a ** b)  # 1000: power
+~~~
+Use ==, !=, >, <, >=, <= to compare values. = assigns a value; == compares two values.
 
-function_name(arguments)  # calling the function
-```
+## 2. Conditions
 
-- `def` starts a function definition.
-- The function name identifies the task.
-- Parameters are variables that receive input.
-- The colon `:` starts the function body; indentation matters.
-- Defining a function does not execute its body. Calling it does.
+Conditions let a program make decisions.
+~~~python
+marks = 72
+if marks >= 90:
+    print("Grade A")
+elif marks >= 60:
+    print("Passed")
+else:
+    print("Keep practising")
+~~~
+**Why/where:** input validation, grading, login checks, and deciding whether an item can be removed or restored. Put a colon after each condition and indent the body consistently.
 
-### Parameter vs argument
+## 3. Loops, counters and accumulators
 
-```python
+A for loop iterates over a sequence. A while loop repeats while a condition is true.
+~~~python
+for i in range(1, 6):
+    print(i)  # 1 through 5; stop value is excluded
+
+a = 1
+while a <= 5:
+    print(a)
+    a += 1
+~~~
+Always update a while-loop variable so the condition eventually becomes false.
+
+An **accumulator** collects a running result; a **counter** tracks how many times something happens.
+~~~python
+total = 0
+for i in range(1, 11):
+    total += i
+print(total)  # 55
+~~~
+Multiplication table:
+~~~python
+n = 5
+for i in range(1, 11):
+    print(n, "x", i, "=", n * i)
+~~~
+
+## 4. Functions: definition, syntax, parameters and arguments
+
+A **function** is a reusable block of code that performs a task. def defines it; calling it executes it.
+~~~python
 def greet(name):       # name is a parameter
     print("Hello", name)
 
 greet("Adil")          # "Adil" is an argument
-```
+~~~
+A **parameter** is named in the definition; an **argument** is the actual value passed to the call.
 
-A **parameter** appears in the function definition. An **argument** is the actual value supplied in a function call.
+return sends a value back to the caller; print() only displays it.
+~~~python
+def add(a, b):
+    return a + b
 
-### print() vs return
+answer = add(4, 6)
+print(answer)  # 10
+~~~
+**Why use functions?** Reuse logic, organise code, improve readability, and test small pieces independently. Real-world uses include calculations, data validation, reporting, and application logic.
 
-`print()` displays a value; `return` sends a value back to the caller.
+Common mistakes: forgetting to call a function, incorrect indentation, forgetting the colon, or returning the function name instead of the calculated result. A function without an explicit return returns None.
 
-```python
-def count_items(items):
-    return len(items)
+## 5. Lists and membership
 
-total = count_items(["a", "b"])
-print(total)  # 2
-```
-
-A function without an explicit `return` returns `None` by default.
-
-## 2. Lists and useful operations
-
-A **list** is an ordered, mutable collection of items. It can hold multiple values and can be changed after creation.
-
-```python
+A **list** is an ordered, mutable collection. Indexing starts at zero.
+~~~python
 names = ["Syed", "Adil", "Ali"]
-print(names[0])       # Syed: indexing starts at 0
-names.append("Athif") # add an item to the end
-names.remove("Adil")  # remove the first matching value
-print(len(names))     # number of current items
-print("Ali" in names) # True if present
-print("Ravi" not in names)
-```
-
-- `append(value)`: adds one item to the end.
-- `remove(value)`: removes the first matching value; raises `ValueError` if missing.
-- `len(list)`: counts the elements currently in the list.
-- `value in list`: checks whether a value is present.
-- `value not in list`: checks whether a value is absent.
-- `if` / `else`: chooses which block of code to run based on a condition.
-
-### Why, where, and how are these useful?
-- **Functions:** reusable calculations, validation, report generation, and application operations.
-- **Lists:** contacts, tasks, shopping-cart items, student records, and inventory.
-- **Conditions:** validating input and choosing an action.
-- **Membership checks:** preventing duplicate entries and checking before deletion.
-- **len():** counting current tasks, records, or results.
-- **Separate active/deleted/restore lists:** demonstrating a simple undo/restore workflow. Real applications normally need persistent storage and audit history.
-
-## 3. Five worked examples
-
-### Example 1 — Greeting function
-
-```python
-def greet(name):
-    print("Hello", name)
-
-greet("Adil")
-greet("Syed")
-```
-
-Output:
-```text
-Hello Adil
-Hello Syed
-```
-
-**Explanation:** The same function is reused with different arguments. This pattern is useful for personalised greetings and messages.
-
-### Example 2 — Add a name only if it is not already present
-
-```python
-names = []
-
-def addname(name):
-    if name not in names:
-        names.append(name)
-        print("New name added =", name)
-    else:
-        print("Name already exists")
-
-addname("Adil")
-addname("Syed")
-addname("Adil")
+print(names[0])       # Syed
+names.append("Athif") # add at the end
+print(len(names))     # current item count
+print("Ali" in names) # True
+print("Ravi" not in names) # True
+names.remove("Adil")  # remove first matching value
 print(names)
-```
+~~~
+- append(value): add one item at the end.
+- remove(value): remove the first matching value; raises ValueError if absent.
+- len(items): number of items currently in the list.
+- value in items: membership test.
+- items[0]: first item.
+Lists can contain duplicates. Removing an item shifts later items left, so their indexes change. Check membership before removing when a missing item is possible.
 
-**Explanation:** `not in` checks for an existing name before `append()`. String comparisons are case-sensitive: `"Adil"` and `"adil"` are different values. This is a basic duplicate-prevention pattern.
+## 6. Eight worked coding examples
 
-### Example 3 — Delete a name safely
+### Example 1 — Sum 1 to 10
+~~~python
+total = 0
+for i in range(1, 11):
+    total += i
+print(total)  # 55
+~~~
+The accumulator adds each number to the running total.
 
-```python
-names = ["Adil", "Syed", "Ali"]
-deleted = []
+### Example 2 — Factorial
+Factorial is the product of positive integers up to n; by definition, 0! = 1.
+~~~python
+def factorial(n):
+    if n < 0:
+        return "Not defined for negative integers"
+    result = 1
+    while n > 0:
+        result *= n
+        n -= 1
+    return result
 
-def removename(name):
-    if name in names:
-        names.remove(name)
-        deleted.append(name)
-        print("Deleted successfully =", name)
-    else:
-        print("No suitable name to delete")
+print(factorial(5))  # 120
+print(factorial(0))  # 1
+~~~
+Multiply the result by n, then decrease n. Return the computed value.
 
-removename("Syed")
-removename("Ravi")
-print("Active:", names)
-print("Deleted:", deleted)
-```
+### Example 3 — Prime check
+A prime integer is greater than 1 and has no positive divisors except 1 and itself.
+~~~python
+def is_prime(n):
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
 
-**Explanation:** Check membership before calling `remove()` to avoid a missing-value error. A successful deletion moves the name into a separate list. This is similar to removing a task or contact from an active collection.
+print(is_prime(7))   # True
+print(is_prime(12))  # False
+~~~
+Testing divisors up to the square root is sufficient.
 
-### Example 4 — Restore a deleted name safely
+### Example 4 — Fibonacci sequence
+~~~python
+a, b = 0, 1
+for _ in range(8):
+    print(a, end=" ")
+    a, b = b, a + b
+# 0 1 1 2 3 5 8 13
+~~~
+Each new term is the sum of the previous two.
 
-```python
-names = ["Adil", "Ali"]
-deleted = ["Syed"]
-restore = []
+### Example 5 — Count digits
+~~~python
+n = abs(12345)
+count = 0
+if n == 0:
+    count = 1
+else:
+    while n > 0:
+        count += 1
+        n //= 10
+print(count)  # 5
+~~~
+Floor-dividing by 10 removes the last digit. Zero needs a special case.
 
-def restoreName(name):
-    if name in names:
-        print("Name already exists in active names")
-    elif name in deleted:
-        deleted.remove(name)
-        names.append(name)
-        restore.append(name)
-        print("Restored successfully =", name)
-    else:
-        print("Name not found in deleted names")
+### Example 6 — Count vowels and consonants
+~~~python
+text = "python by me"
+vowels = "aeiou"
+vowel_count = 0
+consonant_count = 0
+for ch in text.lower():
+    if ch.isalpha():
+        if ch in vowels:
+            vowel_count += 1
+        else:
+            consonant_count += 1
+print("Vowels:", vowel_count)
+print("Consonants:", consonant_count)
+~~~
+Check the current character ch, not the whole string. isalpha() skips spaces and punctuation.
 
-restoreName("Syed")
-restoreName("Adil")
-restoreName("Ravi")
-print("Active:", names)
-print("Deleted:", deleted)
-print("Restored history:", restore)
-```
+### Example 7 — Swap using a third variable
+~~~python
+a = 10
+b = 20
+temp = a
+a = b
+b = temp
+print(a, b)  # 20 10
+~~~
 
-**Explanation:** First avoid duplicates in the active list. If the name is in the deleted list, move it back and record the successful restoration. Otherwise, report that it was not found.
+### Example 8 — Swap without a third variable
+~~~python
+a = 10
+b = 20
+a, b = b, a
+print(a, b)  # 20 10
+~~~
+Python multiple assignment swaps the values directly.
 
-### Example 5 — View lists and counts
+## 7. Name Management mini-project
 
-```python
-names = ["Adil", "Ali"]
-deleted = ["Syed"]
-restore = ["Athif"]
+Lists used:
+- names: currently active names.
+- deleted: deleted names that have not been restored.
+- restore: history of successful restorations.
 
-def viewname():
-    print("Active names:", names)
-    print("Number of active names:", len(names))
-    print("Deleted names:", deleted)
-    print("Number currently deleted:", len(deleted))
-    print("Restoration history:", restore)
-
-viewname()
-```
-
-**Explanation:** `len()` counts current elements. The active count is not the total number of names ever added. This is useful for a simple report or dashboard.
-
-## 4. Combined mini project — Name Management System
-
-```python
+~~~python
 names = []
 deleted = []
 restore = []
@@ -212,7 +252,7 @@ def removename(name):
         deleted.append(name)
         print("Name deleted successfully =", name)
     else:
-        print("Name not found in active names")
+        print("No suitable name to delete")
 
 def restoreName(name):
     if name in names:
@@ -223,14 +263,13 @@ def restoreName(name):
         restore.append(name)
         print("Restored successfully =", name)
     else:
-        print("Name not found in deleted names")
+        print("Name not found in deleted list")
 
 def viewname():
-    print("\n--- Name Management Report ---")
     print("Active names:", names)
-    print("Number of active names:", len(names))
+    print("Total active names:", len(names))
     print("Deleted names:", deleted)
-    print("Number currently deleted:", len(deleted))
+    print("Total currently deleted:", len(deleted))
     print("Restoration history:", restore)
 
 addname("syed adil")
@@ -240,205 +279,111 @@ addname("ali")
 addname("athif")
 removename("syed adil")
 removename("adil")
-restoreName("syed adil")
-restoreName("Rahul")
-addname("syed")  # duplicate check
 viewname()
-```
+restoreName("syed adil")
+restoreName("adil")
+viewname()
+~~~
 
-### How the project works
-- `names`: names currently active.
-- `deleted`: names deleted but not restored.
-- `restore`: history of successful restorations.
-- `addname()`: adds a name if it is not active already.
-- `removename()`: moves an active name to the deleted list.
-- `restoreName()`: moves a deleted name back and records the restoration.
-- `viewname()`: prints lists and current counts.
+**How it works:** addname() prevents an active duplicate; removename() checks before removing and records the deletion; restoreName() avoids duplicate active names and restores only a deleted name; viewname() shows current lists and counts.
 
-### Important index lesson
+**Index lesson:** if names = ["Adil", "Syed", "Ali"] and you remove "Adil", the list becomes ["Syed", "Ali"]. Now names[1] is "Ali", not "Syed". Pass the intended name directly when possible.
 
-```python
-names = ["Adil", "Syed", "Ali", "Athif"]
-names.remove("Adil")
-print(names)     # ['Syed', 'Ali', 'Athif']
-print(names[1])  # Ali, not Syed
-```
+**Limitations:** Lists live only in memory, so data disappears when the program exits. String comparisons are case-sensitive ("Adil" and "adil" differ). A real application may need persistent storage, input validation, permissions, and audit logs.
 
-List indexes are positions, not permanent identifiers. Removing an earlier item shifts later values left. Passing the intended name directly is clearer than relying on an index that may change.
+## 8. Five practice questions with solutions
 
-### Limitations
-This is a beginner practice project. The lists exist only in memory and data disappears when the program stops. Real applications need persistence, validation, access controls, and reliable audit logs.
+### Q1. Multiply two numbers using a function
+~~~python
+def multiply(a, b):
+    return a * b
+print(multiply(4, 5))  # 20
+~~~
 
-## 5. Five practice questions with answers
+### Q2. Add a value only if it is not already present
+~~~python
+numbers = [2, 4, 6]
+value = 4
+if value not in numbers:
+    numbers.append(value)
+print(numbers)  # [2, 4, 6]
+~~~
 
-### Q1. Write a function to return the square of a number.
-
-```python
-def square(number):
-    return number * number
-
-print(square(4))  # 16
-print(square(7))  # 49
-```
-
-**Explanation:** The parameter receives the input and `return` sends the calculated result back to the caller.
-
-### Q2. Check whether a name is present.
-
-```python
-names = ["Adil", "Syed", "Ali"]
-if "Syed" in names:
-    print("Found")
-else:
-    print("Not found")
-```
-
-**Output:** `Found`. The `in` operator returns a Boolean result.
-
-### Q3. Count elements in a list.
-
-```python
-names = ["Adil", "Syed", "Ali"]
+### Q3. Count items in a list
+~~~python
+names = ["A", "B", "C"]
 print(len(names))  # 3
-```
+~~~
 
-**Explanation:** `len()` counts current elements.
+### Q4. Safely remove a task
+~~~python
+tasks = ["study", "code"]
+task = "code"
+if task in tasks:
+    tasks.remove(task)
+print(tasks)  # ['study']
+~~~
 
-### Q4. Show how indexes change after removal.
+### Q5. Count numbers greater than 10
+~~~python
+numbers = [4, 12, 18, 7, 10]
+count = 0
+for number in numbers:
+    if number > 10:
+        count += 1
+print(count)  # 2
+~~~
 
-```python
-names = ["Adil", "Syed", "Ali"]
-print(names[1])  # Syed
-names.remove("Adil")
-print(names[1])  # Ali
-```
+## 9. Interview questions and answers
 
-**Explanation:** Removing the first element shifts the remaining elements left.
+1. **What is Python?** A high-level, general-purpose programming language.
+2. **What is a variable?** A name that refers to a value.
+3. **What is a function?** Reusable code that performs a task.
+4. **What does def do?** Defines a function.
+5. **Parameter vs argument?** A parameter is in the definition; an argument is passed to the call.
+6. **print() vs return?** print() displays; return sends a value to the caller.
+7. **What is a loop?** A structure that repeats code.
+8. **for vs while?** for iterates over an iterable; while repeats while a condition is true.
+9. **What is an accumulator?** A variable that collects a running result.
+10. **What is a list?** An ordered, mutable collection.
+11. **Can a list contain duplicates?** Yes.
+12. **What does append() do?** Adds an item to the end.
+13. **What does remove() do?** Removes the first matching value.
+14. **What does len() return?** Current item count.
+15. **What does in do?** Checks membership and returns a Boolean.
+16. **What is zero-based indexing?** The first item has index 0.
+17. **Why do indexes change after deletion?** Later items shift left.
+18. **Why check before removing?** To avoid ValueError for a missing value.
+19. **What is a prime number?** An integer greater than 1 divisible only by 1 and itself.
+20. **What is factorial?** Product of integers from 1 through n; 0! = 1.
+21. **What is Fibonacci?** A sequence where each term is the sum of the previous two.
+22. **What does // do?** Floor division.
+23. **What does % do?** Returns a remainder.
+24. **Why use ch in vowels in a loop?** ch is the current character; testing the whole string checks the wrong value.
+25. **How could the mini-project improve?** Add a menu, tests, validation, and persistent storage.
 
-### Q5. Restore a deleted name without creating a duplicate.
+## 10. Common mistakes
 
-```python
-names = ["Adil"]
-deleted = ["Syed"]
-restore = []
+- Forgetting a colon or using incorrect indentation.
+- Using = instead of == for comparison.
+- Forgetting to update a while loop variable.
+- Using a wrong loop condition, such as while n < 0 when processing a positive number.
+- Returning the function name instead of the calculated answer.
+- Checking the whole string instead of the current character in vowel counting.
+- Removing a missing item without checking membership.
+- Assuming indexes remain unchanged after deletion.
+- Confusing the current list length with the total number ever added.
 
-def restoreName(name):
-    if name in names:
-        print("Name already exists")
-    elif name in deleted:
-        deleted.remove(name)
-        names.append(name)
-        restore.append(name)
-        print("Restored successfully")
-    else:
-        print("Name not found in deleted names")
+## 11. Study plan
 
-restoreName("Syed")
-restoreName("Adil")
-restoreName("Ravi")
-```
-
-**Explanation:** Check active names first, then deleted names. Only a successful move updates the restoration history.
-
-## 6. Interview questions and answers
-
-1. **What is a function?** A reusable block of code designed for a particular task.
-2. **Which keyword defines a function?** `def`.
-3. **Definition vs call?** Defining creates the function; calling executes its body.
-4. **What is a parameter?** A variable in the function definition that receives input.
-5. **What is an argument?** The value passed to a function call.
-6. **What is a list?** An ordered, mutable collection of items.
-7. **Can lists contain duplicates?** Yes.
-8. **What does `append()` do?** Adds one item to the end of a list.
-9. **What does `remove()` do?** Removes the first matching value; it raises `ValueError` if the value is absent.
-10. **What does `len()` return?** The number of items currently in a collection.
-11. **What does `in` do?** Checks whether a value is present.
-12. **What does `not in` do?** Checks whether a value is absent.
-13. **What is zero-based indexing?** The first element has index `0`.
-14. **Why check before removing?** To avoid removing a value that is not present.
-15. **Difference between `print()` and `return`?** `print()` displays output; `return` sends a value back to the caller.
-16. **Why did an index refer to a different name after deletion?** Later elements shift left.
-17. **Why keep active, deleted, and restored lists separately?** To represent current state and restoration history in this learning example.
-18. **What happens if there is no explicit return?** The function returns `None`.
-19. **What is one project limitation?** Data is not saved after the program exits.
-20. **How can this project be improved?** Add a menu, input validation, tests, and persistent storage.
-
-## 7. Five coding interview questions and answers
-
-### 1. Add a name only if it is not already present
-
-```python
-names = ["Adil", "Syed"]
-name = "Ali"
-if name not in names:
-    names.append(name)
-print(names)  # ['Adil', 'Syed', 'Ali']
-```
-
-### 2. Count items
-
-```python
-names = ["Adil", "Syed", "Ali", "Athif"]
-print(len(names))  # 4
-```
-
-### 3. Delete safely
-
-```python
-names = ["Adil", "Syed", "Ali"]
-name = "Syed"
-if name in names:
-    names.remove(name)
-print(names)  # ['Adil', 'Ali']
-```
-
-### 4. Move a deleted name back to active names
-
-```python
-names = ["Adil"]
-deleted = ["Syed"]
-name = "Syed"
-if name in deleted and name not in names:
-    deleted.remove(name)
-    names.append(name)
-print(names)   # ['Adil', 'Syed']
-print(deleted) # []
-```
-
-### 5. Return the number of active names
-
-```python
-names = ["Adil", "Syed", "Ali"]
-
-def count_names():
-    return len(names)
-
-print(count_names())  # 3
-```
-
-## 8. Common mistakes and fixes
-
-| Mistake | Fix |
-|---|---|
-| Forgetting parentheses in a function call | Call it like `addname("Adil")` |
-| Incorrect indentation | Indent function and condition bodies consistently |
-| Removing a missing value | Check `if name in names` first |
-| Expecting a history list to update automatically | Append only when the action succeeds |
-| Assuming indexes stay unchanged after removal | Inspect the list again or pass the target value directly |
-| Printing the whole list when one value is needed | Print the current variable |
-| Treating `len(names)` as lifetime additions | Describe it as the current active count |
-| Restoring an already-active name | Check `name in names` first |
-
-## 9. Practice plan
-
-1. Type each example yourself.
-2. Predict the output before running the code.
-3. Test duplicate names, missing names, and empty lists.
-4. Explain each function's purpose, parameters, condition, list operation, and result.
-5. Add a `searchname(name)` function.
-6. Build a menu with Add, Delete, Restore, View, and Exit.
-7. Later, save records to a file or database.
+1. Type and run every example yourself.
+2. Predict output before running it.
+3. Test edge cases: zero, negative numbers, empty lists, missing names, and duplicates.
+4. Explain each variable and line aloud.
+5. Try the five practice questions without viewing the solutions first.
+6. Extend the mini-project with a menu: Add, Delete, Restore, View, Exit.
+7. Later, learn file handling and databases to preserve records between runs.
 
 ## AI assistance disclosure
 
-This guide was drafted with AI assistance from the concepts and code explored during practice. The learner should test, review, adapt, and understand the examples before presenting the project as work they can explain. Be transparent in a portfolio or interview that this was a beginner practice project developed while learning with AI assistance.
+These notes were organised and drafted with AI assistance from the learner's practice code and questions. AI helped explain concepts, identify common mistakes, and prepare examples and interview questions. The learner should test and understand the code and disclose AI assistance honestly when sharing the repository.
