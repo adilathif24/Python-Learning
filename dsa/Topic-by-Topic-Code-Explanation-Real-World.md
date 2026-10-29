@@ -1,5 +1,8 @@
 # DSA — Code, Explanation, Complexity and Real-World Use
 
+
+> **Professional interview preparation:** For structured syntax, complete code examples, interview-ready explanations, seven solved interview Q&As and five practice tasks with solutions, also use the [Professional Interview Workbook](dsa/Professional-Interview-Workbook.md).
+
 This guide develops DSA from pattern foundations to interview-ready solutions. For each problem, practise the approach, assumptions, correctness, complexity, dry run and edge cases. DSA remains a separate learning track from Python Core and OOP.
 
 ## 1. Big-O and linear search
