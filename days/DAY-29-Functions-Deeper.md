@@ -171,6 +171,14 @@ Run `python -m unittest -v`.
 5. What is a contract? **Documented/checked expectations for inputs and outputs.**
 **Challenge:** Add a minimum/maximum range option as keyword-only values and test invalid ranges and empty data.
 
+## Real-world use cases — where, when and how
+1. **Typed service functions:** Where: team-maintained APIs. When input/output expectations should be clear. How: annotate parameters/returns and validate runtime input.
+2. **Configurable reports:** Where: analytics apps. When callers choose title/precision/options. How: use keyword-only parameters with defaults.
+3. **Reusable callback:** Where: event processing. When caller selects behavior. How: accept a callable and invoke it on each value.
+4. **Stateful closure:** Where: counters or lightweight factories. When a function must retain private state. How: return an inner function and use nonlocal deliberately.
+5. **Public library contract:** Where: reusable packages. When users need predictable errors. How: document validation, return type and exceptions.
+
+
 ## 10. Completion
 - [ ] I understand hints, scope and keyword-only arguments.
 - [ ] Project tests pass.
