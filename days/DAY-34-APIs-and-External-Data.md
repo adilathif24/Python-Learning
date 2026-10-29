@@ -183,6 +183,14 @@ The tests exercise offline validation, not internet availability. Run `python -m
 5. Why protect API tokens? **They can grant access or incur costs.**
 **Challenge:** Add a small retry for temporary URL errors, cap attempts at 3, and test the retry function using a mocked fetch function rather than requiring internet.
 
+## Real-world use cases — where, when and how
+1. **Job listings:** Where: job-search utilities. When a provider exposes listings. How: request data with timeout, check status, parse JSON and validate fields.
+2. **Weather/current data:** Where: dashboards. When data is owned by an external service. How: handle rate limits and missing values and cache when appropriate.
+3. **Automation:** Where: internal scripts. When another service can perform an action. How: authenticate securely and use documented HTTP methods.
+4. **Dashboard integration:** Where: reporting apps. When metrics come from an API. How: normalize payload fields before combining with local data.
+5. **Fault-tolerant clients:** Where: network-dependent tools. When services can be unreachable. How: bounded retry for transient errors, clear failure messages and secret-safe logs.
+
+
 ## 10. Completion
 - [ ] Offline JSON examples work.
 - [ ] Validation tests pass.
