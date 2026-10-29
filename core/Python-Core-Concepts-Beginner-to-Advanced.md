@@ -1,5 +1,8 @@
 # Python Core Concepts: Beginner to Advanced
 
+
+> **Professional interview preparation:** For structured syntax, complete code examples, interview-ready explanations, seven solved interview Q&As and five practice tasks with solutions, also use the [Professional Interview Workbook](core/Professional-Interview-Workbook.md).
+
 This is the Python-language track. OOP and DSA have separate guides. Each topic includes an interview-ready definition, explanation, use cases, solved examples, tasks, and answers.
 
 ## How to study
