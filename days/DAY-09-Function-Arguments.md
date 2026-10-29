@@ -302,3 +302,11 @@ Add a required `source` keyword-only argument and optional `max_emails` limit to
 - [ ] I tried all examples and tasks before viewing the solutions.
 - [ ] The email collector tests pass.
 - [ ] I completed the independent challenge.
+
+## Real-world use cases — where, when and how
+1. **Configurable reports:** Where: analytics/reporting tools. When callers choose optional formats. How: keyword arguments make options explicit.
+2. **Math utilities:** Where: shared helpers. When a function needs a variable number of values. How: collect positional values with *args and validate the count.
+3. **CLI settings:** Where: utilities. When a command has optional named settings. How: keyword-only parameters prevent ambiguous calls.
+4. **Decorators/wrappers:** Where: logging and timing. When another function's call must be forwarded. How: accept and forward *args and **kwargs.
+5. **Metadata collection:** Where: simple integration layers. When optional labels vary. How: collect named options with **kwargs but reject unknown keys where possible.
+
