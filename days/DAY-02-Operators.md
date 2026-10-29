@@ -334,3 +334,11 @@ Add a coupon rule: if the customer is a member **or** subtotal reaches ₹3,000,
 - [ ] I attempted all five tasks independently.
 - [ ] All shopping-cart tests pass.
 - [ ] I solved the independent challenge and explained the conditions.
+
+## Real-world use cases — where, when and how
+1. **Checkout totals:** Where: e-commerce. When: adding quantities and prices. How: arithmetic operators compute subtotal and discount.
+2. **Eligibility rules:** Where: applications. When: thresholds matter. How: comparison operators handle inclusive/exclusive boundaries.
+3. **Access control:** Where: login/permissions. When: several requirements must pass. How: combine Boolean tests with and/or/not.
+4. **Feature membership:** Where: role/tag filters. When: checking whether a label is allowed. How: use in/not in against a collection.
+5. **Optional results:** Where: parsing functions. When: a value may be missing. How: use is None for identity against None, not is for ordinary equality.
+
