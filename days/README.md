@@ -32,4 +32,4 @@ Every day has its own lesson file. Study in order and complete the examples, tas
 
 ## Important
 
-The earlier Days 01–09 were practised in conversations, but the existing material has not necessarily been expanded into the full required format in these new day files yet. Do not treat a link or a status label as proof of mastery. We will expand the days into full lesson packs in order and update completion only after practice.
+**Lesson-pack audit:** Day 03 has now been expanded into a complete study pack with five worked examples, five solved practice tasks, a runnable eligibility checker, unit tests, interview Q&A and revision quiz. Days 01, 02, and 04–09 still need to be audited and expanded to this full format; do not treat their link or status label as proof of mastery.
