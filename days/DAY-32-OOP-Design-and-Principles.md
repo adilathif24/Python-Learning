@@ -200,3 +200,8 @@ Run `python -m unittest -v`.
 - [ ] I can explain the four pillars and composition.
 - [ ] Tests pass.
 - [ ] I implemented and tested a second notifier.
+
+
+## Additional reference — separate OOP track
+
+For deeper design patterns and interview preparation, continue with the [OOP beginner-to-advanced guide](../oop/Python-OOP-Beginner-to-Advanced.md), [topic-by-topic practical guide](../oop/Topic-by-Topic-Code-Explanation-Real-World.md), and [OOP interview workbook](../oop/Professional-Interview-Workbook.md). This day is a learning entry point; it does not replace the separate OOP track.
