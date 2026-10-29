@@ -337,3 +337,11 @@ Extend the expense tracker with a fifth menu option to remove an expense by its 
 - [ ] I completed five practice tasks.
 - [ ] Project tests pass.
 - [ ] I solved the independent challenge.
+
+## Real-world use cases — where, when and how
+1. **Batch processing:** Where: CSV/data imports. When: every row needs handling. How: iterate over rows and validate each one.
+2. **Totals and averages:** Where: finance reports. When: many amounts must be aggregated. How: use an accumulator or a built-in such as sum.
+3. **Retries:** Where: CLI prompts. When: an input may be invalid. How: use a bounded while loop with a clear exit path.
+4. **Search:** Where: contact/task lists. When: the first matching record is enough. How: scan with for and stop with break.
+5. **Menu applications:** Where: local utilities. When: the user performs multiple operations. How: repeat choices until a quit command is received.
+
