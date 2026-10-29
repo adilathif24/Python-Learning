@@ -1,5 +1,8 @@
 # Python OOP — Separate Beginner-to-Advanced Track
 
+
+> **Professional interview preparation:** For structured syntax, complete code examples, interview-ready explanations, seven solved interview Q&As and five practice tasks with solutions, also use the [Professional Interview Workbook](oop/Professional-Interview-Workbook.md).
+
 This guide is intentionally separate from Python core concepts and DSA. OOP means Object-Oriented Programming.
 
 Each topic has definition, explanation, real-world example, where/when/how to use it, seven examples or interview Q&A items, tasks and answers.
