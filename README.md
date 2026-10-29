@@ -1,438 +1,64 @@
-# My Python Learning Journey 🐍
+# Python Learning Portfolio
 
-Hi! I am learning Python step by step and using this repository to keep my notes, practice programs, mistakes, and mini-projects in one place. I write and run examples as I learn, then add explanations so I can revise them later and prepare for interviews.
+A structured, hands-on record of my Python learning: concepts, runnable examples, problem-solving practice, debugging notes, and small projects.
 
-> **AI assistance:** I use AI as a study helper to explain concepts, review errors, and organise notes. The examples are learning material that I should run, understand, test, and adapt myself. I disclose this assistance rather than presenting AI help as something it was not.
+I am building this repository to strengthen programming fundamentals and prepare for technical interviews. It documents what I have practised and what I plan to learn next; planned topics are not presented as completed skills.
 
-## What I have practised so far
-- Python statements, print(), variables, basic types, operators
-- Conditions: if, elif, else
-- Loops: for, while, range()
-- Counters and accumulators
-- Functions: def, parameters, arguments, function calls, return
-- Lists, indexing, append(), remove(), len(), in, not in
-- Coding exercises: sum, multiplication table, factorial, prime check, Fibonacci, digit count, vowel/consonant count, swapping
-- Name Management mini-project: add, remove, restore, view
-- Practice and interview questions
+## Current focus
 
-## 1. Python basics
+- Variables, built-in data types, input and output
+- Arithmetic, comparison and logical operators
+- if / elif / else conditions
+- for and while loops, range(), counters and accumulators
+- Number problems: sum, multiplication tables, factorial, prime check, Fibonacci, digit count and swapping
+- String iteration and vowel/consonant counting
+- Functions, parameters, arguments, calls and return values
+- Lists, indexing, membership, append(), remove() and len()
+- Name Management mini-project using functions, conditions and lists
 
-### Output and variables
-A variable is a name that refers to a value. Common types: int (whole number), float (decimal), str (text), and bool (True/False).
-~~~python
-name = "Adil"
-age = 23
-print("Hello", name)
-print(age)
-~~~
-print() displays output. Use variables to store data for later calculations and decisions.
+## Repository map
 
-### Operators
-~~~python
-a, b = 10, 3
-print(a + b)   # 13
-print(a - b)   # 7
-print(a * b)   # 30
-print(a / b)   # 3.333...
-print(a // b)  # 3: floor division
-print(a % b)   # 1: remainder
-print(a ** b)  # 1000: power
-~~~
-Use ==, !=, >, <, >=, <= to compare values. = assigns a value; == compares two values.
+| File | Purpose |
+| --- | --- |
+| [Detailed learning notes](notes/Python-Basics-to-Functions-and-Lists.md) | Definitions, syntax, examples, dry runs, common mistakes, practice problems with solutions and interview Q&A |
+| [Learning roadmap](ROADMAP.md) | Beginner-to-advanced sequence with honest progress checkpoints |
+| [Mind map](MINDMAP.md) | Quick view of how topics connect |
+| [Practice folder](practice/) | Small programs and exercises will be organised here as the collection grows |
+| [Projects folder](projects/) | Standalone projects will be added here when they are ready |
 
-## 2. Conditions
+## How I practise
 
-Conditions let a program make decisions.
-~~~python
-marks = 72
-if marks >= 90:
-    print("Grade A")
-elif marks >= 60:
-    print("Passed")
-else:
-    print("Keep practising")
-~~~
-**Why/where:** input validation, grading, login checks, and deciding whether an item can be removed or restored. Put a colon after each condition and indent the body consistently.
+For each topic, I aim to:
+1. Explain the concept in my own words.
+2. Type and run examples rather than only copy them.
+3. Predict the output and dry-run variable changes.
+4. Test normal inputs, boundary values and invalid inputs.
+5. Solve questions without looking at solutions first.
+6. Refactor the code for readability and explain its limitations.
+7. Mark a topic complete only when I can use it independently.
 
-## 3. Loops, counters and accumulators
+## Current project
 
-A for loop iterates over a sequence. A while loop repeats while a condition is true.
-~~~python
-for i in range(1, 6):
-    print(i)  # 1 through 5; stop value is excluded
+### Name Management — beginner console project
 
-a = 1
-while a <= 5:
-    print(a)
-    a += 1
-~~~
-Always update a while-loop variable so the condition eventually becomes false.
+Practises adding names, preventing active duplicates, deleting names, restoring deleted names, and displaying current counts. At this stage, data is stored in Python lists and is lost when the program exits. It is a learning project, not a production contact-management system.
 
-An **accumulator** collects a running result; a **counter** tracks how many times something happens.
-~~~python
-total = 0
-for i in range(1, 11):
-    total += i
-print(total)  # 55
-~~~
-Multiplication table:
-~~~python
-n = 5
-for i in range(1, 11):
-    print(n, "x", i, "=", n * i)
-~~~
+Next improvements: menu-driven input, case-insensitive matching, automated tests, file persistence, and clearer separation between program logic and user interface.
 
-## 4. Functions: definition, syntax, parameters and arguments
+## Roadmap
 
-A **function** is a reusable block of code that performs a task. def defines it; calling it executes it.
-~~~python
-def greet(name):       # name is a parameter
-    print("Hello", name)
+The full roadmap continues through collections, functions, debugging and testing, files, exceptions, modules, object-oriented programming, intermediate Python, data structures and algorithms, databases, projects, and interview preparation. See [ROADMAP.md](ROADMAP.md) for the full sequence.
 
-greet("Adil")          # "Adil" is an argument
-~~~
-A **parameter** is named in the definition; an **argument** is the actual value passed to the call.
+## Quality and accuracy
 
-return sends a value back to the caller; print() only displays it.
-~~~python
-def add(a, b):
-    return a + b
-
-answer = add(4, 6)
-print(answer)  # 10
-~~~
-**Why use functions?** Reuse logic, organise code, improve readability, and test small pieces independently. Real-world uses include calculations, data validation, reporting, and application logic.
-
-Common mistakes: forgetting to call a function, incorrect indentation, forgetting the colon, or returning the function name instead of the calculated result. A function without an explicit return returns None.
-
-## 5. Lists and membership
-
-A **list** is an ordered, mutable collection. Indexing starts at zero.
-~~~python
-names = ["Syed", "Adil", "Ali"]
-print(names[0])       # Syed
-names.append("Athif") # add at the end
-print(len(names))     # current item count
-print("Ali" in names) # True
-print("Ravi" not in names) # True
-names.remove("Adil")  # remove first matching value
-print(names)
-~~~
-- append(value): add one item at the end.
-- remove(value): remove the first matching value; raises ValueError if absent.
-- len(items): number of items currently in the list.
-- value in items: membership test.
-- items[0]: first item.
-Lists can contain duplicates. Removing an item shifts later items left, so their indexes change. Check membership before removing when a missing item is possible.
-
-## 6. Eight worked coding examples
-
-### Example 1 — Sum 1 to 10
-~~~python
-total = 0
-for i in range(1, 11):
-    total += i
-print(total)  # 55
-~~~
-The accumulator adds each number to the running total.
-
-### Example 2 — Factorial
-Factorial is the product of positive integers up to n; by definition, 0! = 1.
-~~~python
-def factorial(n):
-    if n < 0:
-        return "Not defined for negative integers"
-    result = 1
-    while n > 0:
-        result *= n
-        n -= 1
-    return result
-
-print(factorial(5))  # 120
-print(factorial(0))  # 1
-~~~
-Multiply the result by n, then decrease n. Return the computed value.
-
-### Example 3 — Prime check
-A prime integer is greater than 1 and has no positive divisors except 1 and itself.
-~~~python
-def is_prime(n):
-    if n < 2:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
-
-print(is_prime(7))   # True
-print(is_prime(12))  # False
-~~~
-Testing divisors up to the square root is sufficient.
-
-### Example 4 — Fibonacci sequence
-~~~python
-a, b = 0, 1
-for _ in range(8):
-    print(a, end=" ")
-    a, b = b, a + b
-# 0 1 1 2 3 5 8 13
-~~~
-Each new term is the sum of the previous two.
-
-### Example 5 — Count digits
-~~~python
-n = abs(12345)
-count = 0
-if n == 0:
-    count = 1
-else:
-    while n > 0:
-        count += 1
-        n //= 10
-print(count)  # 5
-~~~
-Floor-dividing by 10 removes the last digit. Zero needs a special case.
-
-### Example 6 — Count vowels and consonants
-~~~python
-text = "python by me"
-vowels = "aeiou"
-vowel_count = 0
-consonant_count = 0
-for ch in text.lower():
-    if ch.isalpha():
-        if ch in vowels:
-            vowel_count += 1
-        else:
-            consonant_count += 1
-print("Vowels:", vowel_count)
-print("Consonants:", consonant_count)
-~~~
-Check the current character ch, not the whole string. isalpha() skips spaces and punctuation.
-
-### Example 7 — Swap using a third variable
-~~~python
-a = 10
-b = 20
-temp = a
-a = b
-b = temp
-print(a, b)  # 20 10
-~~~
-
-### Example 8 — Swap without a third variable
-~~~python
-a = 10
-b = 20
-a, b = b, a
-print(a, b)  # 20 10
-~~~
-Python multiple assignment swaps the values directly.
-
-## 7. Name Management mini-project
-
-Lists used:
-- names: currently active names.
-- deleted: deleted names that have not been restored.
-- restore: history of successful restorations.
-
-~~~python
-names = []
-deleted = []
-restore = []
-
-def addname(name):
-    if name not in names:
-        names.append(name)
-        print("New name added =", name)
-    else:
-        print("Name already exists")
-
-def removename(name):
-    if name in names:
-        names.remove(name)
-        deleted.append(name)
-        print("Name deleted successfully =", name)
-    else:
-        print("No suitable name to delete")
-
-def restoreName(name):
-    if name in names:
-        print("Name already exists in active names")
-    elif name in deleted:
-        deleted.remove(name)
-        names.append(name)
-        restore.append(name)
-        print("Restored successfully =", name)
-    else:
-        print("Name not found in deleted list")
-
-def viewname():
-    print("Active names:", names)
-    print("Total active names:", len(names))
-    print("Deleted names:", deleted)
-    print("Total currently deleted:", len(deleted))
-    print("Restoration history:", restore)
-
-addname("syed adil")
-addname("syed")
-addname("adil")
-addname("ali")
-addname("athif")
-removename("syed adil")
-removename("adil")
-viewname()
-restoreName("syed adil")
-restoreName("adil")
-viewname()
-~~~
-
-**How it works:** addname() prevents an active duplicate; removename() checks before removing and records the deletion; restoreName() avoids duplicate active names and restores only a deleted name; viewname() shows current lists and counts.
-
-**Index lesson:** if names = ["Adil", "Syed", "Ali"] and you remove "Adil", the list becomes ["Syed", "Ali"]. Now names[1] is "Ali", not "Syed". Pass the intended name directly when possible.
-
-**Limitations:** Lists live only in memory, so data disappears when the program exits. String comparisons are case-sensitive ("Adil" and "adil" differ). A real application may need persistent storage, input validation, permissions, and audit logs.
-
-## 8. Five practice questions with solutions
-
-### Q1. Multiply two numbers using a function
-~~~python
-def multiply(a, b):
-    return a * b
-print(multiply(4, 5))  # 20
-~~~
-
-### Q2. Add a value only if it is not already present
-~~~python
-numbers = [2, 4, 6]
-value = 4
-if value not in numbers:
-    numbers.append(value)
-print(numbers)  # [2, 4, 6]
-~~~
-
-### Q3. Count items in a list
-~~~python
-names = ["A", "B", "C"]
-print(len(names))  # 3
-~~~
-
-### Q4. Safely remove a task
-~~~python
-tasks = ["study", "code"]
-task = "code"
-if task in tasks:
-    tasks.remove(task)
-print(tasks)  # ['study']
-~~~
-
-### Q5. Count numbers greater than 10
-~~~python
-numbers = [4, 12, 18, 7, 10]
-count = 0
-for number in numbers:
-    if number > 10:
-        count += 1
-print(count)  # 2
-~~~
-
-## 9. Interview questions and answers
-
-1. **What is Python?** A high-level, general-purpose programming language.
-2. **What is a variable?** A name that refers to a value.
-3. **What is a function?** Reusable code that performs a task.
-4. **What does def do?** Defines a function.
-5. **Parameter vs argument?** A parameter is in the definition; an argument is passed to the call.
-6. **print() vs return?** print() displays; return sends a value to the caller.
-7. **What is a loop?** A structure that repeats code.
-8. **for vs while?** for iterates over an iterable; while repeats while a condition is true.
-9. **What is an accumulator?** A variable that collects a running result.
-10. **What is a list?** An ordered, mutable collection.
-11. **Can a list contain duplicates?** Yes.
-12. **What does append() do?** Adds an item to the end.
-13. **What does remove() do?** Removes the first matching value.
-14. **What does len() return?** Current item count.
-15. **What does in do?** Checks membership and returns a Boolean.
-16. **What is zero-based indexing?** The first item has index 0.
-17. **Why do indexes change after deletion?** Later items shift left.
-18. **Why check before removing?** To avoid ValueError for a missing value.
-19. **What is a prime number?** An integer greater than 1 divisible only by 1 and itself.
-20. **What is factorial?** Product of integers from 1 through n; 0! = 1.
-21. **What is Fibonacci?** A sequence where each term is the sum of the previous two.
-22. **What does // do?** Floor division.
-23. **What does % do?** Returns a remainder.
-24. **Why use ch in vowels in a loop?** ch is the current character; testing the whole string checks the wrong value.
-25. **How could the mini-project improve?** Add a menu, tests, validation, and persistent storage.
-
-## 10. Common mistakes
-
-- Forgetting a colon or using incorrect indentation.
-- Using = instead of == for comparison.
-- Forgetting to update a while loop variable.
-- Using a wrong loop condition, such as while n < 0 when processing a positive number.
-- Returning the function name instead of the calculated answer.
-- Checking the whole string instead of the current character in vowel counting.
-- Removing a missing item without checking membership.
-- Assuming indexes remain unchanged after deletion.
-- Confusing the current list length with the total number ever added.
-
-## 11. My next practice steps
-
-1. Type and run each example myself instead of only copying it.
-2. Predict output before running it.
-3. Test edge cases: zero, negative numbers, empty lists, missing names, and duplicates.
-4. Explain each variable and line in my own words.
-5. Try the five practice questions without viewing the solutions first.
-6. Extend the mini-project with a menu: Add, Delete, Restore, View, Exit.
-7. Next, I plan to learn file handling and databases so records can be saved between runs.
+Examples should include expected output where useful and should be tested before being treated as verified. If an example has not been run in an environment, it should not be described as tested. The repository is a work in progress and will grow topic by topic.
 
 ## AI assistance disclosure
 
-These notes were organised and drafted with AI assistance from the learner's practice code and questions. AI helped explain concepts, identify common mistakes, and prepare examples and interview questions. The learner should test and understand the code and disclose AI assistance honestly when sharing the repository.
+AI tools have assisted with organising notes, explaining concepts, suggesting practice problems, and reviewing code. I am responsible for reviewing, running, understanding, and improving the material before relying on it. This disclosure is intentional; AI assistance is not represented as unaided work.
 
+## Contact and profile
 
-## Complete study guide
-
-I also added a detailed guide from Python basics through functions and lists, with definitions, syntax, explanations, real-world use cases, worked examples, loop and number problems, the Name Management mini-project, practice questions with solutions, interview Q&A, common mistakes, and AI assistance disclosure.
-
-**[Read Python Basics to Functions and Lists](notes/Python-Basics-to-Functions-and-Lists.md)**
-
----
-
-## Repository study guide and navigation
-
-This repository separates the **topics already practised** from the **full future roadmap**:
-
-- **[Detailed Python Notes — Basics to Functions and Lists](notes/Python-Basics-to-Functions-and-Lists.md)**  
-  Definitions, syntax, explanations in English, worked code examples, dry-run guidance, real-world uses, common mistakes, practice questions with answers, interview Q&A, and the Name Management mini-project.
-
-- **[Complete Python Learning Roadmap](ROADMAP.md)**  
-  A beginner-to-advanced learning sequence covering foundations, operators, conditions, loops, number problems, strings, collections, functions, debugging, files, modules, OOP, intermediate Python, DSA, Python with SQL, practical tracks, projects, and interviews. Includes a progress checklist.
-
-- **[Python Learning Mind Map](MINDMAP.md)**  
-  A quick visual-text map of the major topics, the concepts already practised, and how they connect.
-
-## Topics practised so far
-
-Current learning notes include:
-1. Python basics: output, variables, types, input, operators.
-2. Conditions: `if`, `elif`, `else`.
-3. Loops: `for`, `while`, `range()`.
-4. Counters, accumulators, totals, and multiplication tables.
-5. Number problems: factorial, prime checking, Fibonacci, digit counting, swapping.
-6. Strings: iterating through characters and counting vowels/consonants.
-7. Functions: `def`, parameters, arguments, function calls, and `return`.
-8. Lists: indexing, `append()`, `remove()`, `len()`, `in`, and `not in`.
-9. Name Management mini-project: add, delete, restore, view, and count.
-
-## How I will use this repository
-
-- Read the definition and syntax.
-- Type and run examples myself.
-- Predict output before execution and dry-run the logic.
-- Solve the practice questions without looking at the answers first.
-- Test edge cases and explain the code in my own words.
-- Tick off roadmap phases only after I can use the concepts independently.
-
-> **AI assistance disclosure:** AI helped organise these notes, explain concepts, identify common beginner mistakes, and prepare practice examples and interview questions. I will test, review, and understand the code, and I will be transparent about AI assistance when sharing this repository.
+- GitHub: [adilathif24](https://github.com/adilathif24)
+- Repository: [Python-Learning](https://github.com/adilathif24/Python-Learning)
 
