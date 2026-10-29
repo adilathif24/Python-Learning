@@ -184,6 +184,14 @@ Run `python -m unittest -v`.
 
 **Challenge:** Add a low-stock report showing inventory items with quantity below a user-supplied threshold.
 
+## Real-world use cases — where, when and how
+1. **User profile:** Where: forms/API data. When fields are named. How: map field names to validated values.
+2. **Inventory counts:** Where: stock tools. When quantities are retrieved by SKU. How: use SKU as key and increment values.
+3. **Frequency counter:** Where: logs or word analysis. When occurrences matter. How: update counts with get(key, 0) + 1.
+4. **Configuration:** Where: app startup. When named settings have defaults. How: merge user settings over defaults and validate types.
+5. **Nested API payload:** Where: web services. When objects contain nested address/items fields. How: validate each level before indexing.
+
+
 ## 10. Completion
 - [ ] I can explain dict access, update, counting and nesting.
 - [ ] I solved all tasks and tested the project.
