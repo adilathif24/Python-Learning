@@ -157,6 +157,14 @@ Run `python -m unittest -v`.
 5. What causes circular imports? **Modules depending on one another during import.**
 **Challenge:** Turn the calculator into a package with an `__init__.py` and add a second module for input validation.
 
+## Real-world use cases — where, when and how
+1. **Reusable validation:** Where: multiple app entry points. When the same rule is needed in many places. How: place it in a module imported by UI and tests.
+2. **Calculator app:** Where: command-line tools. When arithmetic logic should be isolated from input/output. How: put calculate() in a module and main() in another.
+3. **Team codebase:** Where: shared repositories. When several features are maintained. How: group cohesive functions into packages.
+4. **Testing:** Where: CI or local tests. When business logic must run without interactive prompts. How: use a main guard so importing a module does not start the app.
+5. **Dependency control:** Where: apps with third-party libraries. When versions must be reproducible. How: use a virtual environment and dependency specification.
+
+
 ## 10. Completion
 - [ ] I understand imports and main guard.
 - [ ] The modular calculator works and all tests pass.
