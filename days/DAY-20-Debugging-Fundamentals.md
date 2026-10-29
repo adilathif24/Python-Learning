@@ -176,6 +176,14 @@ Run `python -m unittest -v`.
 5. Why change one thing at a time? **To isolate cause and effect.**
 **Challenge:** Given an incorrect prime checker, create failing tests first, fix the bug, then demonstrate the tests pass for -1, 0, 1, 2, and 9.
 
+## Real-world use cases — where, when and how
+1. **Wrong calculation:** Where: billing scripts. When totals differ from expected results. How: reproduce a small example, trace intermediate values and add regression tests.
+2. **API failure:** Where: integrations. When a request fails sporadically. How: inspect status/traceback, log safe context and test timeout/error handling.
+3. **Data import crash:** Where: CSV/JSON tools. When a row has malformed data. How: isolate the offending row, validate inputs and test the corrected path.
+4. **Boundary defect:** Where: age/score checks. When only exact thresholds fail. How: test immediately below, at and above each boundary.
+5. **Unexpected state:** Where: object-oriented apps. When state changes unexpectedly. How: inspect the method that mutates state and verify invariants with unit tests.
+
+
 ## 10. Completion
 - [ ] I can classify errors and read a traceback.
 - [ ] I completed the debugging tasks.
