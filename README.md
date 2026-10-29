@@ -389,3 +389,10 @@ print(count)  # 2
 ## AI assistance disclosure
 
 These notes were organised and drafted with AI assistance from the learner's practice code and questions. AI helped explain concepts, identify common mistakes, and prepare examples and interview questions. The learner should test and understand the code and disclose AI assistance honestly when sharing the repository.
+
+
+## Complete study guide
+
+I also added a detailed guide from Python basics through functions and lists, with definitions, syntax, explanations, real-world use cases, worked examples, loop and number problems, the Name Management mini-project, practice questions with solutions, interview Q&A, common mistakes, and AI assistance disclosure.
+
+**[Read Python Basics to Functions and Lists](notes/Python-Basics-to-Functions-and-Lists.md)**
