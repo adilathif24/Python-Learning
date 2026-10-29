@@ -155,6 +155,14 @@ Run `python -m unittest -v`.
 5. What exception marks exhaustion? **StopIteration.**
 **Challenge:** Read a large log file line-by-line and count ERROR records without storing all lines, then test with an in-memory iterator.
 
+## Real-world use cases — where, when and how
+1. **Large logs:** Where: server support tools. When files exceed memory comfort. How: stream lines and yield only matching records.
+2. **Data pipelines:** Where: ETL-like application code. When each record is transformed in sequence. How: chain generators for filtering/normalization.
+3. **Paginated API:** Where: integrations. When records arrive page by page. How: yield each page's records instead of accumulating everything.
+4. **Infinite sequences:** Where: simulations or scheduling. When values are generated on demand. How: use a generator with explicit stopping conditions at the consumer.
+5. **Memory-aware aggregation:** Where: reports. When only the total is needed. How: pass a generator expression to sum rather than allocating a separate list.
+
+
 ## 10. Completion
 - [ ] I understand iterable, iterator, next and yield.
 - [ ] Project tests pass.
