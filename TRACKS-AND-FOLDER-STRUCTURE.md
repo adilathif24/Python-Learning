@@ -35,5 +35,16 @@ Five use cases and one complete project are separate requirements. Do not substi
 - Completed: examples run, tasks attempted, project tested, quiz passed and learner can explain the topic.
 - Next: next lesson to study.
 
+## Direct track indexes
+- [Day-by-day Python lessons](days/README.md)
+- [Exceptions](exceptions/README.md)
+- [Files and data formats](files/README.md)
+- [Modules and packages](modules/README.md)
+- [Testing](testing/README.md)
+- [APIs and external data](apis/README.md)
+- [OOP track](oop/README.md)
+- [DSA track](dsa/README.md)
+- [Interview preparation](interview/README.md)
+
 ## Honest current status
-Day 10 has a full lesson pack. Days 01–09 have separate outlines and older notes, but still need expansion to the full format. Planned outlines are not completed lessons. Retain useful existing guides until they are consolidated; remove redundant navigation and duplicate summaries rather than deleting useful learning material.
+Day-specific study-pack files for Days 01–40 are published. Publishing a pack is not proof that all snippets execute in a clean environment or that the learner has mastered the topic. Run the examples and tests, check the expected outputs, and finish the challenges before marking Completed. Existing subject guides are retained as deeper references rather than deleted blindly.
