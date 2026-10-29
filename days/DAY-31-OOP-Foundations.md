@@ -192,6 +192,14 @@ Run `python -m unittest -v`.
 5. Can each instance have a different attribute value? **Yes.**
 **Challenge:** Add a transfer method that moves money between two accounts and test same-account, zero, negative and insufficient-funds cases.
 
+## Real-world use cases — where, when and how
+1. **Bank account:** Where: financial learning apps. When balance and allowed operations belong together. How: object state plus deposit/withdraw methods enforce rules.
+2. **Student records:** Where: grading utilities. When name, ID and score travel together. How: create a Student class with methods for validation/reporting.
+3. **Shopping product:** Where: catalogue tools. When each item has name, price, and stock. How: Product objects group fields and behavior.
+4. **Task manager:** Where: productivity apps. When each task has title/status. How: a Task class tracks completion with methods.
+5. **Geometry:** Where: simulations. When points/rectangles are reused. How: represent data as objects with area/distance methods.
+
+
 ## 10. Completion
 - [ ] I can define classes, create objects, and explain self.
 - [ ] Project tests pass.
