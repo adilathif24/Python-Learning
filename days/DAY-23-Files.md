@@ -192,6 +192,14 @@ Run `python -m unittest -v`.
 5. Why use pathlib? **Clear, cross-platform path operations.**
 **Challenge:** Add delete-by-name contact functionality and write tests for present, absent and empty names.
 
+## Real-world use cases — where, when and how
+1. **Configuration:** Where: small scripts. When preferences must persist. How: read/write a small text or JSON file with explicit UTF-8 encoding.
+2. **Application logs:** Where: CLI or server programs. When activity must be audited. How: append timestamped log lines and rotate/store them appropriately.
+3. **Contact list:** Where: offline personal utility. When records should survive restarts. How: serialize validated contacts as JSON and load them on startup.
+4. **CSV report:** Where: spreadsheet interchange. When data needs to be opened in spreadsheet software. How: use the csv module instead of joining strings manually.
+5. **Safe file processing:** Where: batch jobs. When a path could be missing or inaccessible. How: use pathlib and catch specific I/O errors.
+
+
 ## 10. Completion
 - [ ] I can read, write, append, and use paths safely.
 - [ ] Contact persistence tests pass.
