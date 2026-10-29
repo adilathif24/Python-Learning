@@ -164,6 +164,14 @@ Run `python -m unittest -v`.
 
 **Challenge:** Extend distance to a 3D point and test both valid and invalid tuple lengths.
 
+## Real-world use cases — where, when and how
+1. **Coordinates:** Where: maps and geometry. When a point is exactly x/y. How: store values as a tuple and unpack for calculations.
+2. **Multiple returns:** Where: parsing/math helpers. When a function returns paired results. How: return a tuple and unpack it at the call site.
+3. **Fixed database row:** Where: quick query results. When field order is known. How: unpack columns into descriptive names; use named records when schemas grow.
+4. **Dictionary keys:** Where: caches keyed by a grid position. When a composite immutable key is needed. How: use a tuple of hashable components.
+5. **Swapping variables:** Where: algorithms. When two values must exchange. How: use simultaneous assignment `a, b = b, a`.
+
+
 ## 10. Completion
 - [ ] I can create tuples and unpack fixed and variable lengths.
 - [ ] I completed all examples and tasks.
