@@ -101,3 +101,24 @@ Study Python fundamentals, OOP and DSA independently so each skill is easy to na
 
 ### Contribution and accuracy note
 These are learning notes and starter interview practice, not a claim that every topic is mastered. Run code, test edge cases, correct mistakes and solve new variations independently before listing a skill as interview-ready.
+
+
+## Runnable code examples
+
+Each learning track now has a Python file you can run locally. These files demonstrate the main concepts and common coding patterns; use them alongside the detailed Markdown guide.
+
+- [Python Core runnable examples](core/examples.py) — variables, operators, loops, strings, collections, functions, exceptions, generators and more.
+- [OOP runnable examples](oop/examples.py) — classes, constructors, methods, encapsulation, inheritance, polymorphism, abstraction, composition and dataclasses.
+- [DSA runnable examples](dsa/examples.py) — searching, arrays, strings, hashing, two pointers, sliding window, prefix sums, recursion, stacks, queues/BFS, heaps, DP, greedy and bit manipulation.
+
+### Run the examples
+
+From the repository's root folder, use:
+
+```bash
+python core/examples.py
+python oop/examples.py
+python dsa/examples.py
+```
+
+If your system uses the Python 3 launcher, use `py` instead of `python`. Read each function, predict the output, run it, then change the inputs and test edge cases. The examples are starter implementations; verify them in your own environment before treating them as tested interview solutions.
