@@ -176,6 +176,14 @@ Run `python -m unittest -v`.
 5. Linked-list node contains? **Value and reference to next node (in a singly linked list).**
 **Challenge:** Implement a queue class with enqueue/dequeue/peek and test empty behavior.
 
+## Real-world use cases — where, when and how
+1. **Undo history:** Where: editors/browser. When latest action reverses first. How: use a stack and pop the last action.
+2. **Job scheduling:** Where: worker systems. When requests should be served in arrival order. How: use deque as FIFO queue.
+3. **Expression parsing:** Where: calculators. When brackets/operators must be matched. How: push opening symbols, pop on valid closing symbols.
+4. **Linked data:** Where: educational structures or frequent node insertion. When node links are updated locally. How: store each value with a reference to its next node.
+5. **Hierarchical recursion:** Where: tree traversal. When data naturally contains subtrees. How: use a base case and recurse on child nodes; use iterative methods for very deep input.
+
+
 ## 10. Completion
 - [ ] I can explain stack, queue, linked list and recursion.
 - [ ] Tests pass.
