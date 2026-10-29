@@ -342,3 +342,11 @@ Extend the bill generator to support a discount percentage. Validate that the di
 - [ ] I completed five tasks without initially copying the answers.
 - [ ] The project tests pass.
 - [ ] I solved the independent challenge.
+
+## Real-world use cases — where, when and how
+1. **User profile:** Where: signup forms. When: collecting a name/age. How: store validated text and integer values in descriptive variables.
+2. **Shopping bill:** Where: checkout. When: calculating totals. How: store price as numeric values, quantity as int, and format the total for output.
+3. **CLI tools:** Where: admin scripts. When: a user must provide a choice. How: read with input(), strip whitespace, convert, then validate.
+4. **Configuration:** Where: small apps. When: flags or settings determine behavior. How: store Boolean and string settings separately.
+5. **Reports/logs:** Where: support tools. When: showing results. How: use f-strings for readable, consistently formatted messages.
+
