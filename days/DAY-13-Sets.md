@@ -165,6 +165,14 @@ Run `python -m unittest -v`.
 
 **Challenge:** Compare two lists of course enrollments and report shared, unique-to-A, and unique-to-B courses.
 
+## Real-world use cases — where, when and how
+1. **De-duplication:** Where: imported records. When only unique tags matter. How: convert values to a set, then sort if display order matters.
+2. **Permission checks:** Where: access control. When a role must include all required capabilities. How: use subset tests or set difference.
+3. **Course overlap:** Where: enrollment reports. When comparing two cohorts. How: intersection returns shared courses/students.
+4. **Diffing records:** Where: reconciliation. When values missing from one list must be found. How: use set difference in each direction.
+5. **Visited nodes:** Where: graph traversal. When repeat visits must be avoided. How: track seen nodes in a set.
+
+
 ## 10. Completion
 - [ ] I can explain set uniqueness and all four operations.
 - [ ] I completed examples, tasks and project.
