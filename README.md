@@ -1,8 +1,10 @@
-# Python Learning — From Basics to Functions, Loops, Lists & Mini Project
+# My Python Learning Journey 🐍
 
-> **AI assistance disclosure:** This learning guide was prepared with AI assistance based on the learner's practice code and questions. AI helped organise explanations, examples, corrections, and interview questions. The learner should run, review, understand, and modify every example and disclose AI assistance honestly when sharing the work.
+Hi! I am learning Python step by step and using this repository to keep my notes, practice programs, mistakes, and mini-projects in one place. I write and run examples as I learn, then add explanations so I can revise them later and prepare for interviews.
 
-## Learning path covered
+> **AI assistance:** I use AI as a study helper to explain concepts, review errors, and organise notes. The examples are learning material that I should run, understand, test, and adapt myself. I disclose this assistance rather than presenting AI help as something it was not.
+
+## What I have practised so far
 - Python statements, print(), variables, basic types, operators
 - Conditions: if, elif, else
 - Loops: for, while, range()
@@ -374,15 +376,15 @@ print(count)  # 2
 - Assuming indexes remain unchanged after deletion.
 - Confusing the current list length with the total number ever added.
 
-## 11. Study plan
+## 11. My next practice steps
 
-1. Type and run every example yourself.
+1. Type and run each example myself instead of only copying it.
 2. Predict output before running it.
 3. Test edge cases: zero, negative numbers, empty lists, missing names, and duplicates.
-4. Explain each variable and line aloud.
+4. Explain each variable and line in my own words.
 5. Try the five practice questions without viewing the solutions first.
 6. Extend the mini-project with a menu: Add, Delete, Restore, View, Exit.
-7. Later, learn file handling and databases to preserve records between runs.
+7. Next, I plan to learn file handling and databases so records can be saved between runs.
 
 ## AI assistance disclosure
 
