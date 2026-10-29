@@ -196,3 +196,8 @@ Run `python -m unittest -v`.
 - [ ] I can define classes, create objects, and explain self.
 - [ ] Project tests pass.
 - [ ] I completed the transfer challenge.
+
+
+## Additional reference — separate OOP track
+
+This day introduces OOP only. Continue with the dedicated [OOP beginner-to-advanced guide](../oop/Python-OOP-Beginner-to-Advanced.md), the [OOP topic-by-topic practical guide](../oop/Topic-by-Topic-Code-Explanation-Real-World.md), and the [OOP interview workbook](../oop/Professional-Interview-Workbook.md) for deeper coverage. Keep OOP files separate from Python Core and DSA practice.
