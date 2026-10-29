@@ -372,7 +372,7 @@ Strings are sequences of text characters and are immutable: methods such as lowe
                     consonant_count += 1
         return vowel_count, consonant_count
 
-    print(count_letters("Python by me!"))  # (3, 7)
+    print(count_letters("Python by me!"))  # (2, 8)
 
 The loop checks the current character ch, not the entire input string. isalpha() skips spaces and punctuation. This simple English-vowel rule does not classify every letter in every language.
 
